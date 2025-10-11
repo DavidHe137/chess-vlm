@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "lichess_id": "01J5O",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h8h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . . r . .\n. p p . N p p k\n. . . p . . . .\np . . . n . . .\n. . . . P . . .\n. P P P . . P .\n. P . K . . P .\n. . . R . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h8h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d1h1",
+    "rating": 613
+  },
+  {
+    "id": 1,
+    "lichess_id": "03kYO",
+    "prompt-with-board": "You are a chess expert. Your opponent just played a7a6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . r . .\n. . . . . . p .\nk p . N p . . r\n. . . . P p . p\n. P . n . P . .\n. . . . . . . .\n. . . . . . P P\n. . . . . R K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played a7a6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f1a1",
+    "rating": 1157
+  },
+  {
+    "id": 2,
+    "lichess_id": "0421L",
+    "prompt-with-board": "You are a chess expert. Your opponent just played a1c1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . . . . .\np . . . . . . .\nb p . . N Q p k\n. . p . . . . .\n. . . p . . . .\n. . . P . . . .\nP P P . K . . P\n. . q . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played a1c1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f6h4",
+    "rating": 1694
+  }
+]

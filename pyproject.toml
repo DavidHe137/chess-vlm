@@ -13,4 +13,10 @@ dependencies = [
     "python-chess>=1.999",
     "pandas>=2.0.0",
     "tqdm>=4.65.0",
+    "cairosvg>=2.8.2",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.30.1",
 ]
