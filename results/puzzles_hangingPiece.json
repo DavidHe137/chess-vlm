@@ -1,0 +1,498 @@
+[
+  {
+    "id": 0,
+    "lichess_id": "001gi",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c7a8. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n\n Board:\nN . . . . . . r\n. p . k . p p p\n. . n p . . . .\nb . . . p . . .\n. . . . P . b .\nN . Q . . . . .\nP . . . . P P P\nR . . . K B . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c7a8. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "a5c3",
+    "rating": 820
+  },
+  {
+    "id": 1,
+    "lichess_id": "002Z9",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f4d2. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . r . k .\n. p . . R . p .\np . . p . . P p\nP . p P . . . .\n. . . . . . . .\n. R . . . p . .\n. P . q . . . P\n. . . . . B . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f4d2. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "e7e8",
+    "rating": 1237
+  },
+  {
+    "id": 2,
+    "lichess_id": "005wJ",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e5d7. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . k b . r\np p q N . p p p\n. . . . p n . .\n. Q . . . b . .\n. . . P . . . .\n. . . . . . . .\nP P . . P P P P\nR N B . K B . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e5d7. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c7c1",
+    "rating": 1399
+  },
+  {
+    "id": 3,
+    "lichess_id": "009L0",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d2d1. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . k .\np b . . r . p N\n. n . . . . B p\n. . . p . . . .\n. P . . p R . .\nP . . . . . . .\n. . . . . P P P\n. . r R . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d2d1. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c1d1",
+    "rating": 706
+  },
+  {
+    "id": 4,
+    "lichess_id": "009YT",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d6e5. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n\n Board:\nr q n r . . k .\n. . . . . p p p\np . . . . . . .\n. . . . p . . .\n. . . . . . . .\n. P . . . . . P\nP B P . . P P .\nR . . R . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d6e5. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d1d8",
+    "rating": 687
+  },
+  {
+    "id": 5,
+    "lichess_id": "00FHX",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c2b1. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n\n Board:\n. . r . . . k .\n. . . . . p . p\n. . . . p P . .\n. . . p . . . P\n. . . . . . . .\n. . . . . P . .\np . . . . . P .\n. b R . . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c2b1. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c1c8",
+    "rating": 495
+  },
+  {
+    "id": 6,
+    "lichess_id": "00QZV",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g1h1. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n\n Board:\nr . b k . . . .\np p p p . . . p\n. . n . . . . .\n. . b . p r N .\n. . . . . . . .\n. B . . . . . .\nP P P P . . P P\nR N B . . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g1h1. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f5f1",
+    "rating": 599
+  },
+  {
+    "id": 7,
+    "lichess_id": "00X1l",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f3g2. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . r . k\nQ . . . . . . p\n. p b . . . p .\n. . . . q . . .\n. . . . p . . .\n. B P . . . . P\nP P . . . . p .\n. . . . . R K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f3g2. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f1f8",
+    "rating": 848
+  },
+  {
+    "id": 8,
+    "lichess_id": "00rTX",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d1d2. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . r . . k .\np p . . . p p p\n. . . . p . . .\n. . N . . . . .\n. . . . . . . q\n. Q . . . P . .\nP P . R . . P P\n. . . . R . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d1d2. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h4e1",
+    "rating": 959
+  },
+  {
+    "id": 9,
+    "lichess_id": "00zxV",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f6e4. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n\n Board:\nr n . . . k . r\np p . . p . . p\n. . p . . . p .\n. . . . . . . .\n. . B . n . . .\n. . . . q . . .\nP Q P . . . P P\nR N . . . K . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f6e4. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "b2h8",
+    "rating": 636
+  },
+  {
+    "id": 10,
+    "lichess_id": "0119E",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e7f8. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . q . k\n. . . . . . . p\n. . . N p . b P\n. . . . P . . .\n. . . P . . P .\n. . n . . . . .\n. . . . . . . .\n. . . . . Q K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e7f8. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f1f8",
+    "rating": 437
+  },
+  {
+    "id": 11,
+    "lichess_id": "01LBw",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d1g4. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . . . . r\np p p . k B p .\n. . n p . . . .\n. . . . p . . .\n. . . . P . Q .\nP . . P . . . q\n. P P N . P . .\nR . . . . R K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d1g4. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h3g4",
+    "rating": 728
+  },
+  {
+    "id": 12,
+    "lichess_id": "01PPM",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d3f4. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n\n Board:\n. . . r . . k .\np . p . . p p p\n. . B . b . . .\n. . . . q . . .\nN . . . . n . Q\n. . . . . . . .\nP . . . . P P P\n. . . . . R K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d3f4. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h4d8",
+    "rating": 1056
+  },
+  {
+    "id": 13,
+    "lichess_id": "01aGC",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e5e8. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n\n Board:\n. . . Q q . . k\n. . . . . . p p\n. . . . . . . .\n. . p . . . . .\nP . . . p . . .\n. . . p . . . P\n. r r . . P P .\n. R . . . R K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e5e8. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d8e8",
+    "rating": 506
+  },
+  {
+    "id": 14,
+    "lichess_id": "01gl3",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d8g5. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . r . k\n. . . . . . p p\n. . . p . . p .\np p p P . . q .\n. . . . . R P .\n. . . P . . . .\nP P P Q . . . .\n. . K . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d8g5. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f4f8",
+    "rating": 462
+  },
+  {
+    "id": 15,
+    "lichess_id": "01i3C",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f3e1. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . k .\n. . p . . p p .\n. . . . p . n p\n. R . . . . . .\n. . . P b . . .\n. . P . . . B .\n. . . . . P P P\nr . . . N . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f3e1. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "a1e1",
+    "rating": 679
+  },
+  {
+    "id": 16,
+    "lichess_id": "01m2j",
+    "prompt-with-board": "You are a chess expert. Your opponent just played b6a6. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n\n Board:\n. r . . . . . .\n. r . . . p k p\nR . . . p . p .\n. . p P . . . .\n. . . . P . . .\n. . . . . P . .\n. . . . . . P P\n. R . . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played b6a6. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "b7b1",
+    "rating": 728
+  },
+  {
+    "id": 17,
+    "lichess_id": "01pz8",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e8e6. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . r . .\n. p . R . . . .\np . . Q q . p k\n. . . . P . . p\n. . . P . n . P\n. . . . . . . .\nP P . . . . . K\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e8e6. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d6f8",
+    "rating": 1000
+  },
+  {
+    "id": 18,
+    "lichess_id": "01uI5",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h5f3. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n\n Board:\nr n . B r . k .\np p . . . p p p\n. . p . . . . .\n. . . p . . . .\n. . . P . . . .\n. . . . . b . P\nP P P . . P P .\nR N . . R . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h5f3. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "e1e8",
+    "rating": 658
+  },
+  {
+    "id": 19,
+    "lichess_id": "01vI5",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c3d5. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . q r . k .\np p . . . . p p\n. . . . . b n .\n. . . N . . N .\nQ . . . . B b .\n. . . . . . . .\nP P . R . P P P\n. . . . R . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c3d5. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "e8e1",
+    "rating": 1078
+  },
+  {
+    "id": 20,
+    "lichess_id": "01zzO",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c3a2. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . . r k .\n. p . b . p . .\np . . . p . p .\nq . . p N . . p\n. . . . . Q . P\n. . . . . . R .\nN P P . . P P .\n. . K . R . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c3a2. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "a5e1",
+    "rating": 855
+  },
+  {
+    "id": 21,
+    "lichess_id": "0217e",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d1d5. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n\n Board:\n. r b . k . . r\nb . . . . . p .\np . . p P p . p\nq p . Q . . . .\n. . . . . . . N\n. P . . . . . .\nP . . . . P P P\nR . B . R . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d1d5. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "a5e1",
+    "rating": 532
+  },
+  {
+    "id": 22,
+    "lichess_id": "021U1",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f3f2. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . . . . .\nb p . . . . . .\n. . . . k N Q .\n. b . . P p . p\np . . R . P . N\nP . q . . . . .\n. . . . . K P P\n. . . . . . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f3f2. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "a7d4",
+    "rating": 1476
+  },
+  {
+    "id": 23,
+    "lichess_id": "0257T",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f6e5. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n\n Board:\nr . . q n r . k\np p p b . . p p\n. . n . . . . B\n. . . N b . . .\n. . . . . . . .\nP . . . . . Q P\n. P P . B . P .\nR . . . . R K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f6e5. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f1f8",
+    "rating": 1441
+  },
+  {
+    "id": 24,
+    "lichess_id": "025Et",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e2a2. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n\n Board:\n. . r . . . k .\n. Q . . . p p p\n. . . . . . . .\n. . . . . . . .\n. . . . B . . .\n. . q . P . . .\nR . . . . P P P\n. . . . R . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e2a2. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c3e1",
+    "rating": 683
+  },
+  {
+    "id": 25,
+    "lichess_id": "02Clu",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f3f2. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . . .\n. p N . . p k .\np . . . . . p .\n. . . . . . . .\n. b . . . . . .\n. . . n . . . .\nP P . . . Q P P\n. . . . . . R K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f3f2. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d3f2",
+    "rating": 799
+  },
+  {
+    "id": 26,
+    "lichess_id": "02FVj",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g1g8. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n\n Board:\n. . k r . . R .\np . . . . p . .\n. p . . . . . p\n. . p . P p . P\n. . P p . P . Q\n. . . P . q . .\nP P . . . . . .\n. K . R . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g1g8. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f3d1",
+    "rating": 1041
+  },
+  {
+    "id": 27,
+    "lichess_id": "02IQK",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f7d8. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n\n Board:\n. . . n r . . k\np b . Q . . p p\n. p . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . P . .\nP . . . . . P P\n. . . . . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f7d8. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d7e8",
+    "rating": 475
+  },
+  {
+    "id": 28,
+    "lichess_id": "02Or9",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f6e5. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n\n Board:\n. . n . . r . k\np . q . . . . p\n. . P . . . p .\n. . Q . b . . .\n. . . P . . . .\n. . . . . . . P\nP . . . . P P .\n. . . . . R K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f6e5. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c5f8",
+    "rating": 655
+  },
+  {
+    "id": 29,
+    "lichess_id": "02T7b",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g2h2. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . . .\n. . k . . . . .\n. b . p . p . .\np . P Q . P . .\n. p . P P . . .\n. P . . . . . q\n. . . . . . . R\n. . . . . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g2h2. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h3f1",
+    "rating": 774
+  },
+  {
+    "id": 30,
+    "lichess_id": "02k1p",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e7d8. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n\n Board:\n. Q . q . k . .\n. p . . . p p .\np . p . . . . p\n. . . . P . . .\nP P . . . P P .\n. . . . . . . P\n. . . . . . . .\n. . . . . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e7d8. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "b8d8",
+    "rating": 1055
+  },
+  {
+    "id": 31,
+    "lichess_id": "02mTT",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d2e1. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n\n Board:\n. . r . k . . r\np p . . b p p .\n. . . . p . . .\nP . . p P . . p\n. P . N n P . .\n. . P q . . . .\n. . . . . . P P\nR . . Q B R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d2e1. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d3f1",
+    "rating": 1225
+  },
+  {
+    "id": 32,
+    "lichess_id": "02pcX",
+    "prompt-with-board": "You are a chess expert. Your opponent just played b8b7. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . r . k .\np r . . . p p p\n. . . . . q . .\n. . p . . . . .\n. n N p . n . .\n. P . . . N . P\nP . P . . P P .\nR . . Q R . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played b8b7. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "e1e8",
+    "rating": 956
+  },
+  {
+    "id": 33,
+    "lichess_id": "031GC",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g1h1. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . k . . .\n. . . . b p p .\n. p . . b . . .\n. . . p P p r .\n. P q . . N . .\n. R n . . . . .\nP . Q . . P . P\n. . B . . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g1h1. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c4f1",
+    "rating": 833
+  },
+  {
+    "id": 34,
+    "lichess_id": "038VQ",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d2c2. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . r k .\np . . . . p p p\n. . p . . . . .\n. . N p . . . n\nP . . P . . . q\n. . P . . P . .\n. P Q . . . P P\n. . . . R . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d2c2. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h4e1",
+    "rating": 1268
+  },
+  {
+    "id": 35,
+    "lichess_id": "03F7p",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f7g8. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . r . k .\np . . . . . p p\n. p n . . . . .\nP . p q . n N .\n. . . . . . . .\n. . B . . P . .\n. . . . . . P .\nR . . . Q . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f7g8. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "e1e8",
+    "rating": 517
+  },
+  {
+    "id": 36,
+    "lichess_id": "03N1y",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f6e4. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . r . k .\n. p p . . p p p\n. b . . b . . .\n. . . q . . . .\nQ . . P n . . .\n. . . . . N . .\n. . . . B P P P\nB . . . . R K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f6e4. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "a4e8",
+    "rating": 592
+  },
+  {
+    "id": 37,
+    "lichess_id": "03RgK",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f3e2. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . r . k .\n. . . . . . p p\n. . Q . . . . .\n. . K p . . . .\n. . . P p . . .\n. N . . P . . .\nP . . . q . . .\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f3e2. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c6e8",
+    "rating": 1074
+  },
+  {
+    "id": 38,
+    "lichess_id": "03Sox",
+    "prompt-with-board": "You are a chess expert. Your opponent just played a8a3. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n\n Board:\n. r . . . . k .\n. . . . . p p .\n. . . . . . . p\n. . . p . . . .\n. . . . . . . .\nr . . . . P . .\np R B . . P K P\nB . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played a8a3. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "b2b8",
+    "rating": 525
+  },
+  {
+    "id": 39,
+    "lichess_id": "03ZGI",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d5f4. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n\n Board:\n. . . r . k . .\np b . . r p q .\n. . . . p . . .\n. P . . . . . .\n. . . . B n . .\nQ . . . . . . .\n. . . . . P P P\n. . . R R . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d5f4. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d1d8",
+    "rating": 915
+  },
+  {
+    "id": 40,
+    "lichess_id": "03eRy",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d1d6. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n\n Board:\nr . b . . r k .\np p . . . . p p\n. . p Q . . . .\n. . . . p . . .\n. . P . B . . q\n. . . . . . . .\nP P . . . . P P\nR . B . R . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d1d6. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h4e1",
+    "rating": 825
+  },
+  {
+    "id": 41,
+    "lichess_id": "03hK3",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c3c2. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . r . k\np . . . . p . p\nq . . . p . . Q\n. . . . . . . .\nP . . . . . . .\n. r . . . . . .\n. . p . R P P b\n. . . R . K . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c3c2. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h6f8",
+    "rating": 1202
+  },
+  {
+    "id": 42,
+    "lichess_id": "03oTJ",
+    "prompt-with-board": "You are a chess expert. Your opponent just played a5e1. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n\n Board:\n. . k . r . . .\np p p . . p p .\n. . p . . . . .\n. P . . . . . p\n. . P . . . . P\n. . . b . . . .\n. . . . . . P R\n. . . . Q . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played a5e1. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "e8e1",
+    "rating": 622
+  },
+  {
+    "id": 43,
+    "lichess_id": "03qMO",
+    "prompt-with-board": "You are a chess expert. Your opponent just played b2a2. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . . . . k\np . . . . . p p\n. . Q . . . . .\n. p . p . . . .\n. . . . . . . .\n. . . . . . . .\nq . P . . P P P\n. . . R . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played b2a2. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c6a8",
+    "rating": 827
+  },
+  {
+    "id": 44,
+    "lichess_id": "03tA7",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d7c6. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n\n Board:\nr . b q . k . r\np . . . . p b .\n. . p . . . p p\n. . p . P p . .\n. . . . . B . P\n. . P . . N . .\nP P . Q . P P .\nR . . . K . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d7c6. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d2d8",
+    "rating": 562
+  },
+  {
+    "id": 45,
+    "lichess_id": "041Bo",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f3d1. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . . .\n. . . b . . . p\n. . . p . . p Q\n. . . . . . . .\n. . P . . P . .\n. . . P . . k .\nP . . . . . . p\n. r . B . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f3d1. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "b1d1",
+    "rating": 400
+  },
+  {
+    "id": 46,
+    "lichess_id": "043MW",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d2h6. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . . . k .\n. p . . . p . .\np . . b p P p B\n. . . p . . . R\nP . . . . . Q p\n. . . q . . . P\n. . . . . . P .\n. . . . . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d2h6. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d3f1",
+    "rating": 469
+  },
+  {
+    "id": 47,
+    "lichess_id": "0442a",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c6e5. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . r . k\n. . . r . p . p\np p . p . R . Q\n. . . q n . . .\nP . . . . . . .\n. P . . . . P .\n. . P . . . . P\n. . . . . R K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c6e5. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h6f8",
+    "rating": 1162
+  },
+  {
+    "id": 48,
+    "lichess_id": "044rM",
+    "prompt-with-board": "You are a chess expert. Your opponent just played b2b3. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n\n Board:\nr . b . . r k .\np p . . . p b .\n. . . . p . p p\n. P . . . n . .\n. . q . N P . .\n. P N . . . . Q\n. . P . . . P P\nR . B . . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played b2b3. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c4f1",
+    "rating": 744
+  },
+  {
+    "id": 49,
+    "lichess_id": "04FTH",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e4d6. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n\n Board:\n. n . . . . . r\nQ . . n k p p p\n. p . N p . . .\n. B p . q . . .\n. P . . . . . .\nP . . . . . . .\n. . P B . P P P\nR . K . R . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e4d6. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "e5a1",
+    "rating": 1057
+  },
+  {
+    "id": 50,
+    "lichess_id": "04JOs",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c4e5. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . r . r . k\np p p . . . p p\n. . . . R n . .\n. . . . N . . .\nP q . . . . . .\n. P . . . . . Q\n. . . . . P P P\n. . . . R . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c4e5. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "b4e1",
+    "rating": 780
+  },
+  {
+    "id": 51,
+    "lichess_id": "04Mpq",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f6e5. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n\n Board:\nr . . k . . . r\np . p . q p . p\n. p . p . . . .\n. B . . p . . .\n. . . . . . . .\n. . P . . Q . .\nP . P . . . P P\n. R . . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f6e5. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f3a8",
+    "rating": 637
+  },
+  {
+    "id": 52,
+    "lichess_id": "04R7e",
+    "prompt-with-board": "You are a chess expert. Your opponent just played a1a2. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . r k .\nP . . . . p p .\n. . . . . . . p\n. . . . . . . .\n. . . . P . . .\n. . . . . . Q .\nR . . . q . P P\n. . . . . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played a1a2. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "e2f1",
+    "rating": 627
+  },
+  {
+    "id": 53,
+    "lichess_id": "04Wro",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c3d4. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n\n Board:\n. . r . . . . k\n. p . . . . . P\np . . . . . . .\n. . . N R b . .\n. . . K . . p .\n. . . . P . . .\nP P . R . r P .\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c3d4. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f2d2",
+    "rating": 840
+  },
+  {
+    "id": 54,
+    "lichess_id": "04YNB",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d7c6. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . r . k\n. . p . . p p p\np . q . b . . .\n. . . p . . . .\n. Q . P n . . .\n. . . . P . . P\nP P . . . P P .\nR . . . K . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d7c6. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "b4f8",
+    "rating": 502
+  },
+  {
+    "id": 55,
+    "lichess_id": "04egm",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c7e5. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . n r k .\n. . . . b p . .\n. . p . n . . Q\n. . . p q N . .\n. . . . . . . .\n. . N . . . P .\nP . . . . . B P\n. . . . . R K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c7e5. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f5e7",
+    "rating": 961
+  },
+  {
+    "id": 56,
+    "lichess_id": "04jjb",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c1e3. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n\n Board:\nr . b . n r k .\np p . . p . . p\n. q . b . . p .\n. . . P . . N .\n. . . . . . . .\n. . N . B . . .\nP P . . B . P .\nR . . Q . . K R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c1e3. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "b6e3",
+    "rating": 741
+  },
+  {
+    "id": 57,
+    "lichess_id": "04p7f",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d1f3. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . r r . k .\np p p . q p p p\n. . . b . . . .\n. . . P . . . .\n. . . . . . . .\nP . . . . Q . P\n. P P . . P P .\nR . B . R . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d1f3. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "e7e1",
+    "rating": 512
+  },
+  {
+    "id": 58,
+    "lichess_id": "04s0y",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f8f7. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . . . . .\np . q p . r b .\nn p p . p . . k\n. . . . P . N p\n. . P P B . P P\n. . . . . . . .\nP P . . . P . .\nR . . . . R K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f8f7. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g5f7",
+    "rating": 663
+  },
+  {
+    "id": 59,
+    "lichess_id": "04vza",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c3b5. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n\n Board:\nq . . . k b . r\np . . n p p p p\n. . . . . n . .\n. N p . . . . .\n. . P p . . b N\n. . . . . . P .\nP P . P P P . P\nR . B Q K . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c3b5. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "a8h1",
+    "rating": 581
+  },
+  {
+    "id": 60,
+    "lichess_id": "04yeU",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c8c2. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . r . k\n. . . . . p . P\n. . . p . p p Q\np . . . . . . .\n. . . . . . . .\n. . . . . N P .\n. q r . . P K .\n. . . . . . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c8c2. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h6f8",
+    "rating": 870
+  },
+  {
+    "id": 61,
+    "lichess_id": "0506s",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c5c6. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . k .\n. . . . . . p .\n. . P N . . . p\np . . . . . . .\n. r . . . . . .\n. . . . . . P b\n. . . . . P . P\n. R . . . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c5c6. In this puzzle there is an unprotected piece. Identify it and capture it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "b4b1",
+    "rating": 729
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "id": 0,
+    "lichess_id": "02THe",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e8f8. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . . r . r . k\n. . . . . . . .\np . . . . P . p\n. p . . B B . b\n. P . . . P . .\n. . P P . . . .\np . N K . . . .\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e8f8. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f6f7",
+    "rating": 817
+  }
+]

@@ -3,6 +3,7 @@
 
 import os
 import json
+import click
 import re
 from vllm import LLM, SamplingParams
 
@@ -14,17 +15,30 @@ def parse_move(response, solution):
     matches = re.findall(uci_pattern, response.lower())
     return solution.lower() in matches
 
-def main():
+# TODO : Have more models
+def get_model(name):
+    model = LLM(name)
+    return model
+
+
+@click.command()
+@click.option('--file_name', type=str, default=None)
+@click.option('--out_file', type=str, default=None)
+@click.option('--model_name', type=str, default="Qwen/Qwen2.5-VL-3B-Instruct")
+@click.option('--prompt_with_board', is_flag=True, default=False)
+def main(file_name, out_file, model_name, prompt_with_board):
+    assert file_name is not None, 'The file name cannot be None'
+    assert out_file is not None, 'The out file name cannot be None'
     # Load puzzles
-    with open("results/puzzles.json") as f:
+    with open(file_name) as f:
         puzzles = json.load(f)
     
     # Initialize model
-    model = LLM("Qwen/Qwen2.5-VL-3B-Instruct")
+    model = get_model(model_name)
     params = SamplingParams(temperature=0, max_tokens=500)
     
     # Get prompts
-    prompts = [p["prompt"] for p in puzzles]
+    prompts = [p["prompt-with-board" if prompt_with_board else "prompt-with-out-board"] for p in puzzles]
     
     # Generate responses
     print("Generating responses...")
@@ -50,7 +64,7 @@ def main():
     
     # Save results
     os.makedirs("results", exist_ok=True)
-    with open("results/results.json", "w") as f:
+    with open(f"results/{out_file}", "w") as f:
         json.dump(results, f, indent=2)
     
     # Print summary

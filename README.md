@@ -40,6 +40,14 @@ from datasets import load_dataset
 dataset = load_dataset("Lichess/chess-puzzles", split="train")
 ```
 
+We create our own dataset. We consider two modes, one where the VLM needs to do think one move ahead and one when its not. To make the move in the board we use the flag `--make_first_move`. The following command creates the dataset:
+
+```bash
+uv run ./scripts/prepare_data.py --make_first_move 
+```
+
+The resulting dataset is separated into many classes of problems and each problem has a different prompt to guide the VLM. Some problems require more geometric interactions and we wish to see if these are important or not.
+
 ### Puzzle Structure
 
 Each puzzle contains the following fields:

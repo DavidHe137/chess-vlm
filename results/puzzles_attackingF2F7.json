@@ -1,0 +1,218 @@
+[
+  {
+    "id": 0,
+    "lichess_id": "003YF",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c1f4. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . . r k .\n. p p . . p p p\np . . p . . . .\n. . b P p . . .\n. . P . P B . q\nP . N . . B . .\n. P . . . P . .\nR . . Q K . R .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c1f4. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h4f2",
+    "rating": 1054
+  },
+  {
+    "id": 1,
+    "lichess_id": "00B2k",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f1d3. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . . r k .\np b p . . . p p\n. p . p p . . .\n. . . . . . B .\n. . P P p . . q\n. . . B P . . P\nP P . . . P . .\nR . . Q K . R .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f1d3. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h4f2",
+    "rating": 830
+  },
+  {
+    "id": 2,
+    "lichess_id": "00HJd",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d5f4. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: White\n\n Board:\nr . b q k b . r\np p . . p p p p\n. . p . . n . .\n. . P . N . . .\n. . B P . n . .\n. . . . . . . .\nP P . . . P P P\nR N . Q R . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d5f4. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c4f7",
+    "rating": 1261
+  },
+  {
+    "id": 3,
+    "lichess_id": "00LUZ",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g1f3. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: Black\n\n Board:\nr n b . k . n r\n. p p p . p p p\n. . . . . . . .\np . b P p . . .\n. . . . P . . q\n. . P B . N . .\nP P . . . P P P\nR N B Q K . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g1f3. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h4f2",
+    "rating": 693
+  },
+  {
+    "id": 4,
+    "lichess_id": "00QBx",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h4g2. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: Black\n\n Board:\nr n . q k . . r\np b . . . p p p\n. . . . . n . .\n. . b . . . . .\n. . . . . . . .\n. . N . p . P .\nP P . P P P N P\nR . B Q K B . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h4g2. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "e3f2",
+    "rating": 1181
+  },
+  {
+    "id": 5,
+    "lichess_id": "00uid",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c2a1. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: White\n\n Board:\nr . . q k b r .\np p . . p p . p\n. . . . . n . .\n. . p . N b . .\n. . Q . . . . .\n. . . . B . . .\nP P . N . P P P\nn . . K . B . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c2a1. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c4f7",
+    "rating": 1182
+  },
+  {
+    "id": 6,
+    "lichess_id": "00z6Y",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f4e5. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . k . . r\n. p p . . . . .\np . b . p q . b\n. . . p B . N p\n. . . P . . n P\n. . . . . . . .\nP P P . . P P .\nR N . Q K . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f4e5. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f6f2",
+    "rating": 955
+  },
+  {
+    "id": 7,
+    "lichess_id": "0109N",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g4d1. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: White\n\n Board:\nr . . q k b n r\n. p . . p p p p\np . n . . . . .\n. . . . N . . .\n. . B P . . . .\n. . . . . . . .\nP P . . . P P P\nR N B b . R K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g4d1. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c4f7",
+    "rating": 1195
+  },
+  {
+    "id": 8,
+    "lichess_id": "014gw",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h5d1. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: White\n\n Board:\nr . . q k b . r\n. p . . p p p p\np . . p . n . .\n. . p . N . . .\nP . B . P . . .\n. . . P . . . P\n. P P N . P P .\nR . B b . R K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h5d1. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c4f7",
+    "rating": 1021
+  },
+  {
+    "id": 9,
+    "lichess_id": "01J4y",
+    "prompt-with-board": "You are a chess expert. Your opponent just played b7b5. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: White\n\n Board:\nr . . q k b . r\n. . . n p p p p\np . . . . n . .\n. p . . . . . .\n. . B P . . b .\n. Q . . . N . .\nP P . N . P P P\nR . B . K . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played b7b5. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c4f7",
+    "rating": 1209
+  },
+  {
+    "id": 10,
+    "lichess_id": "01J8c",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f6e4. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: White\n\n Board:\nr . b q k . . r\np p . . b p p .\n. . p . p . . p\n. . . . N . . .\n. . . P n Q . .\n. . P . . . P .\nP P . . . P B P\nR . . . K . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f6e4. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f4f7",
+    "rating": 819
+  },
+  {
+    "id": 11,
+    "lichess_id": "01UQI",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d5c6. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . k b . r\n. p . . p p p p\np q P p . . . .\n. . . . . . . .\nB . . . n . b .\n. . . . . N . .\nP P . B . P P P\nR N . Q K . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d5c6. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "b6f2",
+    "rating": 1383
+  },
+  {
+    "id": 12,
+    "lichess_id": "01YNx",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g4d1. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: White\n\n Board:\nr n . q k b n r\np p p . p p p .\n. . . p . . . p\n. . . . N . . .\n. . B . P . . .\n. . . . . . . .\nP P P P . P P P\nR N B b K . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g4d1. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c4f7",
+    "rating": 1134
+  },
+  {
+    "id": 13,
+    "lichess_id": "023wk",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d4b3. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: Black\n\n Board:\nr . b . k b . r\np p . . p p p p\n. q n p . . . .\n. . . . . . B .\n. . . . P . n .\n. N N . . . . .\nP P P . . P P P\nR . . Q K B . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d4b3. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "b6f2",
+    "rating": 787
+  },
+  {
+    "id": 14,
+    "lichess_id": "025Cu",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f4e2. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: White\n\n Board:\nr n b q k . . r\np p . . . p p p\n. . . b . . . .\n. . p . . . . .\n. . B . . . . .\n. . N . . Q . .\nP P . P n . P P\nR . B . K . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f4e2. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f3f7",
+    "rating": 1395
+  },
+  {
+    "id": 15,
+    "lichess_id": "02EvG",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f7h8. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: Black\n\n Board:\nr . b . k . n N\np p p p . . p p\n. . . . n q . .\n. . b . . . . .\n. . B . P . . .\n. . . . . . . .\nP P P . . P P P\nR N B Q K . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f7h8. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f6f2",
+    "rating": 1044
+  },
+  {
+    "id": 16,
+    "lichess_id": "02TTi",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e5f3. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: Black\n\n Board:\nr . b . k . . r\np p p . . p p .\n. . p . . n . .\n. . b . . . . p\n. . . q P . . .\n. . N . . N . P\nP P P P . P P .\nR . B Q K . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e5f3. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d4f2",
+    "rating": 976
+  },
+  {
+    "id": 17,
+    "lichess_id": "02VFf",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e7b4. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: White\n\n Board:\nr . b . k b . r\np p p n . p p p\n. . n . . . . .\n. . . . P . B .\n. q B p . . . .\n. Q . . . N . .\nP P . . . P P P\nR N . . . R K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e7b4. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c4f7",
+    "rating": 1074
+  },
+  {
+    "id": 18,
+    "lichess_id": "02Wf7",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g2g8. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: White\n\n Board:\nr . . q k b r .\np p . b p p . p\n. . . p . . . .\n. . . Q p . . .\n. . B . . . . .\n. . N . . . . .\nP P P . . P . P\n. . K R . . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g2g8. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d5f7",
+    "rating": 470
+  },
+  {
+    "id": 19,
+    "lichess_id": "031G5",
+    "prompt-with-board": "You are a chess expert. Your opponent just played b6e3. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: White\n\n Board:\nr . b q k . r .\np p p . . p . .\n. . n p . n . p\n. . . . p . p Q\n. . B . P . . N\n. . P P b . . P\nP P . . . P P .\nR N . . . R K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played b6e3. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h5f7",
+    "rating": 1112
+  },
+  {
+    "id": 20,
+    "lichess_id": "03YfR",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g4d1. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: White\n\n Board:\nr n . q k b n r\np p . . p p p p\n. . p . . . . .\n. . . . N . . .\n. . B P . . . .\n. . . . . . . .\nP P P . . . P P\nR N B b K . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g4d1. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c4f7",
+    "rating": 1049
+  },
+  {
+    "id": 21,
+    "lichess_id": "03yzm",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e2g1. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: Black\n\n Board:\nr . b . k . . r\n. p p . . p p .\np . . . . n . p\n. . . . p . . P\nP . P p . . n R\n. P . . P q P .\n. . . P . P . .\nR N . Q K B N .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e2g1. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f3f2",
+    "rating": 1118
+  },
+  {
+    "id": 22,
+    "lichess_id": "041vj",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f3g2. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . k b . r\np p . . . p p .\n. q n . P . n p\n. . . Q . . . .\n. . . . . . P B\n. P . . . . . P\nP . . . . P p .\nR . . . . R K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f3g2. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "e6f7",
+    "rating": 996
+  },
+  {
+    "id": 23,
+    "lichess_id": "045Y6",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f3d4. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: Black\n\n Board:\nr n . . . r k .\np p p . . . p .\n. . . . p q . p\n. . . . . . . .\nQ . . N B . b .\nP . N . . . P .\n. P . . . P P .\n. . R . K . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f3d4. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f6f2",
+    "rating": 487
+  },
+  {
+    "id": 24,
+    "lichess_id": "04Sre",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g4d1. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: White\n\n Board:\nr . . q k b . r\np p . n p p p p\n. . p . . n . .\n. . . . N . . .\n. . B . . . . .\n. . . . . . N .\nP P P P . P P P\nR . B b K . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g4d1. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c4f7",
+    "rating": 1186
+  },
+  {
+    "id": 25,
+    "lichess_id": "04XLL",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f7h8. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: Black\n\n Board:\nr . b . k b . N\np p p . . . p p\n. . n p . q . .\n. . . . p . . .\n. . B . P . n .\n. . N . . . P .\nP P P P . P . P\nR . B Q K . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f7h8. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f6f2",
+    "rating": 1026
+  },
+  {
+    "id": 26,
+    "lichess_id": "04pCb",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c6d4. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: White\n\n Board:\nr . . q k b . r\np p p n p p p p\n. . . . . . . .\n. B . . . . . .\n. . . n . . . .\n. . N . . Q . P\nP P P . . . P .\nR . B . . R K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c6d4. In this puzzle there is a weakness in an important square. Identify it and punish it. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f3f7",
+    "rating": 716
+  }
+]
