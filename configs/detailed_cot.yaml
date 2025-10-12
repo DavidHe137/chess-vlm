@@ -12,7 +12,7 @@ system_prompt: |
   5. DECIDE: Choose the best move based on your analysis
   
   - Use algebraic notation (e.g., e4, Nf3, O-O)
-  - Your response is limited to 1000 tokens, so be concise but thorough
+  - Your response is limited to 500 tokens. You can think for at most 500 tokens.
   - Always end your response with your move in this exact format:
     <move>e4</move>
 

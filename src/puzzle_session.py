@@ -5,11 +5,22 @@ from .puzzle import Puzzle, BoardFormat
 from typing import List
 from .prompts import PromptFormatter
 
+# Custom exceptions for different failure modes
+class ParseError(Exception):
+    """Raised when move cannot be parsed from model response"""
+    pass
+
+class IllegalMoveError(Exception):
+    """Raised when parsed move is not legal in current position"""
+    pass
+
 class SessionStatus(Enum):
     ACTIVE = "active"
     CORRECT = "correct" # provided all correct moves
     INCORRECT = "incorrect" # provided incorrect move
-    INVALID = "invalid" # provided invalid move
+    PARSE_ERROR = "parse_error" # could not parse move from response
+    ILLEGAL_MOVE = "illegal_move" # parsed move but it's not legal in position
+    SYSTEM_ERROR = "system_error" # unexpected system/processing error
 
 class PuzzleSession:
     def __init__(self, puzzle: Puzzle, prompt_config: str = "basic"):
@@ -26,9 +37,7 @@ class PuzzleSession:
         try:
             self.current_board.push_san(move)
         except (ValueError) as e:
-            self.status = SessionStatus.INVALID
-            self.failure_reason = str(e)
-            return
+            raise IllegalMoveError(f"Illegal move: {move} - {str(e)}")
         
         self.played_moves.append(move)
         move_index = len(self.played_moves) - 1
@@ -52,9 +61,7 @@ class PuzzleSession:
             move = PromptFormatter.parse_move(response, config.move_tags)
             return move
         except Exception as e:
-            self.status = SessionStatus.INVALID
-            self.failure_reason = f"Error parsing move: {str(e)}"
-            return None
+            raise ParseError(f"Could not parse move from response: {str(e)}")
     
     def get_next_move(self):
         assert self.status == SessionStatus.ACTIVE, "Cannot get next move if session is not active"

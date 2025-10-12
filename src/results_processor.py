@@ -9,7 +9,15 @@ def calculate_summary(results: List[Dict[str, Any]]) -> Dict[str, Any]:
     total_puzzles = len(results)
     correct = sum(1 for r in results if r['status'] == 'correct')
     incorrect = sum(1 for r in results if r['status'] == 'incorrect')
-    invalid = sum(1 for r in results if r['status'] == 'invalid')
+    
+    # Handle both legacy 'invalid' and new specific error types
+    parse_error = sum(1 for r in results if r['status'] == 'parse_error')
+    illegal_move = sum(1 for r in results if r['status'] == 'illegal_move')
+    system_error = sum(1 for r in results if r['status'] == 'system_error')
+    legacy_invalid = sum(1 for r in results if r['status'] == 'invalid')
+    
+    # Total invalid includes all error types
+    total_invalid = parse_error + illegal_move + system_error + legacy_invalid
     
     first_move_correct = sum(1 for r in results if r.get('first_move_correct', False))
     
@@ -20,7 +28,11 @@ def calculate_summary(results: List[Dict[str, Any]]) -> Dict[str, Any]:
         "total_puzzles": total_puzzles,
         "correct": correct,
         "incorrect": incorrect,
-        "invalid": invalid,
+        "invalid": total_invalid,  # Total for backwards compatibility
+        "parse_error": parse_error,
+        "illegal_move": illegal_move,
+        "system_error": system_error,
+        "legacy_invalid": legacy_invalid,
         "accuracy": accuracy,
         "first_move_accuracy": first_move_accuracy
     }
@@ -95,16 +107,15 @@ def save_results(
     timestamp: datetime
 ) -> str:
     """Save results to JSON file and return the file path."""
-    # Clean model name for filename
-    clean_model = model_name.replace("/", "_")
+    # Use model name as subdirectory (keep slashes)
     board_format_str = "_".join(board_formats)
     timestamp_str = timestamp.strftime("%Y%m%d_%H%M%S")
     
-    filename = f"{clean_model}_{board_format_str}_{prompt_config}_{timestamp_str}.json"
-    filepath = os.path.join("results", filename)
+    filename = f"{board_format_str}_{prompt_config}_{timestamp_str}.json"
+    filepath = os.path.join("results", model_name, filename)
     
-    # Ensure results directory exists
-    os.makedirs("results", exist_ok=True)
+    # Ensure results directory and model subdirectory exist
+    os.makedirs(os.path.dirname(filepath), exist_ok=True)
     
     # Save results
     with open(filepath, 'w') as f:

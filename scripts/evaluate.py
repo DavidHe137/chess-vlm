@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 load_dotenv()
 from src.puzzle import Puzzle
 from datasets import load_from_disk
-from src.puzzle_session import PuzzleSession, SessionStatus
+from src.puzzle_session import PuzzleSession, SessionStatus, ParseError, IllegalMoveError
 from src.logging_config import setup_evaluation_logging, log_evaluation_start, log_evaluation_end
 from src.results_processor import create_results_structure, save_results
 import requests
@@ -22,7 +22,8 @@ supported_models = {
     ],
     "vllm": [
         "Qwen/Qwen2.5-VL-3B-Instruct",
-        "Qwen/Qwen3-VL-30B-A3B-Instruct"
+        "Qwen/Qwen3-VL-30B-A3B-Instruct",
+        "Qwen/Qwen3-VL-30B-A3B-Thinking"
     ]
 }
 
@@ -59,8 +60,8 @@ async def process_puzzle_session(client, puzzle_session, model_name, board_forma
     
     prompt_messages = puzzle_session.get_prompt_messages(list(board_format))
     
-    while puzzle_session.status == SessionStatus.ACTIVE:
-        try:
+    try:
+        while puzzle_session.status == SessionStatus.ACTIVE:
             response = await client.chat.completions.create(
                 model=model_name,
                 messages=prompt_messages,
@@ -72,9 +73,6 @@ async def process_puzzle_session(client, puzzle_session, model_name, board_forma
             logger.debug(f"Puzzle {puzzle_id} - Model response: {response_text[:100]}...")
             
             move = puzzle_session.parse_move(response_text)
-            if puzzle_session.status != SessionStatus.ACTIVE:
-                break
-
             puzzle_session.submit_move(move)
             
             logger.debug(f"Puzzle {puzzle_id} - Submitted move: {move}, Status: {puzzle_session.status.value}")
@@ -86,12 +84,21 @@ async def process_puzzle_session(client, puzzle_session, model_name, board_forma
             user_response = puzzle_session.get_turn_response()
             puzzle_session.add_user_message(user_response)
             prompt_messages = puzzle_session.get_prompt_messages(list(board_format))
-            
-        except Exception as e:
-            logger.error(f"Error processing puzzle {puzzle_id}: {e}")
-            puzzle_session.status = SessionStatus.INVALID
-            puzzle_session.failure_reason = f"Processing error: {str(e)}"
-            break
+                
+    except ParseError as e:
+        logger.debug(f"Puzzle {puzzle_id} - Parse error: {str(e)}")
+        puzzle_session.status = SessionStatus.PARSE_ERROR
+        puzzle_session.failure_reason = str(e)
+        
+    except IllegalMoveError as e:
+        logger.debug(f"Puzzle {puzzle_id} - Illegal move: {str(e)}")
+        puzzle_session.status = SessionStatus.ILLEGAL_MOVE
+        puzzle_session.failure_reason = str(e)
+        
+    except Exception as e:
+        logger.error(f"Unexpected system error processing puzzle {puzzle_id}: {e}")
+        puzzle_session.status = SessionStatus.SYSTEM_ERROR
+        puzzle_session.failure_reason = f"Unexpected processing error: {str(e)}"
     
     result = puzzle_session.get_session_result()
     logger.debug(f"Completed puzzle {puzzle_id} - Status: {result['status']}")
@@ -205,6 +212,14 @@ async def async_main(board_format, model_name, client_type, hostname, batch_size
     print(f"\n✅ Evaluation completed!")
     print(f"📊 Accuracy: {results_data['summary']['accuracy']:.2%}")
     print(f"🎯 First Move Accuracy: {results_data['summary']['first_move_accuracy']:.2%}")
+    print(f"✅ Correct: {results_data['summary']['correct']}")
+    print(f"❌ Incorrect: {results_data['summary']['incorrect']}")
+    print(f"🔍 Parse Errors: {results_data['summary']['parse_error']}")
+    print(f"⚠️  Illegal Moves: {results_data['summary']['illegal_move']}")
+    if results_data['summary']['system_error'] > 0:
+        print(f"💥 System Errors: {results_data['summary']['system_error']}")
+    if results_data['summary']['legacy_invalid'] > 0:
+        print(f"❓ Legacy Invalid: {results_data['summary']['legacy_invalid']}")
     print(f"📁 Results: {results_file}")
     print(f"📝 Logs: {log_path}")
 
