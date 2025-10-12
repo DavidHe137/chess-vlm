@@ -108,6 +108,10 @@ class Puzzle:
         
         return " ".join(pgn_parts)
 
+    def get_boards(self, board_formats: list[BoardFormat]) -> list[str]:
+        """Get boards in the specified formats"""
+        return [self.get_board(board_format) for board_format in board_formats]
+    
     def get_board(self, board_format: BoardFormat) -> str:
         """Get board in the specified format"""
         if board_format == BoardFormat.FEN:
@@ -118,7 +122,7 @@ class Puzzle:
             return self.get_board_pgn()
         elif board_format == BoardFormat.PNG:
             return self.get_board_png()
-    
+        
     # TODO: clean this up, maybe use some attribute?
     def get_side_to_move(self) -> str:
         """Get the side to move as a readable string"""

@@ -2,9 +2,12 @@ import os
 import json
 import click
 from openai import OpenAI
+from dotenv import load_dotenv
+load_dotenv()
 from src.puzzle import Puzzle
 from datasets import load_from_disk
 from src.puzzle_session import PuzzleSession, SessionStatus
+import requests
 from tqdm.auto import tqdm
 
 supported_models = {
@@ -17,7 +20,7 @@ supported_models = {
     ]
 }
 
-def setup_client(client_type):
+def setup_client(client_type, hostname):
     if client_type == "openrouter":
         # OpenRouter configuration
         api_key = os.getenv("OPENROUTER_API_KEY")
@@ -30,17 +33,28 @@ def setup_client(client_type):
         )
     elif client_type == "vllm":
         client = OpenAI(
-            base_url="http://localhost:8000/v1/completions",
+            base_url=f"http://{hostname}:8000/v1",
+            api_key=""
         )
+
+        try:
+            r = requests.get(f"http://{hostname}:8000/health")
+            print(f"vLLM is healthy. {r}")
+        except Exception as e:
+            print("vLLM healthcheck failed")
+            raise e
+
     return client
 
 @click.command()
-@click.option('--board_format', type=str, multiple=True, choices=["ascii", "fen", "pgn", "png"], 
-              help="Board format(s) to use for evaluation. Can be specified multiple times.")
-@click.option('--model_name', type=str)
-@click.option('--client_type', type=str, choices=["openrouter", "vllm"], default="vllm",
-              help="Client type: openrouter or vllm")
-def main(board_format, model_name, client_type):
+@click.option('--board_format', type=click.Choice(["ascii", "fen", "pgn", "png"]), multiple=True,
+              help="Board format(s) to use for evaluation. Can be specified multiple times.", required=True)
+@click.option('--model_name', type=str, required=True)
+@click.option('--client_type', type=click.Choice(["openrouter", "vllm"]),
+              help="Client type: openrouter or vllm", required=True)
+@click.option('--hostname', type=str,
+              help="Hostname to use for evaluation. Only used for vllm client type.")
+def main(board_format, model_name, client_type, hostname):
     """Run evaluation on prepared puzzles."""
     
     print(f"Model: {model_name}")
@@ -52,7 +66,7 @@ def main(board_format, model_name, client_type):
         raise click.ClickException(f"Model {model_name} not supported for client type {client_type}")
     
     #TODO: add script logging
-    client = setup_client(client_type)
+    client = setup_client(client_type, hostname)
 
     #TODO: first 5 examples for debugging
     dataset = load_from_disk("data/Lichess/chess-puzzles-3000-full-moves").select(range(5))
@@ -61,34 +75,36 @@ def main(board_format, model_name, client_type):
     
     #TODO: make this async batched after finished debugging
     for puzzle_session in tqdm(puzzle_sessions):
-        prompt_messages = puzzle_session.get_prompt_messages(board_format)
+        prompt_messages = puzzle_session.get_prompt_messages(list(board_format))
         while puzzle_session.status == SessionStatus.ACTIVE:
             response = client.chat.completions.create(
                 model=model_name,
-                messages=prompt_messages
+                messages=prompt_messages,
+                temperature=0.0
             )
             response_text = response.choices[0].message.content
+            puzzle_session.add_assistant_response(response_text)
+            
             move = puzzle_session.parse_move(response_text)
             puzzle_session.submit_move(move)
 
             if puzzle_session.status != SessionStatus.ACTIVE:
                 break
 
-            #TODO: message dict formatting should go in one file
-            prompt_messages.append({
-                "role": "assistant",
-                "content": response_text
-            })
-
-            prompt_messages.append({
-                "role": "user",
-                "content": puzzle_session.get_turn_response()
-            })
+            # Add user response to continue conversation
+            user_response = puzzle_session.get_turn_response()
+            puzzle_session.add_user_message(user_response)
+            prompt_messages = puzzle_session.get_prompt_messages(list(board_format))
     
     results = [puzzle_session.get_session_result() for puzzle_session in puzzle_sessions]
-    os.makedirs(f"results", exist_ok=True)
-    with open(f"results/{model_name}_{board_format}_results.json", "w") as f:
-        json.dump(results, f)
+    
+    output_file = f"results/{model_name}_{board_format}_results.jsonl"
+    print(f"Saving results to {output_file}")
+    os.makedirs(os.path.dirname(output_file), exist_ok=True)
+    with open(output_file, "w") as f:
+        for result in results:
+            json.dump(result, f)
+            f.write('\n')
 
 if __name__ == "__main__":
     main()
