@@ -47,8 +47,14 @@ class PuzzleSession:
             self.failure_reason = f"Incorrect move: {move}"
         
     def parse_move(self, response: str) -> str:
-        config = self.formatter.load_config(self.prompt_config)
-        return PromptFormatter.parse_move(response, config.move_tags)
+        try:
+            config = self.formatter.load_config(self.prompt_config)
+            move = PromptFormatter.parse_move(response, config.move_tags)
+            return move
+        except Exception as e:
+            self.status = SessionStatus.INVALID
+            self.failure_reason = f"Error parsing move: {str(e)}"
+            return None
     
     def get_next_move(self):
         assert self.status == SessionStatus.ACTIVE, "Cannot get next move if session is not active"

@@ -72,6 +72,9 @@ async def process_puzzle_session(client, puzzle_session, model_name, board_forma
             logger.debug(f"Puzzle {puzzle_id} - Model response: {response_text[:100]}...")
             
             move = puzzle_session.parse_move(response_text)
+            if puzzle_session.status != SessionStatus.ACTIVE:
+                break
+
             puzzle_session.submit_move(move)
             
             logger.debug(f"Puzzle {puzzle_id} - Submitted move: {move}, Status: {puzzle_session.status.value}")
