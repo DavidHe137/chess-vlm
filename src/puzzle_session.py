@@ -27,19 +27,24 @@ class PuzzleSession:
         except (ValueError) as e:
             self.status = SessionStatus.INVALID
             self.failure_reason = str(e)
+            return
         
         self.played_moves.append(move)
         move_index = len(self.played_moves) - 1
         if move == self.correct_moves[move_index]:
             if len(self.played_moves) == len(self.correct_moves):
                 self.status = SessionStatus.CORRECT
+                return
             else:
                 assert self.status == SessionStatus.ACTIVE
                 self.played_moves.append(self.correct_moves[move_index + 1])
+                if len(self.played_moves) == len(self.correct_moves):
+                    self.status = SessionStatus.CORRECT
+                    return
         else:
             self.status = SessionStatus.INCORRECT
             self.failure_reason = f"Incorrect move: {move}"
-    
+        
     def parse_move(self, response: str) -> str:
         return PromptFormatter.parse_move(response)
     
@@ -72,6 +77,7 @@ class PuzzleSession:
         return {
             "puzzle_id": self.puzzle.puzzle_id,
             "status": self.status.value,
+            "first_move_correct": True if len(self.played_moves) > 0 and self.played_moves[0] == self.correct_moves[0] else False,
             "played_moves": self.played_moves,
             "correct_moves": self.correct_moves,
             "failure_reason": getattr(self, 'failure_reason', None),
