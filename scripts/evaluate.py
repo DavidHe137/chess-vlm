@@ -117,8 +117,8 @@ async def process_puzzle_with_semaphore(semaphore, client, puzzle_session, model
               help="Client type: openrouter or vllm", required=True)
 @click.option('--hostname', type=str,
               help="Hostname to use for evaluation. Only used for vllm client type.")
-@click.option('--batch_size', type=int, default=10,
-              help="Batch size for concurrent processing. Default is 10.")
+@click.option('--batch_size', type=int, default=100,
+              help="Batch size for concurrent processing. Default is 100.")
 @click.option('--prompt_config', type=str, default="basic",
               help="Prompt configuration to use. Can be a legacy type (basic, CoT) or YAML config name.")
 def main(board_format, model_name, client_type, hostname, batch_size, prompt_config):
