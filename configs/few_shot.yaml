@@ -1,0 +1,45 @@
+name: "few_shot"
+description: "Few-shot learning with in-context examples"
+
+system_prompt: |
+  SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:
+  - Think step-by-step about threats, tactics, and strategic ideas
+  - Explain your reasoning before giving the move
+  - Use algebraic notation (e.g., e4, Nf3, O-O)
+  - Always end your response with your move in this exact format:
+    <move>e4</move>
+
+instruction_template: |
+  This is a chess puzzle. Your opponent just played {last_move}. The themes of this puzzle are {themes}. Find the best move to solve the puzzle.
+
+question_template: |
+  {side_to_move} to move. What is the next best move?
+
+# Model parameters
+model_params:
+  max_completion_tokens: 1000
+  temperature: 0.0
+
+# In-context examples
+in_context_examples:
+  - user: |
+      This is a chess puzzle. Your opponent just played Qh5. The themes of this puzzle are fork, pin. Find the best move to solve the puzzle.
+      
+      FEN:
+      r1bqkb1r/pppp1ppp/2n2n2/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 4 4
+      
+      White to move. What is the next best move?
+    assistant: |
+      Looking at this position, I can see that Black's king is still in the center and hasn't castled yet. The Black knight on f6 is defending against the queen on h5, but it's also pinned to the king by my bishop on c4.
+      
+      I notice that if I can remove the knight on f6, the Black king will be in serious trouble. The move Nf3 develops my knight and attacks the e5 pawn, but more importantly, it prepares to support a devastating attack.
+      
+      However, I see an immediate tactical shot: Qxf7+! This move sacrifices the queen but leads to checkmate. After Qxf7+ Kxf7, I can play Bc4+ and the king has no escape.
+      
+      Wait, let me recalculate. Actually, the best move here is Nf3, attacking the e5 pawn and preparing to castle kingside while maintaining pressure.
+      
+      <move>Nf3</move>
+
+# Move parsing configuration
+move_format: "algebraic"
+move_tags: ["<move>", "</move>"]

@@ -1,0 +1,35 @@
+name: "detailed_cot"
+description: "Detailed chain of thought with explicit analysis steps"
+
+system_prompt: |
+  SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:
+  
+  Follow this structured approach:
+  1. ASSESS: Identify material balance, piece activity, and king safety
+  2. THREATS: Look for immediate threats from both sides
+  3. TACTICS: Search for tactical motifs (pins, forks, skewers, discovered attacks, etc.)
+  4. CALCULATE: Analyze candidate moves and their consequences
+  5. DECIDE: Choose the best move based on your analysis
+  
+  - Use algebraic notation (e.g., e4, Nf3, O-O)
+  - Your response is limited to 1000 tokens, so be concise but thorough
+  - Always end your response with your move in this exact format:
+    <move>e4</move>
+
+instruction_template: |
+  This is a chess puzzle. Your opponent just played {last_move}. The themes of this puzzle are {themes}. Find the best move to solve the puzzle.
+
+question_template: |
+  {side_to_move} to move. Analyze the position step-by-step and find the best move.
+
+# Model parameters
+model_params:
+  max_completion_tokens: 1000
+  temperature: 0.0
+
+# In-context examples (empty for now)
+in_context_examples: []
+
+# Move parsing configuration
+move_format: "algebraic"
+move_tags: ["<move>", "</move>"]

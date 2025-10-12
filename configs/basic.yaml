@@ -1,0 +1,27 @@
+name: "basic"
+description: "Basic prompt without chain of thought reasoning"
+
+system_prompt: |
+  SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:
+  - Use algebraic notation (e.g., e4, Nf3, O-O)
+  - Don't think at all. Just give the move.
+  - Always end your response with your move in this exact format:
+    <move>e4</move>
+
+instruction_template: |
+  This is a chess puzzle. Your opponent just played {last_move}. The themes of this puzzle are {themes}. Find the best move to solve the puzzle.
+
+question_template: |
+  {side_to_move} to move. What is the next best move?
+
+# Model parameters
+model_params:
+  max_completion_tokens: 1000
+  temperature: 0.0
+
+# In-context examples (empty for basic)
+in_context_examples: []
+
+# Move parsing configuration
+move_format: "algebraic"
+move_tags: ["<move>", "</move>"]

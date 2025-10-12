@@ -1,0 +1,29 @@
+name: "cot"
+description: "Chain of thought reasoning prompt"
+
+system_prompt: |
+  SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:
+  - Think step-by-step about threats, tactics, and strategic ideas
+  - Explain your reasoning before giving the move
+  - Your response is limited to 1000 tokens, so be sure to give an answer in under 1000 tokens.
+  - Use algebraic notation (e.g., e4, Nf3, O-O)
+  - Always end your response with your move in this exact format:
+    <move>e4</move>
+
+instruction_template: |
+  This is a chess puzzle. Your opponent just played {last_move}. The themes of this puzzle are {themes}. Find the best move to solve the puzzle.
+
+question_template: |
+  {side_to_move} to move. What is the next best move?
+
+# Model parameters
+model_params:
+  max_completion_tokens: 1000
+  temperature: 0.0
+
+# In-context examples (empty for basic CoT)
+in_context_examples: []
+
+# Move parsing configuration
+move_format: "algebraic"
+move_tags: ["<move>", "</move>"]
