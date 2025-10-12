@@ -1,8 +1,10 @@
 from dataclasses import dataclass
-from typing import List, Optional
+from typing import List, Optional, Dict, Any
 from src.puzzle import Puzzle, BoardFormat
 import base64
 import re
+import yaml
+import os
 
 def encode_image(image_path_or_buffer):
     if isinstance(image_path_or_buffer, str):
@@ -42,41 +44,79 @@ def coalesce_messages(messages: List[dict]) -> List[dict]:
     
     return coalesced
 
+
 @dataclass
-class PromptTemplate:
+class PromptConfig:
+    name: str
+    description: str
     system_prompt: str
-    user_template: str
+    instruction_template: str
+    question_template: str
+    model_params: Dict[str, Any]
+    in_context_examples: List[Dict[str, str]]
+    move_format: str
+    move_tags: List[str]
+    
+    @classmethod
+    def from_yaml(cls, config_path: str) -> 'PromptConfig':
+        """Load prompt configuration from YAML file."""
+        with open(config_path, 'r') as f:
+            data = yaml.safe_load(f)
+        
+        return cls(
+            name=data['name'],
+            description=data['description'],
+            system_prompt=data['system_prompt'],
+            instruction_template=data['instruction_template'],
+            question_template=data['question_template'],
+            model_params=data.get('model_params', {}),
+            in_context_examples=data.get('in_context_examples', []),
+            move_format=data.get('move_format', 'algebraic'),
+            move_tags=data.get('move_tags', ['<move>', '</move>'])
+        )
 
 class PromptFormatter:
-    def __init__(self):
-        self.templates = {
-            "basic": PromptTemplate(
-                system_prompt=BASIC_SYSTEM_PROMPT,
-                user_template="{instruction}\n{board}\n{side_to_move} to move. What is the next best move?"
-            ),
-            "CoT": PromptTemplate(
-                system_prompt=COT_SYSTEM_PROMPT,
-                user_template="{instruction}\n{board}\n{side_to_move} to move. What is the next best move?"
-            )
-        }
+    def __init__(self, config_dir: str = "configs"):
+        self.config_dir = config_dir
+        self.configs = {}
+    
+    def load_config(self, config_name: str) -> PromptConfig:
+        """Load a prompt configuration from YAML file."""
+        if config_name in self.configs:
+            return self.configs[config_name]
+        
+        config_path = os.path.join(self.config_dir, f"{config_name}.yaml")
+        if not os.path.exists(config_path):
+            raise FileNotFoundError(f"Config file not found: {config_path}")
+        
+        config = PromptConfig.from_yaml(config_path)
+        self.configs[config_name] = config
+        return config
     
     def format_messages(self, puzzle: Puzzle, board_formats: List[str], 
-                       prompt_type: str = "basic", in_context_examples: Optional[List] = None) -> List[dict]:
-        template = self.templates[prompt_type]
+                       config_name: str = "basic") -> List[dict]:
+        """Format messages using YAML configuration."""
+        config = self.load_config(config_name)
         moves_played = puzzle.get_moves_played()
         
         # Convert string formats to BoardFormat enums
         board_formats = [BoardFormat(fmt) for fmt in board_formats]
         
-        instruction = f"This is a chess puzzle. Your opponent just played {moves_played[-1]}. The themes of this puzzle are {', '.join(puzzle.themes)}. Find the best move to solve the puzzle."
+        # Format instruction using template
+        instruction = config.instruction_template.format(
+            last_move=moves_played[-1],
+            themes=', '.join(puzzle.themes)
+        )
+        
         side_to_move = puzzle.get_side_to_move()
+        question = config.question_template.format(side_to_move=side_to_move)
         
-        messages = [{"role": "system", "content": template.system_prompt}]
+        messages = [{"role": "system", "content": config.system_prompt}]
         
-        if in_context_examples:
-            for example in in_context_examples:
-                messages.append({"role": "user", "content": example["user"]})
-                messages.append({"role": "assistant", "content": example["assistant"]})
+        # Add in-context examples from config
+        for example in config.in_context_examples:
+            messages.append({"role": "user", "content": example["user"]})
+            messages.append({"role": "assistant", "content": example["assistant"]})
         
         # Add instruction message
         messages.append({"role": "user", "content": instruction})
@@ -96,38 +136,23 @@ class PromptFormatter:
                 messages.append({"role": "user", "content": f"{fmt.value.upper()}:\n{board_repr}"})
         
         # Add final question
-        messages.append({"role": "user", "content": f"{side_to_move} to move. What is the next best move?"})
+        messages.append({"role": "user", "content": question})
         
         messages = coalesce_messages(messages)
         return messages
-    
 
     @staticmethod
-    def parse_move(response: str) -> str:
-        match = re.search(r'<move>(.*?)</move>', response)
+    def parse_move(response: str, move_tags: List[str] = None) -> str:
+        if move_tags is None:
+            move_tags = ['<move>', '</move>']
+        
+        start_tag, end_tag = move_tags
+        # Escape special regex characters
+        start_tag_escaped = re.escape(start_tag)
+        end_tag_escaped = re.escape(end_tag)
+        
+        pattern = f'{start_tag_escaped}(.*?){end_tag_escaped}'
+        match = re.search(pattern, response)
         if not match:
             raise ValueError(f"Move not found in response: {response}")
         return match.group(1)
-
-BASIC_SYSTEM_PROMPT = """
-SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:
-- Use algebraic notation (e.g., e4, Nf3, O-O)
-- Don't think at all. Just give the move.
-- Always end your response with your move in this exact format:
-  <move>e4</move>
-"""
-
-COT_SYSTEM_PROMPT = """
-SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:
-- Think step-by-step about threats, tactics, and strategic ideas
-- Explain your reasoning before giving the move
-- Your response is limited to 1000 tokens, so be sure to give an answer in under 1000 tokens.
-- Use algebraic notation (e.g., e4, Nf3, O-O)
-- Always end your response with your move in this exact format:
-  <move>e4</move>
-"""
-
-SYSTEM_PROMPTS = {
-    "basic": BASIC_SYSTEM_PROMPT,
-    "CoT": COT_SYSTEM_PROMPT,
-}

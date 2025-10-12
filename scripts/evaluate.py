@@ -89,17 +89,20 @@ async def process_puzzle_with_semaphore(semaphore, client, puzzle_session, model
               help="Hostname to use for evaluation. Only used for vllm client type.")
 @click.option('--batch_size', type=int, default=10,
               help="Batch size for concurrent processing. Default is 10.")
-def main(board_format, model_name, client_type, hostname, batch_size):
+@click.option('--prompt_config', type=str, default="basic",
+              help="Prompt configuration to use. Can be a legacy type (basic, CoT) or YAML config name.")
+def main(board_format, model_name, client_type, hostname, batch_size, prompt_config):
     """Run evaluation on prepared puzzles."""
-    asyncio.run(async_main(board_format, model_name, client_type, hostname, batch_size))
+    asyncio.run(async_main(board_format, model_name, client_type, hostname, batch_size, prompt_config))
 
-async def async_main(board_format, model_name, client_type, hostname, batch_size):
+async def async_main(board_format, model_name, client_type, hostname, batch_size, prompt_config):
     """Async main function for evaluation."""
     
     print(f"Model: {model_name}")
     print(f"Board formats: {list(board_format) if board_format else 'None specified'}")
     print(f"Client type: {client_type}")
     print(f"Batch size: {batch_size}")
+    print(f"Prompt config: {prompt_config}")
 
     if model_name not in supported_models[client_type]:
         raise click.ClickException(f"Model {model_name} not supported for client type {client_type}")
@@ -107,7 +110,7 @@ async def async_main(board_format, model_name, client_type, hostname, batch_size
     client = setup_client(client_type, hostname)
 
     # Setup output file
-    output_file = f"results/{model_name}_{board_format}_results.jsonl"
+    output_file = f"results/{model_name}_{board_format}_{prompt_config}_results.jsonl"
     print(f"Logging results to {output_file}")
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
     
@@ -117,7 +120,7 @@ async def async_main(board_format, model_name, client_type, hostname, batch_size
 
     dataset = load_from_disk("data/Lichess/chess-puzzles-3000-full-moves").select(range(100))
     puzzles = [Puzzle.from_dataset_row(puzzle) for puzzle in dataset]
-    puzzle_sessions = [PuzzleSession(puzzle) for puzzle in puzzles]
+    puzzle_sessions = [PuzzleSession(puzzle, prompt_config=prompt_config) for puzzle in puzzles]
     
     # Create semaphore to limit concurrent puzzles
     semaphore = asyncio.Semaphore(batch_size)

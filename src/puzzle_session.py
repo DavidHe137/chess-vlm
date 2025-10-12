@@ -12,13 +12,14 @@ class SessionStatus(Enum):
     INVALID = "invalid" # provided invalid move
 
 class PuzzleSession:
-    def __init__(self, puzzle: Puzzle):
+    def __init__(self, puzzle: Puzzle, prompt_config: str = "basic"):
         self.puzzle = puzzle
         self.status = SessionStatus.ACTIVE
         self.current_board = chess.Board(puzzle.fen)
         self.played_moves = []
         self.correct_moves = puzzle.puzzle_moves_san.split()
         self.formatter = PromptFormatter()
+        self.prompt_config = prompt_config
         self.chat_history = []
 
     def submit_move(self, move: str):
@@ -46,7 +47,8 @@ class PuzzleSession:
             self.failure_reason = f"Incorrect move: {move}"
         
     def parse_move(self, response: str) -> str:
-        return PromptFormatter.parse_move(response)
+        config = self.formatter.load_config(self.prompt_config)
+        return PromptFormatter.parse_move(response, config.move_tags)
     
     def get_next_move(self):
         assert self.status == SessionStatus.ACTIVE, "Cannot get next move if session is not active"
@@ -57,9 +59,13 @@ class PuzzleSession:
         move = self.get_next_move()
         return f"That's correct. {self.puzzle.get_side_to_respond()} plays {move}. What's your next move?"
     
-    def get_prompt_messages(self, board_formats: List[str], prompt_type: str = "basic"):
+    def get_prompt_messages(self, board_formats: List[str], config_name: str = None):
+        # Use instance prompt_config if config_name not specified
+        if config_name is None:
+            config_name = self.prompt_config
+            
         if not self.chat_history:  # First call - initialize with system + user prompt
-            messages = self.formatter.format_messages(self.puzzle, board_formats, prompt_type)
+            messages = self.formatter.format_messages(self.puzzle, board_formats, config_name)
             self.chat_history = messages.copy()
             return messages
         else:  # Return current chat history
@@ -81,5 +87,6 @@ class PuzzleSession:
             "played_moves": self.played_moves,
             "correct_moves": self.correct_moves,
             "failure_reason": getattr(self, 'failure_reason', None),
+            "prompt_config": self.prompt_config,
             "chat_history": self.chat_history
         }
