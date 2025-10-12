@@ -112,6 +112,7 @@ class PromptFormatter:
 BASIC_SYSTEM_PROMPT = """
 SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:
 - Use algebraic notation (e.g., e4, Nf3, O-O)
+- Don't think at all. Just give the move.
 - Always end your response with your move in this exact format:
   <move>e4</move>
 """
@@ -120,6 +121,7 @@ COT_SYSTEM_PROMPT = """
 SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:
 - Think step-by-step about threats, tactics, and strategic ideas
 - Explain your reasoning before giving the move
+- Your response is limited to 1000 tokens, so be sure to give an answer in under 1000 tokens.
 - Use algebraic notation (e.g., e4, Nf3, O-O)
 - Always end your response with your move in this exact format:
   <move>e4</move>
