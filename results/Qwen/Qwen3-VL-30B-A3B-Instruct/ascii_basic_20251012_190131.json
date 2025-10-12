@@ -1,0 +1,2919 @@
+{
+  "summary": {
+    "total_puzzles": 100,
+    "correct": 0,
+    "incorrect": 17,
+    "invalid": 83,
+    "parse_error": 0,
+    "illegal_move": 83,
+    "system_error": 0,
+    "legacy_invalid": 0,
+    "accuracy": 0.0,
+    "first_move_accuracy": 0.01
+  },
+  "config": {
+    "model_name": "Qwen/Qwen3-VL-30B-A3B-Instruct",
+    "prompt_config": "basic",
+    "board_formats": [
+      "ascii"
+    ],
+    "client_type": "vllm",
+    "batch_size": 100,
+    "timestamp": "2025-10-12T19:01:31.591883",
+    "evaluation_duration": "00:00:02",
+    "command": "python scripts/evaluate.py --model_name Qwen/Qwen3-VL-30B-A3B-Instruct --client_type vllm --prompt_config basic --batch_size 100 --board_format ascii --hostname atl1-1-03-017-16-0",
+    "hostname": "atl1-1-03-017-16-0",
+    "git_commit": "979306b1a81647a29a0ce2bafc1286103def6177"
+  },
+  "results": [
+    {
+      "puzzle_id": "000o3",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Kd6",
+        "Kd4",
+        "g5",
+        "fxg5"
+      ],
+      "failure_reason": "Illegal move: Ke4 - illegal san: 'Ke4' in 8/2p1k3/6p1/1p1P1p2/1P3P2/3K2Pp/7P/8 b - - 1 43",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Kd3. The themes of this puzzle are crushing, endgame, pawnEndgame, short, zugzwang. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . . . .\n. . p . k . . .\n. . . . . . p .\n. p . P . p . .\n. P . . . P . .\n. . . K . . P p\n. . . . . . . P\n. . . . . . . .\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Ke4</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "000rO",
+      "status": "incorrect",
+      "first_move_correct": false,
+      "played_moves": [
+        "Re8"
+      ],
+      "correct_moves": [
+        "Kxa5",
+        "Bc7+",
+        "Kxb4",
+        "Bxd8"
+      ],
+      "failure_reason": "Incorrect move: Re8",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Be5. The themes of this puzzle are crushing, endgame, fork, master, short. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . R . . . .\n. . . . . . . .\nK . . . . . . .\np B . . b . . .\n. p . . . . . .\n. P . . k . . .\n. . . p . . . .\n. . . . . . . .\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Re8</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "002Ds",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "b6",
+        "b5",
+        "Nd1+",
+        "Ke2",
+        "axb5",
+        "a6"
+      ],
+      "failure_reason": "Illegal move: Nd3 - illegal san: 'Nd3' in 8/1pp5/p2p4/P2Pk2p/1PP1p2P/2n1K2P/3N4/8 b - - 0 45",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played b4. The themes of this puzzle are crushing, endgame, knightEndgame, long. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . . . .\n. p p . . . . .\np . . p . . . .\nP . . P k . . p\n. P P . p . . P\n. . n . K . . P\n. . . N . . . .\n. . . . . . . .\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Nd3</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "000qP",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Kf1",
+        "Kf3",
+        "Ke1",
+        "Rc1+",
+        "Kd2",
+        "Rxg1"
+      ],
+      "failure_reason": "Illegal move: Re2 - illegal san: 'Re2' in 8/7R/8/5p2/4bk1P/8/2r2K2/6R1 w - - 7 51",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Rc2+. The themes of this puzzle are crushing, endgame, exposedKing, long, skewer. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . . . .\n. . . . . . . R\n. . . . . . . .\n. . . . . p . .\n. . . . b k . P\n. . . . . . . .\n. . r . . K . .\n. . . . . . R .\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Re2</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "003S3",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Rb8",
+        "Ne6+",
+        "Kg8",
+        "Nxc7"
+      ],
+      "failure_reason": "Illegal move: Qxf3 - illegal san: 'Qxf3' in r4k1r/pNqnppb1/6pn/2p3Np/7P/2P2Q2/PP3PP1/R1B1K2R b KQ - 2 15",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Qf3. The themes of this puzzle are advantage, middlegame, pin, short. Find the best move to solve the puzzle.\n\n\nASCII:\nr . . . . k . r\np N q n p p b .\n. . . . . . p n\n. . p . . . N p\n. . . . . . . P\n. . P . . Q . .\nP P . . . P P .\nR . B . K . . R\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qxf3</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "003jv",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Rh8",
+        "Nf7+",
+        "Ke4",
+        "Nxh8"
+      ],
+      "failure_reason": "Illegal move: Ne5 - illegal san: 'Ne5' in 1R6/1p2k2p/p2n2p1/4K3/8/6P1/P6P/8 w - - 10 37",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Ke7. The themes of this puzzle are crushing, endgame, fork, short. Find the best move to solve the puzzle.\n\n\nASCII:\n. R . . . . . .\n. p . . k . . p\np . . n . . p .\n. . . . K . . .\n. . . . . . . .\n. . . . . . P .\nP . . . . . . P\n. . . . . . . .\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Ne5</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "002VP",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Bd5",
+        "Bxf6+",
+        "Kf5",
+        "Bxd5"
+      ],
+      "failure_reason": "Illegal move: Ke7 - illegal san: 'Ke7' in 8/6p1/2B1bn2/6k1/3B4/6K1/4P3/8 b - - 4 44",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Bd4. The themes of this puzzle are crushing, endgame, short. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . . . .\n. . . . . . p .\n. . B . b n . .\n. . . . . . k .\n. . . B . . . .\n. . . . . . K .\n. . . . P . . .\n. . . . . . . .\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Ke7</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "001Wz",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Rxe5",
+        "Rd8+",
+        "Re8",
+        "Rxe8#"
+      ],
+      "failure_reason": "Illegal move: Re1 - illegal san: 'Re1' in 4r1k1/5ppp/r1p5/p1n1RP2/8/2P2N1P/2P3P1/3R2K1 b - - 0 21",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Rxe5. The themes of this puzzle are backRankMate, endgame, mate, mateIn2, short. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . r . k .\n. . . . . p p p\nr . p . . . . .\np . n . R P . .\n. . . . . . . .\n. . P . . N . P\n. . P . . . P .\n. . . R . . K .\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Re1</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "002GQ",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Rc1",
+        "Ne2+",
+        "Kf1",
+        "Nxc1"
+      ],
+      "failure_reason": "Illegal move: Qd8 - illegal san: 'Qd8' in 5rk1/5ppp/4p3/4N3/8/1Pn5/5PPP/5RK1 w - - 0 28",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Nxc3. The themes of this puzzle are crushing, endgame, fork, short. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . r k .\n. . . . . p p p\n. . . . p . . .\n. . . . N . . .\n. . . . . . . .\n. P n . . . . .\n. . . . . P P P\n. . . . . R K .\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qd8</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "001aK",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Rxe2",
+        "Kxe2",
+        "g2",
+        "e4",
+        "Nd4+",
+        "Kf2"
+      ],
+      "failure_reason": "Illegal move: Ra1 - illegal san: 'Ra1' in 6k1/5p2/4p3/P1B5/2P4P/4Pnp1/Rb1rN3/5K2 b - - 1 33",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Ra2. The themes of this puzzle are crushing, endgame, hangingPiece, long, quietMove. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . . k .\n. . . . . p . .\n. . . . p . . .\nP . B . . . . .\n. . P . . . . P\n. . . . P n p .\nR b . r N . . .\n. . . . . K . .\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Ra1</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "002Uy",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Rc3",
+        "Rxc3+",
+        "Kxc3",
+        "Kxa4",
+        "Kb2",
+        "Kb4"
+      ],
+      "failure_reason": "Illegal move: Re3 - illegal san: 'Re3' in 8/8/1p6/k7/P1R5/1K5r/8/8 w - - 26 64",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Rh3+. The themes of this puzzle are crushing, defensiveMove, endgame, long, rookEndgame. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . . . .\n. . . . . . . .\n. p . . . . . .\nk . . . . . . .\nP . R . . . . .\n. K . . . . . r\n. . . . . . . .\n. . . . . . . .\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Re3</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "002bK",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Bb5+",
+        "Nxb5",
+        "c2",
+        "Kd2"
+      ],
+      "failure_reason": "Illegal move: Ne3 - illegal san: 'Ne3' in 8/7p/2b1k3/p2p1pPB/1n1P3P/N1p1P3/4K3/8 b - - 1 42",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Ke2. The themes of this puzzle are advantage, endgame, hangingPiece, short. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . . . .\n. . . . . . . p\n. . b . k . . .\np . . p . p P B\n. n . P . . . P\nN . p . P . . .\n. . . . K . . .\n. . . . . . . .\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Ne3</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "003Jb",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Qa7",
+        "Qg5+",
+        "Kb1",
+        "Qxh6"
+      ],
+      "failure_reason": "Illegal move: Qh5 - illegal san: 'Qh5' in 6k1/3bqr1p/2rpp1pR/p7/Pp1QP3/1B3P2/1PP3P1/2KR4 w - - 6 22",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Rf7. The themes of this puzzle are advantage, fork, master, middlegame, short. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . . k .\n. . . b q r . p\n. . r p p . p R\np . . . . . . .\nP p . Q P . . .\n. B . . . P . .\n. P P . . . P .\n. . K R . . . .\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qh5</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "000mr",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Qg3",
+        "Rxf4",
+        "Bxf4",
+        "Rxf4"
+      ],
+      "failure_reason": "Illegal move: Qh6 - illegal san: 'Qh6' in 5r1k/5rp1/p7/1b2B2p/1P1P1Pq1/2R1Q3/P3p1P1/2R3K1 w - - 0 41",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played h5. The themes of this puzzle are crushing, middlegame, short. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . r . k\n. . . . . r p .\np . . . . . . .\n. b . . B . . p\n. P . P . P q .\n. . R . Q . . .\nP . . . p . P .\n. . R . . . K .\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qh6</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "0039T",
+      "status": "incorrect",
+      "first_move_correct": false,
+      "played_moves": [
+        "Rd7"
+      ],
+      "correct_moves": [
+        "Ra4",
+        "Rb1+",
+        "Kf2",
+        "Rxh1",
+        "Rxa7+",
+        "Kf8"
+      ],
+      "failure_reason": "Incorrect move: Rd7",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Ke7. The themes of this puzzle are crushing, defensiveMove, endgame, long, rookEndgame, skewer. Find the best move to solve the puzzle.\n\n\nASCII:\n. r . . . . . r\np . . . k p . .\n. . . . p . . p\n. . . . P . . .\n. . . R . P p .\n. . . . . . P .\nP . P . . . . P\n. . . . K . . R\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Rd7</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "003Tx",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Rxe4",
+        "Nd2+",
+        "Ka1",
+        "Rc1#"
+      ],
+      "failure_reason": "Illegal move: Qh5 - illegal san: 'Qh5' in 2r5/pR5p/5p1k/4p3/4r3/B4nPP/PP3P2/1K2R3 w - - 0 27",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Rxe4. The themes of this puzzle are backRankMate, endgame, fork, mate, mateIn2, short. Find the best move to solve the puzzle.\n\n\nASCII:\n. . r . . . . .\np R . . . . . p\n. . . . . p . k\n. . . . p . . .\n. . . . r . . .\nB . . . . n P P\nP P . . . P . .\n. K . . R . . .\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qh5</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "002Hv",
+      "status": "incorrect",
+      "first_move_correct": false,
+      "played_moves": [
+        "g4"
+      ],
+      "correct_moves": [
+        "Nxf4",
+        "gxf4",
+        "h4",
+        "Kxg2",
+        "h5",
+        "f3",
+        "Kd2",
+        "f2"
+      ],
+      "failure_reason": "Incorrect move: g4",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Kf2. The themes of this puzzle are advancedPawn, crushing, endgame, veryLong. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . N . . p .\n. . . . . b . .\n. . . p . . . P\n. . . . . k P .\n. . . K . . . .\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>g4</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "003aS",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "h5",
+        "b2",
+        "Rb6+",
+        "Ke5",
+        "f4+",
+        "gxf4+"
+      ],
+      "failure_reason": "Illegal move: Rg7 - illegal san: 'Rg7' in 8/8/5k1p/6p1/1R4PP/1p2KP2/8/1r6 w - - 0 43",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played g5. The themes of this puzzle are advancedPawn, crushing, defensiveMove, endgame, long, rookEndgame. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . . . .\n. . . . . . . .\n. . . . . k . p\n. . . . . . p .\n. R . . . . P P\n. p . . K P . .\n. . . . . . . .\n. r . . . . . .\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Rg7</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "002CP",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Qe3",
+        "Qxc2#"
+      ],
+      "failure_reason": "Illegal move: Qh5 - illegal san: 'Qh5' in r5k1/pp4pp/4p1q1/4p3/3n4/P5P1/1PP2Q1P/2KR1R2 w - - 4 24",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Nd4. The themes of this puzzle are endgame, mate, mateIn1, oneMove, queensideAttack. Find the best move to solve the puzzle.\n\n\nASCII:\nr . . . . . k .\np p . . . . p p\n. . . . p . q .\n. . . . p . . .\n. . . n . . . .\nP . . . . . P .\n. P P . . Q . P\n. . K R . R . .\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qh5</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "001Hi",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Qd4",
+        "Qf6",
+        "Qxf2+",
+        "Qxf2",
+        "Rxf2",
+        "Kxf2"
+      ],
+      "failure_reason": "Illegal move: Qd5 - illegal san: 'Qd5' in 6k1/pp1r1pp1/1qp1p2p/4P2P/5Q2/1P4R1/P1Pr1PP1/R5K1 b - - 4 23",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Rg3. The themes of this puzzle are advantage, endgame, long, pin. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . . k .\np p . r . p p .\n. q p . p . . p\n. . . . P . . P\n. . . . . Q . .\n. P . . . . R .\nP . P r . P P .\nR . . . . . K .\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qd5</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "003mh",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Re8",
+        "Qxe8+",
+        "Kxe8",
+        "Nf6+",
+        "Ke7",
+        "Nxg4"
+      ],
+      "failure_reason": "Illegal move: Qxd5 - illegal san: 'Qxd5' in r4k1r/1pp2p2/p2p3p/3N4/3P2q1/8/PPP5/1K2Q1NR b - - 1 23",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Nd5. The themes of this puzzle are advantage, attraction, fork, long, middlegame, sacrifice. Find the best move to solve the puzzle.\n\n\nASCII:\nr . . . . k . r\n. p p . . p . .\np . . p . . . p\n. . . N . . . .\n. . . P . . q .\n. . . . . . . .\nP P P . . . . .\n. K . . Q . N R\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qxd5</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "003jb",
+      "status": "incorrect",
+      "first_move_correct": false,
+      "played_moves": [
+        "Qxd4"
+      ],
+      "correct_moves": [
+        "c5",
+        "Qa4+",
+        "Bb5",
+        "Qxb5+"
+      ],
+      "failure_reason": "Incorrect move: Qxd4",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Qxd4. The themes of this puzzle are crushing, fork, master, middlegame, short. Find the best move to solve the puzzle.\n\n\nASCII:\nr . . . k b . r\np . . . . p p p\nb . p . p . . .\n. . . q . . . .\n. . . Q . . . .\n. . . . B N . .\nP P P . . P P P\nR . . . K . . R\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qxd4</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "00347",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Kd3",
+        "h4",
+        "Kc4",
+        "Kd6"
+      ],
+      "failure_reason": "Illegal move: Ke6 - illegal san: 'Ke6' in 8/2p5/8/2pPk2p/8/4K2P/6P1/8 w - - 1 42",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Ke5. The themes of this puzzle are crushing, endgame, pawnEndgame, quietMove, short. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . . . .\n. . p . . . . .\n. . . . . . . .\n. . p P k . . p\n. . . . . . . .\n. . . . K . . P\n. . . . . . P .\n. . . . . . . .\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Ke6</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "004LZ",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Nxg2",
+        "c2+",
+        "Ka2",
+        "c1=Q",
+        "Rd7+",
+        "Ke2"
+      ],
+      "failure_reason": "Illegal move: g4 - illegal san: 'g4' in 8/7R/5p2/p7/7P/2p5/3k2r1/1K2N3 w - - 3 48",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Kd2. The themes of this puzzle are advancedPawn, crushing, defensiveMove, deflection, endgame, long, promotion. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . . . .\n. . . . . . . R\n. . . . . p . .\np . . . . . . .\n. . . . . . . P\n. . p . . . . .\n. . . k . . r .\n. K . . N . . .\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>g4</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "001cr",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "c4",
+        "Be8#"
+      ],
+      "failure_reason": "Illegal move: Qxd7 - illegal san: 'Qxd7' in 8/3B2pp/p5k1/2p3P1/1p1p1K2/8/1P6/8 b - - 0 38",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Bxd7. The themes of this puzzle are bishopEndgame, endgame, mate, mateIn1, oneMove. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . . . .\n. . . B . . p p\np . . . . . k .\n. . p . . . P .\n. p . p . K . .\n. . . . . . . .\n. P . . . . . .\n. . . . . . . .\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qxd7</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "001uD",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "f6",
+        "Nxd2",
+        "Nxd2",
+        "Rxd2",
+        "Rxc1+",
+        "Nxc1"
+      ],
+      "failure_reason": "Illegal move: Rd8 - illegal san: 'Rd8' in 6k1/1p3pp1/1p5p/2r1p3/2n5/r3PN2/2RnNPPP/2R3K1 b - - 1 32",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Nf3. The themes of this puzzle are advantage, long, middlegame. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . . k .\n. p . . . p p .\n. p . . . . . p\n. . r . p . . .\n. . n . . . . .\nr . . . P N . .\n. . R n N P P P\n. . R . . . K .\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Rd8</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "003md",
+      "status": "incorrect",
+      "first_move_correct": false,
+      "played_moves": [
+        "Qh5"
+      ],
+      "correct_moves": [
+        "Re1+",
+        "Ne4",
+        "Rxe4+",
+        "dxe4",
+        "Qh5+",
+        "Qxh5",
+        "Bf7+",
+        "Qxf7"
+      ],
+      "failure_reason": "Incorrect move: Qh5",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Nxg3. The themes of this puzzle are crushing, defensiveMove, middlegame, veryLong. Find the best move to solve the puzzle.\n\n\nASCII:\nr . b . k . . N\np p p . . . p p\n. . n . . . . .\n. . b p . . . .\n. . . . . . . q\n. B . . . . n .\nP P P P . P . P\nR N B Q . R K .\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qh5</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "002vV",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Rb6",
+        "Rh1#"
+      ],
+      "failure_reason": "Illegal move: Ra8 - illegal san: 'Ra8' in 8/6k1/2R4p/5p1P/5P1K/6P1/8/r7 w - - 2 58",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Ra1. The themes of this puzzle are endgame, master, mate, mateIn1, oneMove, rookEndgame. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . . . .\n. . . . . . k .\n. . R . . . . p\n. . . . . p . P\n. . . . . P . K\n. . . . . . P .\n. . . . . . . .\nr . . . . . . .\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Ra8</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "002O7",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Bg4",
+        "Nxg4",
+        "Nxg4",
+        "Qxg4"
+      ],
+      "failure_reason": "Illegal move: Qxf3 - illegal san: 'Qxf3' in r3qrk1/2p2pp1/p2bpn1p/2ppNb2/3P1P2/1PP1P1B1/P2N2PP/R2Q1RK1 b - - 0 14",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played b3. The themes of this puzzle are crushing, middlegame, short. Find the best move to solve the puzzle.\n\n\nASCII:\nr . . . q r k .\n. . p . . p p .\np . . b p n . p\n. . p p N b . .\n. . . P . P . .\n. P P . P . B .\nP . . N . . P P\nR . . Q . R K .\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qxf3</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "000Vc",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "gxh5",
+        "gxh5",
+        "f5+",
+        "Kxe5",
+        "f6",
+        "Kxf6"
+      ],
+      "failure_reason": "Illegal move: g4 - illegal san: 'g4' in 8/8/4k1p1/2KpP2p/5PP1/8/8/8 w - - 0 53",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played h5. The themes of this puzzle are crushing, endgame, long, pawnEndgame. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . . . .\n. . . . . . . .\n. . . . k . p .\n. . K p P . . p\n. . . . . P P .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>g4</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "0047P",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Kf1",
+        "Rb1+",
+        "Ke2",
+        "Rb2+",
+        "Kd1",
+        "Rxa2"
+      ],
+      "failure_reason": "Illegal move: Rb7 - illegal san: 'Rb7' in 8/1N3k2/6p1/8/2P3P1/pr6/R5K1/8 w - - 1 56",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Rb3. The themes of this puzzle are crushing, endgame, exposedKing, fork, long, master. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . . . .\n. N . . . k . .\n. . . . . . p .\n. . . . . . . .\n. . P . . . P .\np r . . . . . .\nR . . . . . K .\n. . . . . . . .\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Rb7</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "001xl",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Kf6",
+        "Rf7+",
+        "Ke5",
+        "Rxf4"
+      ],
+      "failure_reason": "Illegal move: Re8+ - illegal san: 'Re8+' in 8/4R1k1/p5pp/3B4/5q2/8/5P1P/6K1 b - - 5 40",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Re7+. The themes of this puzzle are advantage, endgame, master, masterVsMaster, short, skewer, superGM. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . . . .\n. . . . R . k .\np . . . . . p p\n. . . B . . . .\n. . . . . q . .\n. . . . . . . .\n. . . . . P . P\n. . . . . . K .\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Re8+</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "002IE",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Nxe5",
+        "dxe5",
+        "Qe7",
+        "exf6"
+      ],
+      "failure_reason": "Illegal move: Qxb1 - illegal san: 'Qxb1' in r3brk1/5pp1/p1nqpn1p/P2pN3/2pP4/2P1PN2/5PPP/RB1QK2R b KQ - 4 16",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Bb1. The themes of this puzzle are advantage, fork, middlegame, short. Find the best move to solve the puzzle.\n\n\nASCII:\nr . . . b r k .\n. . . . . p p .\np . n q p n . p\nP . . p N . . .\n. . p P . . . .\n. . P . P N . .\n. . . . . P P P\nR B . Q K . . R\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qxb1</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "002Tf",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Bb5",
+        "Qb4+",
+        "Nc3",
+        "Qxb2"
+      ],
+      "failure_reason": "Illegal move: Qxe7 - illegal san: 'Qxe7' in r3kbnr/ppp1qppp/2n5/3pP3/5B2/4PQ2/PPP2PPP/RN2KB1R w KQkq - 1 7",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Qe7. The themes of this puzzle are advantage, fork, opening, short. Find the best move to solve the puzzle.\n\n\nASCII:\nr . . . k b n r\np p p . q p p p\n. . n . . . . .\n. . . p P . . .\n. . . . . B . .\n. . . . P Q . .\nP P P . . P P P\nR N . . K B . R\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qxe7</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "002KJ",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Be7",
+        "Nxe5",
+        "Qxe5",
+        "Bxg4"
+      ],
+      "failure_reason": "Illegal move: Qh4 - illegal san: 'Qh4' in r3kb1r/ppq2ppp/4pn2/2Ppn3/1P4bP/2P2N2/P3BPP1/RNBQ1RK1 b kq - 2 10",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played O-O. The themes of this puzzle are crushing, discoveredAttack, middlegame, short. Find the best move to solve the puzzle.\n\n\nASCII:\nr . . . k b . r\np p q . . p p p\n. . . . p n . .\n. . P p n . . .\n. P . . . . b P\n. . P . . N . .\nP . . . B P P .\nR N B Q . R K .\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qh4</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "00143",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Qf6",
+        "Qh5",
+        "h6",
+        "Qxc5"
+      ],
+      "failure_reason": "Illegal move: Qxe4 - illegal san: 'Qxe4' in r2q1rk1/5ppp/1np5/p1b5/2p1B3/P7/1P3PPP/R1BQ1RK1 b - - 1 17",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Be4. The themes of this puzzle are advantage, middlegame, short. Find the best move to solve the puzzle.\n\n\nASCII:\nr . . q . r k .\n. . . . . p p p\n. n p . . . . .\np . b . . . . .\n. . p . B . . .\nP . . . . . . .\n. P . . . P P P\nR . B Q . R K .\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qxe4</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "000Zo",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "exf6",
+        "Re1+",
+        "Kf2",
+        "Rf1#"
+      ],
+      "failure_reason": "Illegal move: Rf8 - illegal san: 'Rf8' in 4r3/1k6/pp3r2/1b2P2p/3R1p2/P1R2P2/1P4PP/6K1 w - - 0 35",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Rxf6. The themes of this puzzle are endgame, mate, mateIn2, short. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . r . . .\n. k . . . . . .\np p . . . r . .\n. b . . P . . p\n. . . R . p . .\nP . R . . P . .\n. P . . . . P P\n. . . . . . K .\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Rf8</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "0018S",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "b6",
+        "Qa1",
+        "a5",
+        "Rc1"
+      ],
+      "failure_reason": "Illegal move: Qe3 - illegal san: 'Qe3' in 2kr3r/pp3p2/4p2p/1N1p2p1/3Q4/1P1P4/2q2PPP/5RK1 b - - 1 20",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Nb5. The themes of this puzzle are advantage, endgame, pin, short. Find the best move to solve the puzzle.\n\n\nASCII:\n. . k r . . . r\np p . . . p . .\n. . . . p . . p\n. N . p . . p .\n. . . Q . . . .\n. P . P . . . .\n. . q . . P P P\n. . . . . R K .\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qe3</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "002Z9",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Qxd2",
+        "Rxe8#"
+      ],
+      "failure_reason": "Illegal move: Qxe7 - illegal san: 'Qxe7' in 4r1k1/1p2R1p1/p2p2Pp/P1pP4/5q2/1R3p2/1P1Q3P/5B1K b - - 0 34",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Rxe7. The themes of this puzzle are endgame, hangingPiece, master, mate, mateIn1, oneMove. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . r . k .\n. p . . R . p .\np . . p . . P p\nP . p P . . . .\n. . . . . q . .\n. R . . . p . .\n. P . Q . . . P\n. . . . . B . K\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qxe7</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "004Ax",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Kf7",
+        "Rxh6",
+        "Rf6",
+        "Rh7+",
+        "Kg6",
+        "Ra7"
+      ],
+      "failure_reason": "Illegal move: Rxe6 - illegal san: 'Rxe6' in 8/8/4R1kp/p7/5rPK/8/7P/8 b - - 2 42",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Re6+. The themes of this puzzle are crushing, endgame, exposedKing, long, rookEndgame. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . . . .\n. . . . . . . .\n. . . . R . k p\np . . . . . . .\n. . . . . r P K\n. . . . . . . .\n. . . . . . . P\n. . . . . . . .\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Rxe6</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "0017R",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Nexc4",
+        "Bxc4",
+        "Nxc4",
+        "Qa4+",
+        "Qd7",
+        "Qxc4"
+      ],
+      "failure_reason": "Illegal move: Qxf3 - illegal san: 'Qxf3' in r2qk2r/pp2ppbp/1n1p2p1/3Pn3/2P5/2NBBP1P/PP3P2/R2QK2R b KQkq - 0 12",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played gxf3. The themes of this puzzle are advantage, fork, long, middlegame. Find the best move to solve the puzzle.\n\n\nASCII:\nr . . q k . . r\np p . . p p b p\n. n . p . . p .\n. . . P n . . .\n. . P . . . . .\n. . N B B P . P\nP P . . . P . .\nR . . Q K . . R\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qxf3</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "003if",
+      "status": "incorrect",
+      "first_move_correct": false,
+      "played_moves": [
+        "Qd4"
+      ],
+      "correct_moves": [
+        "Qb7",
+        "Qh5+",
+        "Ke7",
+        "Bc5+",
+        "Rxc5",
+        "Qxc5+"
+      ],
+      "failure_reason": "Incorrect move: Qd4",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played b6. The themes of this puzzle are advantage, endgame, long. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . . . .\n. . . q . k p p\n. P . . p . . .\n. . . . Q . . .\n. . . . . P . .\n. . . . B . . P\n. . r . . . P K\n. . . . . . . .\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qd4</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "002LF",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Qxg4",
+        "Qe5+",
+        "f6",
+        "Qc7+",
+        "Kh6",
+        "Qxh2+"
+      ],
+      "failure_reason": "Illegal move: Qe2 - illegal san: 'Qe2' in 7r/p2q1pk1/1pp3p1/8/6P1/4Q3/PP1R1P1r/5KN1 b - - 0 38",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Qxe3. The themes of this puzzle are advantage, endgame, interference, long. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . . . r\np . . q . p k .\n. p p . . . p .\n. . . . . . . .\n. . . . . . P .\n. . . . Q . . .\nP P . R . P . r\n. . . . . K N .\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qe2</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "001Fg",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Rc7",
+        "Ne2+",
+        "Kh2",
+        "Qf4+",
+        "Kh1",
+        "Ng3+",
+        "fxg3",
+        "Qxf1+"
+      ],
+      "failure_reason": "Illegal move: Qh5 - illegal san: 'Qh5' in 2R2r1k/pQ4pp/5rp1/3B4/q2n4/7P/P4PP1/5RK1 w - - 3 30",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Rf6. The themes of this puzzle are advantage, middlegame, veryLong. Find the best move to solve the puzzle.\n\n\nASCII:\n. . R . . r . k\np Q . . . . p p\n. . . . . r p .\n. . . B . . . .\nq . . n . . . .\n. . . . . . . P\nP . . . . P P .\n. . . . . R K .\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qh5</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "002LW",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Ne5",
+        "f6",
+        "Nxf3+",
+        "Rxf3"
+      ],
+      "failure_reason": "Illegal move: Qh4 - illegal san: 'Qh4' in 3r1rk1/1b1n1pp1/3p4/p4PPQ/4P3/3q1BN1/8/2R2RK1 b - - 1 28",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Bf3. The themes of this puzzle are advantage, middlegame, short. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . r . r k .\n. b . n . p p .\n. . . p . . . .\np . . . . P P Q\n. . . . P . . .\n. . . q . B N .\n. . . . . . . .\n. . R . . R K .\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qh4</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "003jH",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Kf2",
+        "Nd3+",
+        "Ke3",
+        "Nxf4",
+        "Rxh5",
+        "Nxh5"
+      ],
+      "failure_reason": "Illegal move: Qxe5 - illegal san: 'Qxe5' in rn3rk1/p5pp/3N4/4np1q/5Q2/1P3K2/PB1P2P1/2R4R w - - 0 25",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Nxe5+. The themes of this puzzle are crushing, fork, long, middlegame. Find the best move to solve the puzzle.\n\n\nASCII:\nr n . . . r k .\np . . . . . p p\n. . . N . . . .\n. . . . n p . q\n. . . . . Q . .\n. P . . . K . .\nP B . P . . P .\n. . R . . . . R\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qxe5</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "003AX",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "cxd4",
+        "Qxh7#"
+      ],
+      "failure_reason": "Illegal move: Qh4 - illegal san: 'Qh4' in 2r2rk1/5ppp/bq2p3/p1ppP1N1/Pb1P2P1/1P2P2P/2QN4/2R1K2R b K - 1 18",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Ng5. The themes of this puzzle are kingsideAttack, mate, mateIn1, middlegame, oneMove. Find the best move to solve the puzzle.\n\n\nASCII:\n. . r . . r k .\n. . . . . p p p\nb q . . p . . .\np . p p P . N .\nP b . P . . P .\n. P . . P . . P\n. . Q N . . . .\n. . R . K . . R\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qh4</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "001XA",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Qc7",
+        "Rxb7",
+        "Qxb7",
+        "Nf6+",
+        "Bxf6",
+        "Bxb7"
+      ],
+      "failure_reason": "Illegal move: Qxf3 - illegal san: 'Qxf3' in 1qr2rk1/pb2bppp/8/8/2p1N3/P1Bn2P1/2Q2PBP/1R3RK1 b - - 3 23",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Rb1. The themes of this puzzle are crushing, discoveredAttack, long, master, middlegame, sacrifice. Find the best move to solve the puzzle.\n\n\nASCII:\n. q r . . r k .\np b . . b p p p\n. . . . . . . .\n. . . . . . . .\n. . p . N . . .\nP . B n . . P .\n. . Q . . P B P\n. R . . . R K .\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qxf3</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "0008Q",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Rf7",
+        "Re5+",
+        "Kf1",
+        "Rxe6"
+      ],
+      "failure_reason": "Illegal move: Rh8 - illegal san: 'Rh8' in 8/4R3/1p2P3/p4r2/P6p/1P3Pk1/4K3/8 w - - 1 64",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Kg3. The themes of this puzzle are advantage, endgame, rookEndgame, short. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . . . .\n. . . . R . . .\n. p . . P . . .\np . . . . r . .\nP . . . . . . p\n. P . . . P k .\n. . . . K . . .\n. . . . . . . .\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Rh8</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "003o0",
+      "status": "incorrect",
+      "first_move_correct": false,
+      "played_moves": [
+        "Qh5"
+      ],
+      "correct_moves": [
+        "Nf3",
+        "Qa5+",
+        "Qd2",
+        "Qxb5"
+      ],
+      "failure_reason": "Incorrect move: Qh5",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Be7. The themes of this puzzle are advantage, fork, master, opening, short. Find the best move to solve the puzzle.\n\n\nASCII:\nr . b q k . . r\np p . n b p p p\n. . . p . . . .\n. B . p . . . .\n. . . P . B . .\n. . . . . . . .\nP P P . . P P P\nR . . Q K . N R\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qh5</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "003YF",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Bxf4",
+        "Qxf2#"
+      ],
+      "failure_reason": "Illegal move: Qxf7+ - illegal san: 'Qxf7+' in r4rk1/1pp2ppp/p2p4/2bPp3/2P1Pn1q/P1N2B2/1P3P2/R1BQK1R1 w Q - 1 15",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Qh4. The themes of this puzzle are attackingF2F7, mate, mateIn1, middlegame, oneMove. Find the best move to solve the puzzle.\n\n\nASCII:\nr . . . . r k .\n. p p . . p p p\np . . p . . . .\n. . b P p . . .\n. . P . P n . q\nP . N . . B . .\n. P . . . P . .\nR . B Q K . R .\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qxf7+</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "003UW",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Qd5",
+        "Qe4+",
+        "Qxe4",
+        "fxe4"
+      ],
+      "failure_reason": "Illegal move: Qe1 - illegal san: 'Qe1' in 8/6pk/7p/2p5/2qp4/5PP1/P3QK1P/8 b - - 1 40",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Qe2. The themes of this puzzle are advantage, endgame, queenEndgame, short. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . . . .\n. . . . . . p k\n. . . . . . . p\n. . p . . . . .\n. . q p . . . .\n. . . . . P P .\nP . . . Q K . P\n. . . . . . . .\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qe1</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "003nQ",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Rg1",
+        "Ng3+",
+        "Qxg3",
+        "Rxg3"
+      ],
+      "failure_reason": "Illegal move: Qh5 - illegal san: 'Qh5' in 6rk/pp6/2n5/3ppn1p/3p4/2P2P1q/PP3QNB/R4R1K w - - 2 29",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Nf5. The themes of this puzzle are crushing, kingsideAttack, master, middlegame, pin, short. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . . r k\np p . . . . . .\n. . n . . . . .\n. . . p p n . p\n. . . p . . . .\n. . P . . P . q\nP P . . . Q N B\nR . . . . R . K\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qh5</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "002Ua",
+      "status": "incorrect",
+      "first_move_correct": false,
+      "played_moves": [
+        "Qxf3"
+      ],
+      "correct_moves": [
+        "Kh1",
+        "Qf4",
+        "Qxf3",
+        "Qxf3+"
+      ],
+      "failure_reason": "Incorrect move: Qxf3",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Nxf3+. The themes of this puzzle are crushing, kingsideAttack, middlegame, short. Find the best move to solve the puzzle.\n\n\nASCII:\nr . . . . r k .\np p . . . p p p\n. . . p . q . .\nP . P . p . . .\n. . B . . . . .\n. . B . . n . .\n. . P . . P . P\nR . . Q . R K .\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qxf3</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "000hf",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Kxf7",
+        "Qxe6+",
+        "Kf8",
+        "Qf7#"
+      ],
+      "failure_reason": "Illegal move: Qxf7 - illegal san: 'Qxf7' in r1bqk2r/pp1nbNp1/2p1p2p/8/2BP4/1PN3P1/P3QP1P/3R1RK1 b kq - 0 19",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Nxf7. The themes of this puzzle are mate, mateIn2, middlegame, short. Find the best move to solve the puzzle.\n\n\nASCII:\nr . b q k . . r\np p . n b N p .\n. . p . p . . p\n. . . . . . . .\n. . B P . . . .\n. P N . . . P .\nP . . . Q P . P\n. . . R . R K .\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qxf7</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "002xh",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Nh4",
+        "Kxb5",
+        "Ng2",
+        "Ka6",
+        "Ne3",
+        "Kb7"
+      ],
+      "failure_reason": "Illegal move: Ne3+ - illegal san: 'Ne3+' in 2nk4/8/2PBp1n1/1pK1P1p1/1P4P1/8/8/8 b - - 2 42",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Kc5. The themes of this puzzle are crushing, endgame, long. Find the best move to solve the puzzle.\n\n\nASCII:\n. . n k . . . .\n. . . . . . . .\n. . P B p . n .\n. p K . P . p .\n. P . . . . P .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Ne3+</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "003wQ",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Rxf1",
+        "Qxd6",
+        "Bxd6",
+        "Rxf1"
+      ],
+      "failure_reason": "Illegal move: Qxf1 - illegal san: 'Qxf1' in 2r2rk1/6pp/3Q1q2/8/3N1B2/6P1/PP1K3P/R4b2 w - - 0 24",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Bxf1. The themes of this puzzle are advantage, discoveredAttack, middlegame, pin, short. Find the best move to solve the puzzle.\n\n\nASCII:\n. . r . . r k .\n. . . . . . p p\n. . . Q . q . .\n. . . . . . . .\n. . . N . B . .\n. . . . . . P .\nP P . K . . . P\nR . . . . b . .\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qxf1</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "000rZ",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Nxe6",
+        "Qxh2#"
+      ],
+      "failure_reason": "Illegal move: Qh5 - illegal san: 'Qh5' in 2kr1b1r/p1p2pp1/2pqb3/7p/3N2n1/2NPB3/PPP2PPP/R2Q1RK1 w - - 2 13",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Ng4. The themes of this puzzle are kingsideAttack, mate, mateIn1, oneMove, opening. Find the best move to solve the puzzle.\n\n\nASCII:\n. . k r . b . r\np . p . . p p .\n. . p q b . . .\n. . . . . . . p\n. . . N . . n .\n. . N P B . . .\nP P P . . P P P\nR . . Q . R K .\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qh5</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "001wr",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "f3",
+        "Qc5+",
+        "Kh1",
+        "Qxc4"
+      ],
+      "failure_reason": "Illegal move: Qh5 - illegal san: 'Qh5' in r4rk1/p3ppbp/Pp1q1np1/3PpbB1/2B5/2N5/1PPQ1PPP/3RR1K1 w - - 4 18",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Bf5. The themes of this puzzle are advantage, fork, master, masterVsMaster, middlegame, short. Find the best move to solve the puzzle.\n\n\nASCII:\nr . . . . r k .\np . . . p p b p\nP p . q . n p .\n. . . P p b B .\n. . B . . . . .\n. . N . . . . .\n. P P Q . P P P\n. . . R R . K .\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qh5</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "003cs",
+      "status": "incorrect",
+      "first_move_correct": false,
+      "played_moves": [
+        "Qxe3"
+      ],
+      "correct_moves": [
+        "Qxe5",
+        "Rxf8+",
+        "Kxf8",
+        "Bc5+",
+        "Rxc5",
+        "Qxe5",
+        "Rc1+",
+        "Kf2"
+      ],
+      "failure_reason": "Incorrect move: Qxe3",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Be3. The themes of this puzzle are advantage, attraction, discoveredAttack, exposedKing, middlegame, sacrifice, veryLong. Find the best move to solve the puzzle.\n\n\nASCII:\n. . r . k b n r\np p . . . . p p\n. . . . p . . .\n. . . p P . N .\n. . . q . . . .\n. P . . B . . .\nP . . . Q . P P\nn N . . . R K .\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qxe3</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "0048h",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Rxc6",
+        "Re1+",
+        "Rxe1",
+        "Rxe1+",
+        "Kg2",
+        "d3"
+      ],
+      "failure_reason": "Illegal move: Rc7 - illegal san: 'Rc7' in 4r3/p5k1/2p2R1p/2Pp4/1P1pr1P1/P6P/8/3R3K w - - 1 35",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Kg7. The themes of this puzzle are crushing, endgame, exposedKing, long, rookEndgame. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . r . . .\np . . . . . k .\n. . p . . R . p\n. . P p . . . .\n. P . p r . P .\nP . . . . . . P\n. . . . . . . .\n. . . R . . . K\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Rc7</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "001Oo",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Qa4",
+        "Qxa4",
+        "bxa4",
+        "b5",
+        "Kf7",
+        "b6"
+      ],
+      "failure_reason": "Illegal move: Qh2+ - illegal san: 'Qh2+' in 6k1/4p1bp/6p1/1p1pP3/1PpPp3/2P1P3/Q2B1KPP/3q4 b - - 2 23",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Kf2. The themes of this puzzle are crushing, endgame, long, quietMove. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . . k .\n. . . . p . b p\n. . . . . . p .\n. p . p P . . .\n. P p P p . . .\n. . P . P . . .\nQ . . B . K P P\n. . . q . . . .\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qh2+</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "001gi",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Nxa8",
+        "Bxc3#"
+      ],
+      "failure_reason": "Illegal move: Qd8 - illegal san: 'Qd8' in r6r/1pNk1ppp/2np4/b3p3/4P1b1/N1Q5/P4PPP/R3KB1R w KQ - 3 18",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Kd7. The themes of this puzzle are bodenMate, hangingPiece, mate, mateIn1, middlegame, oneMove. Find the best move to solve the puzzle.\n\n\nASCII:\nr . . . . . . r\n. p N k . p p p\n. . n p . . . .\nb . . . p . . .\n. . . . P . b .\nN . Q . . . . .\nP . . . . P P P\nR . . . K B . R\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qd8</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "001kG",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Bc5",
+        "Qh5+",
+        "Kg8",
+        "Qxc5"
+      ],
+      "failure_reason": "Illegal move: Qh4 - illegal san: 'Qh4' in rnbq3r/1p2bkpp/p4n2/8/2pNP3/2N5/PPP3PP/R1BQ1RK1 b - - 1 11",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played O-O. The themes of this puzzle are advantage, opening, pin, short. Find the best move to solve the puzzle.\n\n\nASCII:\nr n b q . . . r\n. p . . b k p p\np . . . . n . .\n. . . . . . . .\n. . p N P . . .\n. . N . . . . .\nP P P . . . P P\nR . B Q . R K .\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qh4</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "001h8",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Be2",
+        "Qxh7+",
+        "Rxh7",
+        "Rxc8+",
+        "Kg7",
+        "Rc7+"
+      ],
+      "failure_reason": "Illegal move: Qh4+ - illegal san: 'Qh4+' in 2r3k1/2r4p/4p1p1/1p1q1pP1/p1bP1P1Q/P6R/5B2/2R3K1 b - - 5 34",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Rh3. The themes of this puzzle are crushing, deflection, kingsideAttack, long, middlegame, sacrifice. Find the best move to solve the puzzle.\n\n\nASCII:\n. . r . . . k .\n. . r . . . . p\n. . . . p . p .\n. p . q . p P .\np . b P . P . Q\nP . . . . . . R\n. . . . . B . .\n. . R . . . K .\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qh4+</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "002mG",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Kf2",
+        "Re8",
+        "Qxe8+",
+        "Qxe8"
+      ],
+      "failure_reason": "Illegal move: Qd4 - illegal san: 'Qd4' in 5r1k/B1p3pp/2Qb1p2/3Pq3/P6P/8/2P3K1/3R1R2 w - - 1 36",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Qe5. The themes of this puzzle are advantage, middlegame, quietMove, short. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . r . k\nB . p . . . p p\n. . Q b . p . .\n. . . P q . . .\nP . . . . . . P\n. . . . . . . .\n. . P . . . K .\n. . . R . R . .\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qd4</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "000h0",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Rxe6",
+        "Rxf3",
+        "gxf3",
+        "Qxh2+",
+        "Kf1",
+        "Qh3+",
+        "Ke2",
+        "Qxe6+"
+      ],
+      "failure_reason": "Illegal move: Qxh7+ - illegal san: 'Qxh7+' in 5rk1/p5p1/3bpr1p/1Pp4q/3pR3/1P1Q1N2/P4PPP/4R1K1 w - - 4 22",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Qh5. The themes of this puzzle are advantage, interference, kingsideAttack, middlegame, veryLong. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . r k .\np . . . . . p .\n. . . b p r . p\n. P p . . . . q\n. . . p R . . .\n. P . Q . N . .\nP . . . . P P P\n. . . . R . K .\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qxh7+</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "003r5",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "dxe6",
+        "Nd3+",
+        "Kg1",
+        "Nxf4"
+      ],
+      "failure_reason": "Illegal move: Qxg7 - illegal san: 'Qxg7' in r2qr1k1/ppp2ppp/4b3/3P4/1nP2Q2/2N2N1P/PP3KP1/R4R2 w - - 1 15",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Nb4. The themes of this puzzle are crushing, fork, middlegame, short. Find the best move to solve the puzzle.\n\n\nASCII:\nr . . q r . k .\np p p . . p p p\n. . . . b . . .\n. . . P . . . .\n. n P . . Q . .\n. . N . . N . P\nP P . . . K P .\nR . . . . R . .\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qxg7</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "003IX",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Kxf5",
+        "Ng3#"
+      ],
+      "failure_reason": "Illegal move: Qh5 - illegal san: 'Qh5' in 8/3pk3/R7/1R2Pp1p/2PPnKr1/8/8/8 w - - 4 43",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Rg4+. The themes of this puzzle are endgame, mate, mateIn1, oneMove. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . . . .\n. . . p k . . .\nR . . . . . . .\n. R . . P p . p\n. . P P n K r .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qh5</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "001m3",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Rxe6",
+        "Rh1+",
+        "Ke2",
+        "Rxa1"
+      ],
+      "failure_reason": "Illegal move: Qh5 - illegal san: 'Qh5' in 7r/6k1/2b1pp2/8/P1N3p1/5nP1/4RP2/Q4K2 w - - 2 38",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Rh8. The themes of this puzzle are advantage, endgame, short, skewer. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . . . r\n. . . . . . k .\n. . b . p p . .\n. . . . . . . .\nP . N . . . p .\n. . . . . n P .\n. . . . R P . .\nQ . . . . K . .\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qh5</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "002p5",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Nd5",
+        "Qh7+",
+        "Kf8",
+        "Qh8#"
+      ],
+      "failure_reason": "Illegal move: Qh4+ - illegal san: 'Qh4+' in r1bqr1k1/pp1nbpp1/2p2n2/6P1/2BP4/P7/1PQNNPP1/R3K2R b KQ - 0 13",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played hxg5. The themes of this puzzle are kingsideAttack, mate, mateIn2, middlegame, short. Find the best move to solve the puzzle.\n\n\nASCII:\nr . b q r . k .\np p . n b p p .\n. . p . . n . .\n. . . . . . P .\n. . B P . . . .\nP . . . . . . .\n. P Q N N P P .\nR . . . K . . R\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qh4+</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "0030b",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Be4",
+        "Rd8+",
+        "Ne8",
+        "Rxe8#"
+      ],
+      "failure_reason": "Illegal move: Qh1+ - illegal san: 'Qh1+' in 6k1/5ppp/5nb1/pp6/6rP/5N1Q/Pq2r1P1/3R2RK b - - 4 32",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Rg1. The themes of this puzzle are backRankMate, mate, mateIn2, middlegame, short. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . . k .\n. . . . . p p p\n. . . . . n b .\np p . . . . . .\n. . . . . . r P\n. . . . . N . Q\nP q . . r . P .\n. . . R . . R K\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qh1+</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "001w5",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Rf7",
+        "Qh7+",
+        "Kxh7",
+        "g8=Q#"
+      ],
+      "failure_reason": "Illegal move: Qh1+ - illegal san: 'Qh1+' in 1rb2rk1/q5P1/4p2p/3p3p/3P1P2/2P5/2QK3P/3R2R1 b - - 0 29",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played g7. The themes of this puzzle are advancedPawn, attraction, mate, mateIn2, middlegame, promotion, short. Find the best move to solve the puzzle.\n\n\nASCII:\n. r b . . r k .\nq . . . . . P .\n. . . . p . . p\n. . . p . . . p\n. . . P . P . .\n. . P . . . . .\n. . Q K . . . P\n. . . R . . R .\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qh1+</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "003eP",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Kg8",
+        "Rh8+",
+        "Kf7",
+        "Rh7+",
+        "Ke8",
+        "Rxe7+"
+      ],
+      "failure_reason": "Illegal move: Qxh1 - illegal san: 'Qxh1' in 8/r1b1q2k/2p3p1/2Pp4/1P2p1n1/2B1P3/NQ6/2K4R b - - 1 36",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Rh1+. The themes of this puzzle are crushing, exposedKing, long, middlegame, skewer. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . . . .\nr . b . q . . k\n. . p . . . p .\n. . P p . . . .\n. P . . p . n .\n. . B . P . . .\nN Q . . . . . .\n. . K . . . . R\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qxh1</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "002e8",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Rd8",
+        "Qh6",
+        "g6",
+        "Rh3"
+      ],
+      "failure_reason": "Illegal move: Qh4 - illegal san: 'Qh4' in r3nrk1/1b3pp1/4pb2/p3q3/1p1N4/3B2R1/PPPQN2P/1K4R1 b - - 1 23",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Nbd4. The themes of this puzzle are crushing, defensiveMove, master, middlegame, pin, short. Find the best move to solve the puzzle.\n\n\nASCII:\nr . . . n r k .\n. b . . . p p .\n. . . . p b . .\np . . . q . . .\n. p . N . . . .\n. . . B . . R .\nP P P Q N . . P\n. K . . . . R .\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qh4</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "0040n",
+      "status": "incorrect",
+      "first_move_correct": false,
+      "played_moves": [
+        "Qh5"
+      ],
+      "correct_moves": [
+        "Rxh2",
+        "gxh2",
+        "Qh3",
+        "Ng4"
+      ],
+      "failure_reason": "Incorrect move: Qh5",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played fxg3. The themes of this puzzle are advancedPawn, advantage, endgame, short. Find the best move to solve the puzzle.\n\n\nASCII:\nr . . . . . . .\np . . k . p p .\np . p . p n . .\n. . . p . . . .\n. . . P . . . .\nP . . . P Q p .\n. P P . . P . q\n. . K . . . . R\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qh5</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "002e5",
+      "status": "incorrect",
+      "first_move_correct": false,
+      "played_moves": [
+        "Qxg5"
+      ],
+      "correct_moves": [
+        "Kg8",
+        "Qc4+",
+        "Kh8",
+        "Rxh7+",
+        "Bxh7",
+        "Nf7+"
+      ],
+      "failure_reason": "Incorrect move: Qxg5",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Ng5+. The themes of this puzzle are crushing, long, middlegame, sacrifice. Find the best move to solve the puzzle.\n\n\nASCII:\nr . . q . . . .\np p . n . k b p\n. . . P . . b .\n. . . . . . N .\n. . . . . . Q .\nP . . . P . . .\n. . . . . . P .\n. . . . K . . R\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qxg5</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "00008",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Bxg3",
+        "Rxe7",
+        "Qb1+",
+        "Nc1",
+        "Qxc1+",
+        "Qxc1"
+      ],
+      "failure_reason": "Illegal move: Qxe6 - illegal san: 'Qxe6' in r6k/pp2r2p/4Rp1Q/3p4/8/1N1P2R1/PqP2bPP/7K b - - 0 24",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Rxe6. The themes of this puzzle are crushing, hangingPiece, long, middlegame. Find the best move to solve the puzzle.\n\n\nASCII:\nr . . . . . . k\np p . . r . . p\n. . . . R p . Q\n. . . p . . . .\n. . . . . . . .\n. N . P . . R .\nP q P . . b P P\n. . . . . . . K\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qxe6</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "001wR",
+      "status": "incorrect",
+      "first_move_correct": false,
+      "played_moves": [
+        "Qh1+"
+      ],
+      "correct_moves": [
+        "b5",
+        "Qa5+",
+        "Kb7",
+        "Nd6+",
+        "Kb8",
+        "Qd8#"
+      ],
+      "failure_reason": "Incorrect move: Qh1+",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Nc4. The themes of this puzzle are endgame, long, mate, mateIn3. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . . n r\np p . . . p . p\nk . p . . . . .\n. . . . . . . .\n. Q N . . . . .\n. . P . P . . .\n. . . . K P q P\n. . . . . . . .\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qh1+</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "00465",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Rxf8",
+        "Rxf8#"
+      ],
+      "failure_reason": "Illegal move: Qxf8+ - illegal san: 'Qxf8+' in 3r1Q1k/pp4pp/2p5/6q1/5R2/2P5/P1P2PPP/3rR1K1 b - - 8 27",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Qf8+. The themes of this puzzle are backRankMate, endgame, mate, mateIn1, oneMove, queenRookEndgame. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . r . Q . k\np p . . . . p p\n. . p . . . . .\n. . . . . . q .\n. . . . . R . .\n. . P . . . . .\nP . P . . P P P\n. . . r R . K .\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qxf8+</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "001wb",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "hxg3",
+        "Qh5#"
+      ],
+      "failure_reason": "Illegal move: Qh5 - illegal san: 'Qh5' in r3k2r/pb1p1ppp/1b4q1/1Q2P3/8/2NP1Pn1/PP4PP/R1B2R1K w kq - 1 17",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Ng3+. The themes of this puzzle are mate, mateIn1, middlegame, oneMove. Find the best move to solve the puzzle.\n\n\nASCII:\nr . . . k . . r\np b . p . p p p\n. b . . . . q .\n. Q . . P . . .\n. . . . . . . .\n. . N P . P n .\nP P . . . . P P\nR . B . . R . K\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qh5</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "004Ao",
+      "status": "incorrect",
+      "first_move_correct": false,
+      "played_moves": [
+        "Qd6"
+      ],
+      "correct_moves": [
+        "Rxf7+",
+        "Qxf7",
+        "Qh8+",
+        "Ke7"
+      ],
+      "failure_reason": "Incorrect move: Qd6",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Kf8. The themes of this puzzle are advantage, endgame, short. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . q k . .\n. b . . . r R .\np . . . . . . .\n. p . . Q . . .\n. . . . P . . P\nP . . P . . . K\n. . r . . . . .\n. . . R . . . .\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qd6</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "002rd",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Be6",
+        "Nf4",
+        "cxd4",
+        "Nxg6+",
+        "fxg6",
+        "Qh6"
+      ],
+      "failure_reason": "Illegal move: Qh4 - illegal san: 'Qh4' in r6k/q1pb1p1p/1b3Pr1/p1ppP2Q/3P2p1/4B3/PP2NRPP/3R2K1 b - - 1 25",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Ne2. The themes of this puzzle are crushing, kingsideAttack, long, middlegame, pin. Find the best move to solve the puzzle.\n\n\nASCII:\nr . . . . . . k\nq . p b . p . p\n. b . . . P r .\np . p p P . . Q\n. . . P . . p .\n. . . . B . . .\nP P . . N R P P\n. . . R . . K .\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qh4</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "001xO",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Ba6",
+        "bxc5",
+        "Bxc8",
+        "c4"
+      ],
+      "failure_reason": "Illegal move: Qxh7+ - illegal san: 'Qxh7+' in k1r1b3/p1r1nppp/1p1qpn2/2Np4/1P1P4/PQRBPN2/5PPP/2R3K1 w - - 0 19",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played b6. The themes of this puzzle are crushing, master, masterVsMaster, middlegame, sacrifice, short. Find the best move to solve the puzzle.\n\n\nASCII:\nk . r . b . . .\np . r . n p p p\n. p . q p n . .\n. . N p . . . .\n. P . P . . . .\nP Q R B P N . .\n. . . . . P P P\n. . R . . . K .\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qxh7+</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "004BW",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Nxf7+",
+        "Ke7",
+        "Qxg8",
+        "Nxg8"
+      ],
+      "failure_reason": "Illegal move: Qh5 - illegal san: 'Qh5' in r1bk2r1/ppq2pQp/3bpn2/1BpnN3/5P2/1P6/PBPP2PP/RN2K2R w KQ - 3 13",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Kd8. The themes of this puzzle are advantage, master, middlegame, short. Find the best move to solve the puzzle.\n\n\nASCII:\nr . b k . . r .\np p q . . p Q p\n. . . b p n . .\n. B p n N . . .\n. . . . . P . .\n. P . . . . . .\nP B P P . . P P\nR N . . K . . R\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qh5</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "001om",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Kh4",
+        "Bf2+",
+        "g3",
+        "Bxg3#"
+      ],
+      "failure_reason": "Illegal move: Qh7+ - illegal san: 'Qh7+' in 5r1k/pp4pp/5p2/1BbQp1r1/6K1/7P/1PP3P1/3R3R w - - 2 26",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Rg5+. The themes of this puzzle are mate, mateIn2, middlegame, short. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . r . k\np p . . . . p p\n. . . . . p . .\n. B b Q p . r .\n. . . . . . K .\n. . . . . . . P\n. P P . . . P .\n. . . R . . . R\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qh7+</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "001u3",
+      "status": "incorrect",
+      "first_move_correct": false,
+      "played_moves": [
+        "Qxc5"
+      ],
+      "correct_moves": [
+        "Qb6",
+        "Qxc8+",
+        "Kh7",
+        "Qb7"
+      ],
+      "failure_reason": "Incorrect move: Qxc5",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Nc5. The themes of this puzzle are advantage, hangingPiece, middlegame, short. Find the best move to solve the puzzle.\n\n\nASCII:\n. . r . . . k .\np . q . . p p .\nQ . . . p . . p\nb . N p . . . .\n. . n P . P . .\n. . . . P . P .\n. . . . . K . P\n. . B . N . . .\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qxc5</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "000aY",
+      "status": "incorrect",
+      "first_move_correct": false,
+      "played_moves": [
+        "Qd2"
+      ],
+      "correct_moves": [
+        "Be7",
+        "Qxc3",
+        "bxc3",
+        "Nxe7"
+      ],
+      "failure_reason": "Incorrect move: Qd2",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played d5. The themes of this puzzle are advantage, master, middlegame, short. Find the best move to solve the puzzle.\n\n\nASCII:\nr . . . . r k .\np p . . . p p p\n. . n . b . . .\nq . p p . . B .\n. . . . . . . .\nP . Q . . N P .\n. P P . P P . P\n. . K R . . . R\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qd2</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "000VW",
+      "status": "incorrect",
+      "first_move_correct": false,
+      "played_moves": [
+        "Qxf5"
+      ],
+      "correct_moves": [
+        "gxf5",
+        "Rc5",
+        "Qe4",
+        "Qg5+",
+        "Kh8",
+        "Qf6+"
+      ],
+      "failure_reason": "Incorrect move: Qxf5",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Nf5+. The themes of this puzzle are crushing, endgame, long. Find the best move to solve the puzzle.\n\n\nASCII:\nr . . . . r . .\n. p . . . p k p\np . . . . . p .\n. . . R . N . Q\n. . . P . . . .\n. . . . . . . .\nP . q . . P . .\n. . . R . . K .\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qxf5</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "002Q2",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Bxh6",
+        "Nxg3#"
+      ],
+      "failure_reason": "Illegal move: Qh7# - illegal san: 'Qh7#' in 7k/p4R1p/3p3r/2pN1n2/2PbBBb1/3P2P1/P3r3/5R1K w - - 1 28",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Rh6+. The themes of this puzzle are mate, mateIn1, middlegame, oneMove. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . . . k\np . . . . R . p\n. . . p . . . r\n. . p N . n . .\n. . P b B B b .\n. . . P . . P .\nP . . . r . . .\n. . . . . R . K\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qh7#</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "000Pw",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Nd2",
+        "Ne2+",
+        "Kf1",
+        "Nxc3"
+      ],
+      "failure_reason": "Illegal move: Qe4 - illegal san: 'Qe4' in 6k1/5p1p/4p3/4q3/3nN3/2Q3P1/PP3P1P/6K1 w - - 2 37",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Nd4. The themes of this puzzle are crushing, endgame, fork, short. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . . k .\n. . . . . p . p\n. . . . p . . .\n. . . . q . . .\n. . . n N . . .\n. . Q . . . P .\nP P . . . P . P\n. . . . . . K .\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qe4</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "001KR",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Kxg8",
+        "Rf8#"
+      ],
+      "failure_reason": "Illegal move: Qxg8+ - illegal san: 'Qxg8+' in 6Qk/p1p3pp/4N3/1p6/2q1r1n1/2B5/PP4PP/3R1R1K b - - 0 28",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Qxg8+. The themes of this puzzle are mate, mateIn1, middlegame, oneMove. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . . Q k\np . p . . . p p\n. . . . N . . .\n. p . . . . . .\n. . q . r . n .\n. . B . . . . .\nP P . . . . P P\n. . . R . R . K\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qxg8+</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "0009B",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "bxc5",
+        "Bxg4",
+        "Bxg4",
+        "Qxg4"
+      ],
+      "failure_reason": "Illegal move: Qxf2 - illegal san: 'Qxf2' in r2qr1k1/b1p2ppp/pp4n1/P1P1p3/4P1n1/B2P2Pb/3NBP1P/RN1QR1K1 b - - 1 16",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Nfd2. The themes of this puzzle are advantage, middlegame, short. Find the best move to solve the puzzle.\n\n\nASCII:\nr . . q r . k .\nb . p . . p p p\np p . . . . n .\nP . P . p . . .\n. . . . P . n .\nB . . P . . P b\n. . . N B P . P\nR N . Q R . K .\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qxf2</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "0042j",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "dxe5",
+        "Qxd8+",
+        "Qxd8",
+        "Rxd8#"
+      ],
+      "failure_reason": "Illegal move: Qh4+ - illegal san: 'Qh4+' in 3r2k1/4nppp/pq1p1b2/1p2P3/2r2P2/2P1NR2/PP1Q2BP/3R2K1 b - - 0 24",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played e5. The themes of this puzzle are backRankMate, mate, mateIn2, middlegame, short. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . r . . k .\n. . . . n p p p\np q . p . b . .\n. p . . P . . .\n. . r . . P . .\n. . P . N R . .\nP P . Q . . B P\n. . . R . . K .\n\nBlack to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qh4+</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "0000D",
+      "status": "incorrect",
+      "first_move_correct": false,
+      "played_moves": [
+        "Qd4"
+      ],
+      "correct_moves": [
+        "Qd6",
+        "Rd8",
+        "Qxd8+",
+        "Bxd8"
+      ],
+      "failure_reason": "Incorrect move: Qd4",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Bf6. The themes of this puzzle are advantage, endgame, short. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . . . r k .\n. p . . . p p p\np q . . . b . .\n. . . . . . . .\n. . . . . . . .\n. P . Q . N . .\nP . . . . P P P\n. . . R . . K .\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qd4</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "004JD",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Ke3",
+        "Nc2#"
+      ],
+      "failure_reason": "Illegal move: Qh7# - illegal san: 'Qh7#' in 3r4/R7/2p5/p1P2p2/1p4k1/nP6/P2KNP2/8 w - - 3 41",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Rd8+. The themes of this puzzle are endgame, mate, mateIn1, oneMove. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . r . . . .\nR . . . . . . .\n. . p . . . . .\np . P . . p . .\n. p . . . . k .\nn P . . . . . .\nP . . K N P . .\n. . . . . . . .\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qh7#</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "000lC",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Rxd6+",
+        "Kxd6",
+        "Qxb6",
+        "axb6"
+      ],
+      "failure_reason": "Illegal move: Qxh6 - illegal san: 'Qxh6' in 3r3r/pQNk1ppp/1qnb1n2/1B6/8/8/PPP3PP/3R1R1K w - - 5 19",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Bd6. The themes of this puzzle are advantage, hangingPiece, middlegame, short. Find the best move to solve the puzzle.\n\n\nASCII:\n. . . r . . . r\np Q N k . p p p\n. q n b . n . .\n. B . . . . . .\n. . . . . . . .\n. . . . . . . .\nP P P . . . P P\n. . . R . R . K\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qxh6</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "002HE",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Kf2",
+        "Qg3#"
+      ],
+      "failure_reason": "Illegal move: Qxh7# - illegal san: 'Qxh7#' in 1qr2rk1/1p1p1ppp/pB2p1n1/7n/2P1P3/1Q2NP1P/PP2B1Pb/3R1RK1 w - - 1 20",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Bh2+. The themes of this puzzle are master, mate, mateIn1, middlegame, oneMove. Find the best move to solve the puzzle.\n\n\nASCII:\n. q r . . r k .\n. p . p . p p p\np B . . p . n .\n. . . . . . . n\n. . P . P . . .\n. Q . . N P . P\nP P . . B . P b\n. . . R . R K .\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qxh7#</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "001pC",
+      "status": "illegal_move",
+      "first_move_correct": false,
+      "played_moves": [],
+      "correct_moves": [
+        "Rxg1",
+        "Nf2#"
+      ],
+      "failure_reason": "Illegal move: Qxh7# - illegal san: 'Qxh7#' in r4rk1/pp3ppp/3b4/2p1pPB1/7N/2PP3n/PP4PP/R2Q1RqK w - - 5 18",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Qg1+. The themes of this puzzle are mate, mateIn1, middlegame, oneMove, smotheredMate. Find the best move to solve the puzzle.\n\n\nASCII:\nr . . . . r k .\np p . . . p p p\n. . . b . . . .\n. . p . p P B .\n. . . . . . . N\n. . P P . . . n\nP P . . . . P P\nR . . Q . R q K\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qxh7#</move>"
+        }
+      ]
+    },
+    {
+      "puzzle_id": "002uV",
+      "status": "illegal_move",
+      "first_move_correct": true,
+      "played_moves": [
+        "Qxf5",
+        "exf5"
+      ],
+      "correct_moves": [
+        "Qxf5",
+        "exf5",
+        "Rxe7",
+        "Nxe7"
+      ],
+      "failure_reason": "Illegal move: Qxe7 - illegal san: 'Qxe7' in r2r2k1/1p2qppp/2n1p3/5Q2/p2P4/P4N2/BP3PPP/2R1R1K1 b - - 0 20",
+      "prompt_config": "basic",
+      "chat_history": [
+        {
+          "role": "system",
+          "content": "SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:\n- Use algebraic notation (e.g., e4, Nf3, O-O)\n- Don't think at all. Just give the move.\n- Always end your response with your move in this exact format:\n  <move>e4</move>\n"
+        },
+        {
+          "role": "user",
+          "content": "This is a chess puzzle. Your opponent just played Nf5. The themes of this puzzle are advantage, middlegame, short. Find the best move to solve the puzzle.\n\n\nASCII:\nr . . r . . k .\n. p . . q p p p\n. . n . p . . .\n. . . . . n . .\np . . P . . . .\nP . . Q . N . .\nB P . . . P P P\n. . R . R . K .\n\nWhite to move. What is the next best move?\n"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qxf5</move>"
+        },
+        {
+          "role": "user",
+          "content": "That's correct. Black plays Rxe7. What's your next move?"
+        },
+        {
+          "role": "assistant",
+          "content": "<move>Qxe7</move>"
+        }
+      ]
+    }
+  ]
+}
