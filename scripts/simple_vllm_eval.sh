@@ -41,14 +41,14 @@ while ! curl -s http://$NODE_NAME:$PORT/health >/dev/null 2>&1; do
 done
 echo "Server ready at http://$NODE_NAME:$PORT"
 
+# TODO: make it easier to pass script arguments
 # 4. Run evaluation script
 echo "Running evaluation..."
-python scripts/run_multiturn_eval.py \
+python scripts/evaluate.py \
     --client_type vllm \
     --model_name "$MODEL_NAME" \
-    --base_url "http://$NODE_NAME:$PORT" \
-    --max_puzzles 100 \
-    --output_file "results/eval_$(date +%Y%m%d_%H%M%S).json"
+    --hostname "$NODE_NAME" \
+    --board_format pgn
 
 # uncomment to sanity-check if script above does not work
 # curl -X POST http://$NODE_NAME:$PORT/v1/completions \

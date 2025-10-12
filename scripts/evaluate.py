@@ -13,7 +13,7 @@ from tqdm.auto import tqdm
 supported_models = {
     "openrouter": [
         "anthropic/claude-sonnet-4.5",
-        "google/gemini-2.0-flash-exp:free",
+        "meta-llama/llama-4-maverick:free",
     ],
     "vllm": [
         "Qwen/Qwen2.5-VL-3B-Instruct",
@@ -74,7 +74,7 @@ def main(board_format, model_name, client_type, hostname):
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
 
     #TODO: first 5 examples for debugging
-    dataset = load_from_disk("data/Lichess/chess-puzzles-3000-full-moves").select(range(5))
+    dataset = load_from_disk("data/Lichess/chess-puzzles-3000-full-moves").select(range(100))
     puzzles = [Puzzle.from_dataset_row(puzzle) for puzzle in dataset]
     puzzle_sessions = [PuzzleSession(puzzle) for puzzle in puzzles]
     
