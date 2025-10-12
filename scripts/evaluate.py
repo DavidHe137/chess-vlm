@@ -68,43 +68,45 @@ def main(board_format, model_name, client_type, hostname):
     #TODO: add script logging
     client = setup_client(client_type, hostname)
 
+    # Setup output file
+    output_file = f"results/{model_name}_{board_format}_results.jsonl"
+    print(f"Logging results to {output_file}")
+    os.makedirs(os.path.dirname(output_file), exist_ok=True)
+
     #TODO: first 5 examples for debugging
     dataset = load_from_disk("data/Lichess/chess-puzzles-3000-full-moves").select(range(5))
     puzzles = [Puzzle.from_dataset_row(puzzle) for puzzle in dataset]
     puzzle_sessions = [PuzzleSession(puzzle) for puzzle in puzzles]
     
     #TODO: make this async batched after finished debugging
-    for puzzle_session in tqdm(puzzle_sessions):
-        prompt_messages = puzzle_session.get_prompt_messages(list(board_format))
-        while puzzle_session.status == SessionStatus.ACTIVE:
-            response = client.chat.completions.create(
-                model=model_name,
-                messages=prompt_messages,
-                temperature=0.0
-            )
-            response_text = response.choices[0].message.content
-            puzzle_session.add_assistant_response(response_text)
-            
-            move = puzzle_session.parse_move(response_text)
-            puzzle_session.submit_move(move)
-
-            if puzzle_session.status != SessionStatus.ACTIVE:
-                break
-
-            # Add user response to continue conversation
-            user_response = puzzle_session.get_turn_response()
-            puzzle_session.add_user_message(user_response)
-            prompt_messages = puzzle_session.get_prompt_messages(list(board_format))
-    
-    results = [puzzle_session.get_session_result() for puzzle_session in puzzle_sessions]
-    
-    output_file = f"results/{model_name}_{board_format}_results.jsonl"
-    print(f"Saving results to {output_file}")
-    os.makedirs(os.path.dirname(output_file), exist_ok=True)
     with open(output_file, "w") as f:
-        for result in results:
+        for puzzle_session in tqdm(puzzle_sessions):
+            prompt_messages = puzzle_session.get_prompt_messages(list(board_format))
+            while puzzle_session.status == SessionStatus.ACTIVE:
+                response = client.chat.completions.create(
+                    model=model_name,
+                    messages=prompt_messages,
+                    temperature=0.0
+                )
+                response_text = response.choices[0].message.content
+                puzzle_session.add_assistant_response(response_text)
+                
+                move = puzzle_session.parse_move(response_text)
+                puzzle_session.submit_move(move)
+
+                if puzzle_session.status != SessionStatus.ACTIVE:
+                    break
+
+                # Add user response to continue conversation
+                user_response = puzzle_session.get_turn_response()
+                puzzle_session.add_user_message(user_response)
+                prompt_messages = puzzle_session.get_prompt_messages(list(board_format))
+            
+            # Log result immediately after each puzzle is completed
+            result = puzzle_session.get_session_result()
             json.dump(result, f)
             f.write('\n')
+            f.flush()  # Ensure data is written to disk immediately
 
 if __name__ == "__main__":
     main()
