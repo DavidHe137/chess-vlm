@@ -29,11 +29,13 @@ class PuzzleSession:
             self.failure_reason = str(e)
         
         self.played_moves.append(move)
-        if move == self.correct_moves[len(self.played_moves) - 1]:
+        move_index = len(self.played_moves) - 1
+        if move == self.correct_moves[move_index]:
             if len(self.played_moves) == len(self.correct_moves):
                 self.status = SessionStatus.CORRECT
             else:
                 assert self.status == SessionStatus.ACTIVE
+                self.played_moves.append(self.correct_moves[move_index + 1])
         else:
             self.status = SessionStatus.INCORRECT
             self.failure_reason = f"Incorrect move: {move}"
