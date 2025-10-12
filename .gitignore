@@ -10,3 +10,5 @@ pngs/
 # Virtual environments
 .venv
 .env
+
+logs/
