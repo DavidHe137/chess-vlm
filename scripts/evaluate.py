@@ -152,8 +152,8 @@ async def async_main(board_format, model_name, client_type, hostname, batch_size
     
     client = setup_client(client_type, hostname)
     
-    # dataset = load_from_disk("data/Lichess/chess-puzzles-600-full-moves-balanced")
-    dataset = load_from_disk("data/Lichess/chess-puzzles-3000-full-moves").select(range(100))
+    dataset = load_from_disk("data/Lichess/chess-puzzles-600-full-moves-balanced").sort("Rating").select(range(100))
+    # dataset = load_from_disk("data/Lichess/chess-puzzles-3000-full-moves").select(range(100))
     puzzles = [Puzzle.from_dataset_row(puzzle) for puzzle in dataset]
     puzzle_sessions = [PuzzleSession(puzzle, prompt_config=prompt_config) for puzzle in puzzles]
     
