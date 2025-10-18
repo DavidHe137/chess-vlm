@@ -102,41 +102,60 @@ class PromptFormatter:
         # Convert string formats to BoardFormat enums
         board_formats = [BoardFormat(fmt) for fmt in board_formats]
         
-        # Format instruction using template
-        instruction = config.instruction_template.format(
-            last_move=moves_played[-1],
-            themes=', '.join(puzzle.themes)
-        )
-        
         side_to_move = puzzle.get_side_to_move()
-        question = config.question_template.format(side_to_move=side_to_move)
         
-        messages = [{"role": "system", "content": config.system_prompt}]
-        
-        # Add in-context examples from config
-        for example in config.in_context_examples:
-            messages.append({"role": "user", "content": example["user"]})
-            messages.append({"role": "assistant", "content": example["assistant"]})
-        
-        # Add instruction message
-        messages.append({"role": "user", "content": instruction})
-        
-        # Add each board format as separate message
-        for fmt in board_formats:
-            if fmt == BoardFormat.PNG:
-                png_image = puzzle.get_board_png()
-                img_base64 = encode_image(png_image)
-                
-                messages.append({
-                    "role": "user", 
-                    "content": [{"type": "image_url", "image_url": {"url": f"data:image/png;base64,{img_base64}"}}]
-                })
-            else:
-                board_repr = puzzle.get_board(fmt)
-                messages.append({"role": "user", "content": f"{fmt.value.upper()}:\n{board_repr}"})
-        
-        # Add final question
-        messages.append({"role": "user", "content": question})
+        # Special handling for kagi format - uses FEN in instruction template
+        if config_name == "kagi":
+            fen = puzzle.get_board(BoardFormat.FEN)
+            instruction = config.instruction_template.format(fen=fen)
+            question = config.question_template.format(side_to_move=side_to_move.lower())
+            
+            messages = [{"role": "system", "content": config.system_prompt}]
+            
+            # Add in-context examples from config
+            for example in config.in_context_examples:
+                messages.append({"role": "user", "content": example["user"]})
+                messages.append({"role": "assistant", "content": example["assistant"]})
+            
+            # For kagi, combine instruction and question into single message
+            combined_message = f"{instruction}\n\n{question}"
+            messages.append({"role": "user", "content": combined_message})
+            
+        else:
+            # Standard format handling
+            instruction = config.instruction_template.format(
+                last_move=moves_played[-1],
+                themes=', '.join(puzzle.themes)
+            )
+            
+            question = config.question_template.format(side_to_move=side_to_move)
+            
+            messages = [{"role": "system", "content": config.system_prompt}]
+            
+            # Add in-context examples from config
+            for example in config.in_context_examples:
+                messages.append({"role": "user", "content": example["user"]})
+                messages.append({"role": "assistant", "content": example["assistant"]})
+            
+            # Add instruction message
+            messages.append({"role": "user", "content": instruction})
+            
+            # Add each board format as separate message
+            for fmt in board_formats:
+                if fmt == BoardFormat.PNG:
+                    png_image = puzzle.get_board_png()
+                    img_base64 = encode_image(png_image)
+                    
+                    messages.append({
+                        "role": "user", 
+                        "content": [{"type": "image_url", "image_url": {"url": f"data:image/png;base64,{img_base64}"}}]
+                    })
+                else:
+                    board_repr = puzzle.get_board(fmt)
+                    messages.append({"role": "user", "content": f"{fmt.value.upper()}:\n{board_repr}"})
+            
+            # Add final question
+            messages.append({"role": "user", "content": question})
         
         messages = coalesce_messages(messages)
         return messages
