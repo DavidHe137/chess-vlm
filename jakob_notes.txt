@@ -1,0 +1,47 @@
+salloc -N1 -t4:00:00 --cpus-per-task 6 --ntasks-per-node=1 --gres=gpu:H200:1 --mem=128000
+
+uv run vllm serve Qwen/Qwen3-VL-8B-Instruct --port=8003 --generation-config vllm
+--repetition-penalty=1.0
+--presence-penalty=2.0
+--top-k=40
+--top-p=1.0
+--temperature=1.0
+--max-model-len=32k
+curl http://atl1-1-03-017-23-0:8003/v1/chat/completions \
+    -H "Content-Type: application/json" \
+    -d '{
+        "model": "Qwen/Qwen3-VL-8B-Instruct",
+        "messages": [
+            {"role": "system", "content": "You are a helpful assistant."},
+            {"role": "user", "content": "Who won the world series in 2020?"}
+        ]
+    }'
+
+uv run scripts/evaluate.py --client_type vllm --model_name Qwen/Qwen3-VL-8B-Instruct --hostname atl1-1-03-017-23-0 --prompt_config cot --board_format fen
+uv run scripts/evaluate.py --client_type openrouter --model_name gpt-5 --prompt_config cot --board_format fen
+
+
+curl https://api.openai.com/v1/chat/completions \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer OPENAI" \
+  -d '{
+  "model": "gpt-5",
+  "messages": [{"role": "user", "content": "what is 4 + 4?"}],
+  "response_format": {
+    "type": "text"
+  },
+  "verbosity": "medium",
+  "reasoning_effort": "medium",
+  "store": false
+}'
+
+# conda create -n verl-v3 python==3.10
+conda activate verl-v3
+cd verl/
+bash scripts/install_vllm_sglang_mcore.sh
+pip install --no-deps -e .
+python examples/data_preprocess/geo3k.py --local_save_dir=data
+
+# we might have to do stuff differently for qwen3_vl-8b ?
+# pip install vllm=0.11.0 
+
