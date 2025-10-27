@@ -19,6 +19,11 @@ dependencies = [
     "openai>=1.0.0",
     "python-dotenv>=1.0.0",
     "anthropic>=0.69.0",
+    "qwen-vl-utils>=0.0.14",
+    "peft>=0.17.1",
+    "trl>=0.24.0",
+    "trackio>=0.7.0",
+    "bitsandbytes>=0.48.1",
 ]
 
 [dependency-groups]

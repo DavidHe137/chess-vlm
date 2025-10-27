@@ -1,4 +1,14 @@
 from huggingface_hub import notebook_login
+from datasets import load_dataset
+from transformers import BitsAndBytesConfig
+import torch
+from transformers import Qwen2VLForConditionalGeneration, Qwen2VLProcessor
+from qwen_vl_utils import process_vision_info
+from peft import LoraConfig, get_peft_model
+from trl import SFTConfig
+import trackio
+from trl import SFTTrainer
+import pdb
 
 system_message = """
 You are a helpful assistant that can answer questions about the image.
@@ -42,33 +52,52 @@ def format_data(sample):
       ]
       }
 
-from datasets import load_dataset
-
 dataset_id = "HuggingFaceM4/ChartQA"
 train_dataset, eval_dataset, test_dataset = load_dataset(dataset_id, split=['train[:10%]', 'val[:10%]', 'test[:10%]'])
 
 train_dataset = [format_data(sample) for sample in train_dataset]
 eval_dataset = [format_data(sample) for sample in eval_dataset]
-test_dataset = [format_data(sample) for sample in test_dataset]
+st_dataset = [format_data(sample) for sample in test_dataset]
 
 
-import torch
-from transformers import Qwen2VLForConditionalGeneration, Qwen2VLProcessor
+print("loading model")
 
 model_id = "Qwen/Qwen2-VL-7B-Instruct"
 
 device = "cuda"
 
+# Load model and tokenizer
+bnb_config = BitsAndBytesConfig(
+    load_in_4bit=True,
+    bnb_4bit_use_double_quant=True,
+    bnb_4bit_quant_type="nf4",
+    bnb_4bit_compute_dtype=torch.bfloat16
+)
 model = Qwen2VLForConditionalGeneration.from_pretrained(
     model_id,
-    device_map=device,
+    device_map="auto",
     torch_dtype=torch.bfloat16,
+    quantization_config=bnb_config
 )
-
 processor = Qwen2VLProcessor.from_pretrained(model_id)
 
+# BitsAndBytesConfig int-4 config
+# Configure LoRA
+peft_config = LoraConfig(
+    lora_alpha=16,
+    lora_dropout=0.05,
+    r=8,
+    bias="none",
+    target_modules=["q_proj", "v_proj"],
+    task_type="CAUSAL_LM",
+)
 
-from qwen_vl_utils import process_vision_info
+# Apply PEFT model adaptation
+peft_model = get_peft_model(model, peft_config)
+
+# Print trainable parameters
+peft_model.print_trainable_parameters()
+
 
 def generate_text_from_sample(model, processor, sample, max_new_tokens=1024, device="cuda"):
     # Prepare the text input by applying the chat template
@@ -108,47 +137,7 @@ def generate_text_from_sample(model, processor, sample, max_new_tokens=1024, dev
 
 # Example of how to call the method with sample:
 output = generate_text_from_sample(model, processor, train_dataset[0])
-output
-
-from transformers import BitsAndBytesConfig
-
-# BitsAndBytesConfig int-4 config
-bnb_config = BitsAndBytesConfig(
-    load_in_4bit=True,
-    bnb_4bit_use_double_quant=True,
-    bnb_4bit_quant_type="nf4",
-    bnb_4bit_compute_dtype=torch.bfloat16
-)
-
-# Load model and tokenizer
-model = Qwen2VLForConditionalGeneration.from_pretrained(
-    model_id,
-    device_map=device,
-    torch_dtype=torch.bfloat16,
-    quantization_config=bnb_config
-)
-processor = Qwen2VLProcessor.from_pretrained(model_id)
-
-
-from peft import LoraConfig, get_peft_model
-
-# Configure LoRA
-peft_config = LoraConfig(
-    lora_alpha=16,
-    lora_dropout=0.05,
-    r=8,
-    bias="none",
-    target_modules=["q_proj", "v_proj"],
-    task_type="CAUSAL_LM",
-)
-
-# Apply PEFT model adaptation
-peft_model = get_peft_model(model, peft_config)
-
-# Print trainable parameters
-peft_model.print_trainable_parameters()
-
-from trl import SFTConfig
+print(output)
 
 # Configure training arguments
 training_args = SFTConfig(
@@ -177,16 +166,12 @@ training_args = SFTConfig(
     report_to="trackio",  # Reporting tool for tracking metrics
 )
 
-import trackio
-
 trackio.init(
     project="qwen2-7b-instruct-trl-sft-ChartQA",
     name="qwen2-7b-instruct-trl-sft-ChartQA",
     config=training_args,
     space_id=training_args.output_dir + "-trackio"
 )
-
-from trl import SFTTrainer
 
 trainer = SFTTrainer(
     model=model,
