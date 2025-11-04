@@ -35,13 +35,15 @@ curl https://api.openai.com/v1/chat/completions \
   "store": false
 }'
 
-# conda create -n verl-v3 python==3.10
-conda activate verl-v3
+# conda create -n verl-v4 python==3.12
+conda activate verl-v4
 cd verl/
-bash scripts/install_vllm_sglang_mcore.sh
+USE_MEGATRON=0 bash scripts/install_vllm_sglang_mcore.sh
 pip install --no-deps -e .
-python examples/data_preprocess/geo3k.py --local_save_dir=data
+pip install -r requirements.txt
+pip install flash-attn==2.7.4.post1 --no-build-isolation
 
+python examples/data_preprocess/geo3k.py --local_save_dir=data
 # we might have to do stuff differently for qwen3_vl-8b ?
 # pip install vllm=0.11.0 
 
