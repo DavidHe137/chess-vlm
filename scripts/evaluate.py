@@ -15,18 +15,6 @@ from src.results_processor import create_results_structure, save_results
 import requests
 from tqdm.auto import tqdm
 
-supported_models = {
-    "openrouter": [
-        "anthropic/claude-sonnet-4.5",
-        "meta-llama/llama-4-maverick:free",
-    ],
-    "vllm": [
-        "Qwen/Qwen2.5-VL-3B-Instruct",
-        "Qwen/Qwen3-VL-30B-A3B-Instruct",
-        "Qwen/Qwen3-VL-30B-A3B-Thinking"
-    ]
-}
-
 def setup_client(client_type, hostname):
     if client_type == "openrouter":
         # OpenRouter configuration
@@ -145,10 +133,6 @@ async def async_main(board_format, model_name, client_type, hostname, batch_size
     
     # Setup logging
     logger, log_path = setup_evaluation_logging(model_name, prompt_config, board_format)
-    
-    if model_name not in supported_models[client_type]:
-        logger.error(f"Model {model_name} not supported for client type {client_type}")
-        raise click.ClickException(f"Model {model_name} not supported for client type {client_type}")
     
     client = setup_client(client_type, hostname)
     

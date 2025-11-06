@@ -14,20 +14,9 @@ This project evaluates how well Vision Language Models can solve chess puzzles b
 - [uv](https://docs.astral.sh/uv/) package manager
 
 ### Installation
-
-1. Install dependencies:
-   ```bash
-   uv sync
-   ```
-
-2. Run the analysis scripts:
-   ```bash
-   # Prepare the dataset
-   uv run ./scripts/prepare_data.py
-   
-   # Run evaluation
-   uv run ./scripts/run_eval.py
-   ```
+```bash
+uv sync
+```
 
 **Note:** Always run scripts from the project root directory.
 
@@ -39,14 +28,6 @@ This project uses the [Lichess chess puzzles dataset](https://huggingface.co/dat
 from datasets import load_dataset
 dataset = load_dataset("Lichess/chess-puzzles", split="train")
 ```
-
-We create our own dataset. We consider two modes, one where the VLM needs to do think one move ahead and one when its not. To make the move in the board we use the flag `--make_first_move`. The following command creates the dataset:
-
-```bash
-uv run ./scripts/prepare_data.py --make_first_move 
-```
-
-The resulting dataset is separated into many classes of problems and each problem has a different prompt to guide the VLM. Some problems require more geometric interactions and we wish to see if these are important or not.
 
 ### Puzzle Structure
 
@@ -66,32 +47,143 @@ Each puzzle contains the following fields:
 }
 ```
 
-### Generating Board Images
+## Evaluation
 
-Convert FEN positions to visual board representations:
+The evaluation process uses `scripts/evaluate.py` to test Vision Language Models on chess puzzles. For local model evaluation using vLLM, the process requires two steps:
 
-```python
-import chessboard_image as cbi
+### Step 1: Start vLLM Server (GPU Node)
 
-# Generate a PIL image of the chess board
-board_image = cbi.generate_pil(dataset[0]["FEN"], size=400)
+Allocate a GPU node and start the vLLM server:
+
+```bash
+uv run vllm serve <model_name>
 ```
 
-## Project Structure
+This starts a vLLM server on port 8000 that the evaluation script will connect to.
 
+### Step 2: Run Evaluation (Another Node)
+
+On a separate node, run the evaluation script:
+
+```bash
+uv run scripts/evaluate.py \
+    --client_type vllm \
+    --model_name <model_name> \
+    --hostname <gpu_node_hostname> \
+    --prompt_config basic \
+    --board_format fen
 ```
-chess-vlm/
-├── scripts/
-│   ├── prepare_data.py    # Data preprocessing
-│   └── run_eval.py        # VLM evaluation
-├── notebooks/
-│   └── exploration.ipynb  # Analysis and visualization
-├── results/
-│   ├── puzzles.json       # Processed puzzle data
-│   └── results.json       # Evaluation results
-└── README.md
+
+### Evaluation Options
+
+- `--client_type`: Choose `"openrouter"` or `"vllm"` (required)
+- `--model_name`: Model identifier (required)
+- `--hostname`: Hostname of the GPU node running vLLM (required for `vllm` client type)
+- `--prompt_config`: Prompt configuration name (corresponds to a YAML file in `configs/`), e.g., `"basic"` or `"cot"` (default: `"basic"`)
+- `--board_format`: Board representation format(s). Can specify multiple times. Options: `"ascii"`, `"fen"`, `"pgn"`, `"png"` (required)
+- `--batch_size`: Number of concurrent puzzle evaluations (default: 100)
+
+### Examples
+
+**Single format (text only):**
+```bash
+# On GPU node
+uv run vllm serve Qwen/Qwen2.5-VL-3B-Instruct
+
+# On another node
+uv run scripts/evaluate.py \
+    --client_type vllm \
+    --model_name Qwen/Qwen2.5-VL-3B-Instruct \
+    --hostname atl1-1-02-003-20-1 \
+    --prompt_config basic \
+    --board_format fen
 ```
 
-## Results
+**Combined formats (image + text):**
+```bash
+# On another node
+uv run scripts/evaluate.py \
+    --client_type vllm \
+    --model_name Qwen/Qwen2.5-VL-3B-Instruct \
+    --hostname atl1-1-02-003-20-1 \
+    --prompt_config basic \
+    --board_format png \
+    --board_format fen
+```
 
-Evaluation results and processed data are stored in the `results/` directory for analysis and visualization.
+The evaluation script processes puzzles asynchronously, logs progress, and saves results to a timestamped file with detailed metrics including accuracy, parse errors, and illegal moves.
+
+### Board Formats
+
+The `--board_format` option can be specified multiple times to include both image and text representations in the prompt. Each format is added as a separate message:
+
+- **`png`**: Visual board representation as an image
+- **`fen`**: Forsyth-Edwards Notation (e.g., `r6k/pp2r2p/4Rp1Q/3p4/8/1N1P2R1/PqP2bPP/7K b - - 0 24`)
+- **`ascii`**: ASCII art board representation
+- **`pgn`**: Portable Game Notation (move history)
+
+**Examples:**
+
+```bash
+# Single format (image only)
+--board_format png
+
+# Single format (text only)
+--board_format fen
+
+# Multiple formats (image + text)
+--board_format png --board_format fen
+
+# Multiple formats (image + multiple text formats)
+--board_format png --board_format fen --board_format ascii
+```
+
+When multiple formats are specified, the model receives all of them in sequence, allowing it to use both visual and textual information to solve the puzzle.
+
+## Prompt Configurations
+
+Prompt configurations are defined in YAML files in the `configs/` directory. Each configuration file specifies:
+
+- **System prompt**: Instructions for the model
+- **Instruction template**: Template for puzzle instructions (supports `{last_move}` and `{themes}` placeholders)
+- **Question template**: Template for the move question (supports `{side_to_move}` placeholder)
+- **Model parameters**: Configuration for model inference (e.g., `max_completion_tokens`, `temperature`)
+- **In-context examples**: Optional few-shot examples
+- **Move parsing**: Format and tags for extracting moves from responses
+
+### Available Configurations
+
+- `basic`: Simple prompt without chain-of-thought reasoning
+- `cot`: Chain-of-thought reasoning prompt
+- `detailed_cot`: Extended chain-of-thought with more detailed instructions
+- `few_shot`: Few-shot learning with in-context examples
+- `kagi`: Custom configuration
+
+### Creating Custom Configurations
+
+To create a new prompt configuration, add a YAML file to the `configs/` directory with the following structure:
+
+```yaml
+name: "my_config"
+description: "Description of the configuration"
+
+system_prompt: |
+  SYSTEM: You are an expert chess player...
+
+instruction_template: |
+  This is a chess puzzle. Your opponent just played {last_move}...
+
+question_template: |
+  {side_to_move} to move. What is the next best move?
+
+model_params:
+  max_completion_tokens: 1000
+  temperature: 0.0
+
+in_context_examples: []
+
+move_format: "algebraic"
+move_tags: ["<move>", "</move>"]
+```
+
+The configuration can then be used by specifying its name (without the `.yaml` extension) in the `--prompt_config` option.
