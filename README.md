@@ -77,6 +77,18 @@ import chessboard_image as cbi
 board_image = cbi.generate_pil(dataset[0]["FEN"], size=400)
 ```
 
+### Serving a model
+
+```{bash}
+ uv run vllm serve Qwen/Qwen2-VL-7B-Instruct     --enable-lora     --lora-modules chess-lora=qwen2-7b-instruct-trl-sft-ChartQA/checkpoint-140/
+```
+
+### Evaluating the model
+
+```{bash}
+uv run scripts/evaluate.py --client_type vllm --model_name Qwen/Qwen2-VL-7B-Instruct --hostname atl1-1-03-017-16-0 --prompt_config cot --board_format pgn
+```
+
 ## Project Structure
 
 ```

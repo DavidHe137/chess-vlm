@@ -1,0 +1,2018 @@
+[
+  {
+    "id": 0,
+    "lichess_id": "01rWZ",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g2h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . . . . k\np p p . . B . .\n. . . p . b . p\n. . . . p . . r\n. . P . P p . .\nP . . P . n . .\n. P . . . P R q\nR . . . . Q . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g2h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h5h2",
+    "rating": 951,
+    "png-file-name": "pngs/arabianMate/puzzle_0.png"
+  },
+  {
+    "id": 1,
+    "lichess_id": "02SG5",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . q . . . k\n. . . b . p r Q\n. . p p . N n .\np p n P p . . .\n. . P . P . P .\n. . N . . P . .\nP P . . . . . .\nR . . . K B . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h1h7",
+    "rating": 1139,
+    "png-file-name": "pngs/arabianMate/puzzle_1.png"
+  },
+  {
+    "id": 5,
+    "lichess_id": "07PMJ",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d6c5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . .\n. R . . . . . .\n. . . Q . . p .\np . p P . . P .\nk . p . . N . .\nP . n . . . . .\n. . r . . . . .\nK . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d6c5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c2a2",
+    "rating": 1127,
+    "png-file-name": "pngs/arabianMate/puzzle_5.png"
+  },
+  {
+    "id": 7,
+    "lichess_id": "0AOxo",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g8h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . b . . . q k\np . . n . p . R\n. . p p . N . .\n. p . . . . . .\n. . . P . r . .\n. . . B . N . .\nP P P . . P P .\n. . K . . . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g8h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h1h7",
+    "rating": 1139,
+    "png-file-name": "pngs/arabianMate/puzzle_7.png"
+  },
+  {
+    "id": 11,
+    "lichess_id": "0GBBE",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h7h8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . . b . .\np . . . . P . k\nb p . . R N . p\n. . p . . . . .\n. . . r . . R .\n. . . . . . . .\nP P . . . . P P\n. . . . . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h7h8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g4g8",
+    "rating": 1021,
+    "png-file-name": "pngs/arabianMate/puzzle_11.png"
+  },
+  {
+    "id": 14,
+    "lichess_id": "0J9yJ",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . b . . . . k\n. . p . q p r Q\np . . p . N . .\n. p n . . . P R\n. . . . P P . .\n. . . . . . . .\nP P P . . . . .\n. . K R . . N .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h5h7",
+    "rating": 578,
+    "png-file-name": "pngs/arabianMate/puzzle_14.png"
+  },
+  {
+    "id": 20,
+    "lichess_id": "0RcGS",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f2g3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . R .\n. . . . . . . .\n. p . . . . . r\n. B . . k . . .\n. . P . . . p .\n. . . . . n p .\n. . . . . P . P\n. . . . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f2g3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h6h2",
+    "rating": 805,
+    "png-file-name": "pngs/arabianMate/puzzle_20.png"
+  },
+  {
+    "id": 23,
+    "lichess_id": "0WaSZ",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c3h3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. r . . . n . k\n. . . . . p . p\n. . . . . N . .\np . . . . . . .\n. . . p . . . .\n. P r . . . . Q\nP . . K . . R P\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c3h3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g2g8",
+    "rating": 858,
+    "png-file-name": "pngs/arabianMate/puzzle_23.png"
+  },
+  {
+    "id": 56,
+    "lichess_id": "1iHiV",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . q . . . k\np p . . . p r Q\n. . p . . N . .\n. . . n . . . R\n. . . P . . . .\n. . . . . . . .\nP P P . . . P P\n. . . R . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h5h7",
+    "rating": 801,
+    "png-file-name": "pngs/arabianMate/puzzle_56.png"
+  },
+  {
+    "id": 64,
+    "lichess_id": "1v0yl",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e8e6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . r . . k\n. p . . . p . p\np . . p . N . p\n. . . . r . . .\n. . P . . . R .\nP P . B . . P .\n. . . . . . K .\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e8e6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g4g8",
+    "rating": 528,
+    "png-file-name": "pngs/arabianMate/puzzle_64.png"
+  },
+  {
+    "id": 78,
+    "lichess_id": "2ASwE",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g2h3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . r . k .\n. . . . . p p .\n. p . . . . . p\n. . . . . . r .\n. . . . p . . .\n. P P . P n . q\nP . . . Q P B .\n. . . R B . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g2h3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g5g1",
+    "rating": 400,
+    "png-file-name": "pngs/arabianMate/puzzle_78.png"
+  },
+  {
+    "id": 90,
+    "lichess_id": "2X8TA",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g5e4. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . r . k\n. p . R . . . p\np . . . . N p .\nP . . . . . n .\n. P . . R . . .\n. . . . . . P P\nr . . . . P . .\n. . . . . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g5e4. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d7h7",
+    "rating": 811,
+    "png-file-name": "pngs/arabianMate/puzzle_90.png"
+  },
+  {
+    "id": 91,
+    "lichess_id": "2eE8a",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g1h1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . .\nQ . . . . . R .\n. . P . p . . p\n. . . . . p . k\n. . . P p P . .\n. . . . . n . .\nP . . r . . . .\n. . . . R . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g1h1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d2h2",
+    "rating": 944,
+    "png-file-name": "pngs/arabianMate/puzzle_91.png"
+  },
+  {
+    "id": 93,
+    "lichess_id": "2hI94",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g7c7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . .\nN . p . . . Q p\n. . . . . n . .\n. . . . . k . .\n. . . . . . . .\n. . . . . n P .\nP P . . . r . P\n. . . R . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g7c7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f2h2",
+    "rating": 909,
+    "png-file-name": "pngs/arabianMate/puzzle_93.png"
+  },
+  {
+    "id": 98,
+    "lichess_id": "2oalS",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f4h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . .\np p . . . . . k\n. . . P . . . .\n. . . . . . . p\n. P . . . B . .\nP . . . . n . P\n. . . . . r . r\n. . . R . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f4h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f2h2",
+    "rating": 961,
+    "png-file-name": "pngs/arabianMate/puzzle_98.png"
+  },
+  {
+    "id": 101,
+    "lichess_id": "2rJRP",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g6f5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . r n . k\n. p . . . p . p\n. . . . . N p .\n. . p . . Q . .\n. . B P . P . .\nq P . . . P . .\nP . K . . . . P\nR . . . . . R .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g6f5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g1g8",
+    "rating": 1028,
+    "png-file-name": "pngs/arabianMate/puzzle_101.png"
+  },
+  {
+    "id": 110,
+    "lichess_id": "3AgHh",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g7g8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . n R . . . k\n. b . . . p r .\n. P p . . N p .\np p q . . . P p\n. . . . P . . P\n. . . . . . . .\nB P P . . P . .\n. . . . R . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g7g8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d8g8",
+    "rating": 654,
+    "png-file-name": "pngs/arabianMate/puzzle_110.png"
+  },
+  {
+    "id": 133,
+    "lichess_id": "3keca",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . . k\n. . . b q . r Q\np . . . p N . .\n. p . p P p . .\n. . . P . . . P\nP . . B P . R .\n. P . n . . P .\n. . . . . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g3g8",
+    "rating": 697,
+    "png-file-name": "pngs/arabianMate/puzzle_133.png"
+  },
+  {
+    "id": 140,
+    "lichess_id": "3smfW",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e3c5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . r . k\np . . . . . p .\n. . P . . . . r\n. . q . p . . .\n. . . . . . . .\nP . . . Q n P .\nB . . . . P . P\n. R . . . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e3c5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h6h2",
+    "rating": 1106,
+    "png-file-name": "pngs/arabianMate/puzzle_140.png"
+  },
+  {
+    "id": 147,
+    "lichess_id": "424JN",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f5h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . r . . . . k\n. R . . . . . R\n. . . p . N . P\n. . r P . b p .\n. . . . . . . .\n. . . . . P K .\n. . . . . . . .\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f5h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "b7h7",
+    "rating": 688,
+    "png-file-name": "pngs/arabianMate/puzzle_147.png"
+  },
+  {
+    "id": 151,
+    "lichess_id": "47jZn",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f7g6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . r . k\n. p . . . p . p\np . . p . N R .\n. . . . . . . .\n. . . . . . . R\n. . . . . . . P\nP P . . . P P K\n. . . r . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f7g6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h4h7",
+    "rating": 523,
+    "png-file-name": "pngs/arabianMate/puzzle_151.png"
+  },
+  {
+    "id": 154,
+    "lichess_id": "4DPPJ",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . . k\np . p . . p r Q\n. . p . b N r .\n. . . . P . . .\nP . . P . . . R\n. . . . . . P .\n. P . q . . . P\nR . . . . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h4h7",
+    "rating": 548,
+    "png-file-name": "pngs/arabianMate/puzzle_154.png"
+  },
+  {
+    "id": 162,
+    "lichess_id": "4UoRE",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f5g5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . b . . . . k\n. p p p n R . .\n. p . . . N . .\n. . . B . q Q p\n. . . . . . . .\n. . . . . . P .\nP P P . . . . P\n. . . . . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f5g5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f7h7",
+    "rating": 1231,
+    "png-file-name": "pngs/arabianMate/puzzle_162.png"
+  },
+  {
+    "id": 167,
+    "lichess_id": "4Zv7s",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h7f8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\nr . . k . b . .\np p . . . p . N\n. . . . . . . r\n. . . . . b . .\n. . . . . . . .\n. B . . . n . .\nP P P . . P P P\nR N . . . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h7f8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h6h2",
+    "rating": 611,
+    "png-file-name": "pngs/arabianMate/puzzle_167.png"
+  },
+  {
+    "id": 168,
+    "lichess_id": "4cJPe",
+    "prompt-with-board": "You are a chess expert. Your opponent just played b8f8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. r . . . . . k\n. . . . . R . .\n. . . . p N n p\n. . . . . p . .\n. . . . . . . .\n. . . . . . P .\n. . . K . . . .\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played b8f8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f7h7",
+    "rating": 1036,
+    "png-file-name": "pngs/arabianMate/puzzle_168.png"
+  },
+  {
+    "id": 180,
+    "lichess_id": "4lQbq",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g6h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . r . . r . k\np . . . . p . Q\n. n . . p N q .\n. . . . . . . .\n. . . . . . . .\n. . . . p . . R\nP P . . . P P P\n. . . R . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g6h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h3h7",
+    "rating": 983,
+    "png-file-name": "pngs/arabianMate/puzzle_180.png"
+  },
+  {
+    "id": 190,
+    "lichess_id": "4xQ0K",
+    "prompt-with-board": "You are a chess expert. Your opponent just played a2a1q. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . r . . . k\n. . . . . . R .\n. . . . p N . .\n. . . p P . . .\n. . . . . . . .\n. . P . . . . .\np . . . . P . P\n. . . . . . R K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played a2a1q. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g7h7",
+    "rating": 1169,
+    "png-file-name": "pngs/arabianMate/puzzle_190.png"
+  },
+  {
+    "id": 191,
+    "lichess_id": "4xRlr",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g5e5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . . k\np p R . . . . p\n. . . . p N . .\n. b . . P . r .\n. . . . . . . .\nP . . . . . . .\n. . . . . . P P\n. . . . . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g5e5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c7h7",
+    "rating": 1093,
+    "png-file-name": "pngs/arabianMate/puzzle_191.png"
+  },
+  {
+    "id": 194,
+    "lichess_id": "51SOm",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e4f6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . r . . k\n. . . . . . . p\np B . . . q p Q\nP p . . . . . .\n. b . . N . . .\n. P . . R n . P\n. . r . . . . .\nR . . . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e4f6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c2h2",
+    "rating": 1107,
+    "png-file-name": "pngs/arabianMate/puzzle_194.png"
+  },
+  {
+    "id": 195,
+    "lichess_id": "51zHS",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d1d4. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . . . . k\n. p R . . . . p\np . . . . . p .\nP . . . n . . .\n. . . b Q . . .\n. . N . . n . .\n. P . . . r . P\n. . . R . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d1d4. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f2h2",
+    "rating": 1304,
+    "png-file-name": "pngs/arabianMate/puzzle_195.png"
+  },
+  {
+    "id": 206,
+    "lichess_id": "5Jh8O",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h7h8q. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . .\n. . . k . . . P\n. . . . p . . .\n. . . p B p . .\n. . b P . . . .\n. r n . P B . .\n. . R . . P P .\nK . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h7h8q. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "b3b1",
+    "rating": 1063,
+    "png-file-name": "pngs/arabianMate/puzzle_206.png"
+  },
+  {
+    "id": 220,
+    "lichess_id": "5dCOG",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f1h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . k .\n. . . . . p p .\np . . . . . . .\n. p . p . . . p\n. . . . . . P .\n. . . . Q n . P\nP P r . . . . q\n. . . . R N . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f1h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c2h2",
+    "rating": 776,
+    "png-file-name": "pngs/arabianMate/puzzle_220.png"
+  },
+  {
+    "id": 243,
+    "lichess_id": "6WA4K",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g2h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. r . . . k . .\np . p . . . . p\n. . . . . . . .\n. . . . p . r .\n. . . . P . . .\n. . N . . n . .\nP P . . Q P R q\n. . . . . . R K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g2h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g5g1",
+    "rating": 710,
+    "png-file-name": "pngs/arabianMate/puzzle_243.png"
+  },
+  {
+    "id": 293,
+    "lichess_id": "8GutK",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g2h3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . k . . . . .\np p p . . . . .\n. . . . p . . .\n. . . . . . p .\n. . P . N . . .\n. P . . P n P r\nP . r . . . B .\nR . . . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g2h3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c2h2",
+    "rating": 864,
+    "png-file-name": "pngs/arabianMate/puzzle_293.png"
+  },
+  {
+    "id": 298,
+    "lichess_id": "8LHVu",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e7g6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . . k\n. . p . n . . p\n. . r . . N N .\n. . . . P . . .\n. b . . . . . .\n. P . . . . . R\n. r . . . . . .\n. . . K . . R .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e7g6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h3h7",
+    "rating": 1004,
+    "png-file-name": "pngs/arabianMate/puzzle_298.png"
+  },
+  {
+    "id": 308,
+    "lichess_id": "8eSbi",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h3f3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . . k\nR . . . . . . p\n. . . . . N p .\n. . . . K n . .\n. . . . . . . .\n. . . . . P . r\n. . . . . . . .\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h3f3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "a7h7",
+    "rating": 1209,
+    "png-file-name": "pngs/arabianMate/puzzle_308.png"
+  },
+  {
+    "id": 311,
+    "lichess_id": "8i2Fr",
+    "prompt-with-board": "You are a chess expert. Your opponent just played b7a7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . k N . . . .\np R . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . n . .\n. . r . . . . .\n. . . . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played b7a7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c2h2",
+    "rating": 1183,
+    "png-file-name": "pngs/arabianMate/puzzle_311.png"
+  },
+  {
+    "id": 324,
+    "lichess_id": "8zaAU",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h2h1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . R . . . . .\np . . . . . r .\n. p . . . . . .\n. . . . . p . .\n. P . . . k . .\nP . . . . n . P\n. . . . . . . K\n. . . . . B . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h2h1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g7g1",
+    "rating": 719,
+    "png-file-name": "pngs/arabianMate/puzzle_324.png"
+  },
+  {
+    "id": 363,
+    "lichess_id": "A808P",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e7e6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . r q . . . k\np p . . r . . p\n. . . . Q N p .\n. . b . P . . .\n. . . . . P . .\n. P . . p . . R\nP . . . . . P P\nR . . . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e7e6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h3h7",
+    "rating": 569,
+    "png-file-name": "pngs/arabianMate/puzzle_363.png"
+  },
+  {
+    "id": 378,
+    "lichess_id": "AWici",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g2h3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . .\np p . . . . k .\n. . p . . p . p\n. . . . . . p .\n. P P . p . . .\nP . Q . P n P q\n. . . . . r B P\n. . . R . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g2h3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f2h2",
+    "rating": 845,
+    "png-file-name": "pngs/arabianMate/puzzle_378.png"
+  },
+  {
+    "id": 390,
+    "lichess_id": "AoDe8",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d3f4. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . B . k .\n. p . . . . p .\np . . . . p . .\nP . B b . . . p\n. . . . . n . .\nR . . N . n . .\n. . . . . . r P\n. . . . . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d3f4. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g2h2",
+    "rating": 1104,
+    "png-file-name": "pngs/arabianMate/puzzle_390.png"
+  },
+  {
+    "id": 391,
+    "lichess_id": "ArPZw",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g1g3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . k .\n. . . . . . . p\np . . . . . p .\n. . P P . N . .\n. . . . . . . .\nP . . . . n . P\n. . . . r . . .\n. . . . . . R K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g1g3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "e2h2",
+    "rating": 1284,
+    "png-file-name": "pngs/arabianMate/puzzle_391.png"
+  },
+  {
+    "id": 399,
+    "lichess_id": "B4fdA",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g2h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . r k .\n. p . . . . p p\np . p . . . . r\n. . . P p . . .\n. . . . Q . . .\n. P . P . n N .\n. P . . . P R q\n. . R . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g2h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h6h2",
+    "rating": 858,
+    "png-file-name": "pngs/arabianMate/puzzle_399.png"
+  },
+  {
+    "id": 405,
+    "lichess_id": "BD37r",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f2h3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . k . . . . .\n. p b . . . . .\np . . . . . . p\n. . . . . N . .\n. . p . . . P .\n. . P . . n . r\nP r . . . N . .\nR . . . . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f2h3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "b2h2",
+    "rating": 1079,
+    "png-file-name": "pngs/arabianMate/puzzle_405.png"
+  },
+  {
+    "id": 407,
+    "lichess_id": "BHOXV",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h6g5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . . . . k\np . . . . R . .\n. . p . . N p p\n. . P . . n B .\n. P . . . P . .\n. . b . . . . K\n. . . . . . . .\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h6g5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f7h7",
+    "rating": 977,
+    "png-file-name": "pngs/arabianMate/puzzle_407.png"
+  },
+  {
+    "id": 440,
+    "lichess_id": "BywDk",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f2a7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . .\nb . p . k . . .\np . . . . . q .\n. p . . p . . .\n. P P . P . . .\n. . . P . n . r\nP . . . . Q . N\n. . . . R R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f2a7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h3h2",
+    "rating": 1069,
+    "png-file-name": "pngs/arabianMate/puzzle_440.png"
+  },
+  {
+    "id": 441,
+    "lichess_id": "Bzs8F",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g7h6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . r . r k\n. . . . . R p .\n. . . . . N . Q\n. p P . P . . P\np P q . . . . .\n. . . . . . P .\n. . . . . . . .\n. . . . . N K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g7h6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f7h7",
+    "rating": 677,
+    "png-file-name": "pngs/arabianMate/puzzle_441.png"
+  },
+  {
+    "id": 458,
+    "lichess_id": "CUHdI",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h1d1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . .\n. p . . . . . .\np . . . . . k .\n. . . . . R . .\n. . . . . . P .\nP P n . P . . .\n. . r . . P . .\nK . . r . . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h1d1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c2a2",
+    "rating": 1066,
+    "png-file-name": "pngs/arabianMate/puzzle_458.png"
+  },
+  {
+    "id": 471,
+    "lichess_id": "Cmu4z",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e2d3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . R . . .\n. . p . . . . k\n. . . . P . . .\np p r . . . . .\n. . P . R . . P\n. P n . . P . .\n. . . r B . . .\nK . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e2d3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d2a2",
+    "rating": 1300,
+    "png-file-name": "pngs/arabianMate/puzzle_471.png"
+  },
+  {
+    "id": 485,
+    "lichess_id": "DB7Fw",
+    "prompt-with-board": "You are a chess expert. Your opponent just played a3a7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nk . . . . . . .\nR . . R . . p .\n. . N . . . . p\n. . P p . . . .\n. . . P n . . .\nr . . . P . r .\n. . . . . . . .\n. . . . K . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played a3a7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d7a7",
+    "rating": 1169,
+    "png-file-name": "pngs/arabianMate/puzzle_485.png"
+  },
+  {
+    "id": 489,
+    "lichess_id": "DHxzL",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f8f7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . r . k\np . p . . N . p\n. p . . . N . .\nn . . . P p . .\n. . . r . . . .\n. . . . . . R .\nP . . . . P . P\n. . . . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f8f7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g3g8",
+    "rating": 853,
+    "png-file-name": "pngs/arabianMate/puzzle_489.png"
+  },
+  {
+    "id": 496,
+    "lichess_id": "DW0kw",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c4d6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nk . . . . . . .\n. . . . R . . .\n. . N . . . . p\n. . . . . . r .\n. . n . . . . .\n. . K . . . . n\nP . . . . P . .\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c4d6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "e7a7",
+    "rating": 988,
+    "png-file-name": "pngs/arabianMate/puzzle_496.png"
+  },
+  {
+    "id": 513,
+    "lichess_id": "EN2OF",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e6d5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . r . k\n. . p . . . b p\nQ . . . B . p .\n. . . q p . . .\nP . . . . . . .\n. . N P . n P .\nP r . . . . . P\n. . . . . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e6d5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "b2h2",
+    "rating": 786,
+    "png-file-name": "pngs/arabianMate/puzzle_513.png"
+  },
+  {
+    "id": 519,
+    "lichess_id": "EUTO2",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c1a2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . r k .\n. p p . . p p p\np . . . b . . .\nr . . . Q . . .\n. . . p . . P .\n. P n P . P . P\nq . P . . . . .\nK . N R . B . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c1a2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "a5a2",
+    "rating": 838,
+    "png-file-name": "pngs/arabianMate/puzzle_519.png"
+  },
+  {
+    "id": 530,
+    "lichess_id": "Er3VW",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d8c8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nk . . r . . . .\n. . . . . R p p\nP . N . p . . .\n. . . p . . . .\n. . . . . . . .\n. . . b . . . .\n. . . . . K P P\nb . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d8c8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f7a7",
+    "rating": 1063,
+    "png-file-name": "pngs/arabianMate/puzzle_530.png"
+  },
+  {
+    "id": 541,
+    "lichess_id": "FEYQN",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e1e2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . . k\n. R . . . . . .\n. . . . . N p p\n. . . P . . . .\n. . . q . p . .\n. . . . . K . .\n. b . . B P . P\n. . . . r . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e1e2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "b7h7",
+    "rating": 1077,
+    "png-file-name": "pngs/arabianMate/puzzle_541.png"
+  },
+  {
+    "id": 545,
+    "lichess_id": "FIl19",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f1g1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . r k\np p p . . . . p\n. . . p . . . .\n. . . P . B . .\n. . P . . . . .\n. . N . . n . P\nP . . Q . . . .\n. . . . . R q K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f1g1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g8g1",
+    "rating": 873,
+    "png-file-name": "pngs/arabianMate/puzzle_545.png"
+  },
+  {
+    "id": 557,
+    "lichess_id": "Fkrff",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f2h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. b . . . r . k\n. . . . Q . p p\n. . . . . . . .\n. . . . . p . .\n. P b . . P . .\nP . . . P n P .\n. . . r . R . q\nR . . . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f2h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d2h2",
+    "rating": 1115,
+    "png-file-name": "pngs/arabianMate/puzzle_557.png"
+  },
+  {
+    "id": 564,
+    "lichess_id": "G50mP",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . . . . k\np p . . . . q Q\n. . b . . N . .\n. . . . . p . .\n. . P . . . . .\nP . . B . . . .\n. P . . . P . .\n. . K . . . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h1h7",
+    "rating": 812,
+    "png-file-name": "pngs/arabianMate/puzzle_564.png"
+  },
+  {
+    "id": 572,
+    "lichess_id": "GJjIX",
+    "prompt-with-board": "You are a chess expert. Your opponent just played a7a8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. r . . . . . r\nk . . . . R . .\np . N . . p . p\n. . P . b . p .\n. . . . . . . .\n. . . . . . . .\nP P . . . P P P\n. . . . . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played a7a8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f7a7",
+    "rating": 774,
+    "png-file-name": "pngs/arabianMate/puzzle_572.png"
+  },
+  {
+    "id": 574,
+    "lichess_id": "GKYgr",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g7h6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . r k\n. . p . . . p .\np p . p . N . Q\n. . . . p . . .\n. . P . q n . P\nP . . . . . . .\n. P P . . . R .\n. K . . . . R .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g7h6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g2g8",
+    "rating": 820,
+    "png-file-name": "pngs/arabianMate/puzzle_574.png"
+  },
+  {
+    "id": 591,
+    "lichess_id": "GqIDW",
+    "prompt-with-board": "You are a chess expert. Your opponent just played b7b1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\nQ . R . . . . .\n. R . . . p p k\n. . . . p . . p\n. . . . . . . .\n. . . . . n . .\n. . . . . n . P\n. . P . . . r .\n. . . . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played b7b1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g2h2",
+    "rating": 1145,
+    "png-file-name": "pngs/arabianMate/puzzle_591.png"
+  },
+  {
+    "id": 594,
+    "lichess_id": "GyyiH",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c6e5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . . k\np . q b . R . .\n. p n . p N . p\n. . p . P . . .\n. . P . . . . .\n. . P B . . . .\nP . . . . . K P\n. . . . R . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c6e5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f7h7",
+    "rating": 1117,
+    "png-file-name": "pngs/arabianMate/puzzle_594.png"
+  },
+  {
+    "id": 607,
+    "lichess_id": "HIYK9",
+    "prompt-with-board": "You are a chess expert. Your opponent just played b1a1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . .\np . . . . k . .\n. . . B . . . .\n. . . . . . . .\n. . . . . . . .\n. R n . . . . .\nP . . . . . r .\n. K . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played b1a1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g2a2",
+    "rating": 1254,
+    "png-file-name": "pngs/arabianMate/puzzle_607.png"
+  },
+  {
+    "id": 626,
+    "lichess_id": "Hsgn7",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d7d3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . .\n. . . Q . . . .\n. . . . . p . .\n. . . . . . . .\n. P . . . . r p\n. P . . . n . k\n. B P . . . . .\n. . . . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d7d3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g4g1",
+    "rating": 561,
+    "png-file-name": "pngs/arabianMate/puzzle_626.png"
+  },
+  {
+    "id": 640,
+    "lichess_id": "ILYlC",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h6h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. r . . . r . k\n. . p R . . . Q\n. . . . . N p q\n. . . . . . . .\n. . P . . . . .\nb p . . . . . P\n. . . . . P P .\n. . . . R . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h6h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d7h7",
+    "rating": 1021,
+    "png-file-name": "pngs/arabianMate/puzzle_640.png"
+  },
+  {
+    "id": 641,
+    "lichess_id": "INJAp",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g7h6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . n . . . . k\n. R . . . . p .\np . b . . N . Q\nq . . . p . . .\nP . . . P . P P\n. . . . . . . .\n. . . . . P . .\n. . . . . B K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g7h6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "b7h7",
+    "rating": 595,
+    "png-file-name": "pngs/arabianMate/puzzle_641.png"
+  },
+  {
+    "id": 664,
+    "lichess_id": "IzrUa",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c3d5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . .\np . . . . . k p\n. . Q . . . . .\n. P . . . p . .\nP . . . . . p .\n. . N . . n P .\n. . . r . . . P\n. . R . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c3d5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d2h2",
+    "rating": 980,
+    "png-file-name": "pngs/arabianMate/puzzle_664.png"
+  },
+  {
+    "id": 670,
+    "lichess_id": "JDehI",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h5g4. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . b . . . . k\n. . R . . . . .\n. . . p . N p .\n. . . . . q . p\n. . . . p . N .\np . . . P . . P\nP . . . . . . .\nK R . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h5g4. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c7h7",
+    "rating": 962,
+    "png-file-name": "pngs/arabianMate/puzzle_670.png"
+  },
+  {
+    "id": 676,
+    "lichess_id": "JMMs2",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e7e6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . . n . k\np p b . r p . .\n. . p . . N . .\n. . . . . . . .\n. . . P . . R .\n. . . B B . . .\nP P . K . P . P\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e7e6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g4g8",
+    "rating": 1048,
+    "png-file-name": "pngs/arabianMate/puzzle_676.png"
+  },
+  {
+    "id": 680,
+    "lichess_id": "JTM0l",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g7h6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. r . . . . . k\n. b . . . R b .\np . p . p N p Q\n. . . . P . . .\n. . P . . . . .\n. . . . . . . .\n. q . . . P P P\n. . . . . R K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g7h6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f7h7",
+    "rating": 949,
+    "png-file-name": "pngs/arabianMate/puzzle_680.png"
+  },
+  {
+    "id": 694,
+    "lichess_id": "JnSDs",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g7a7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nk . . . . . . .\nQ . . . . . r .\n. p N q . . . .\n. P . p . p . b\n. . . P . P . p\n. . . . P . p P\n. . . . . . P .\nR . . . . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g7a7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "a1a7",
+    "rating": 921,
+    "png-file-name": "pngs/arabianMate/puzzle_694.png"
+  },
+  {
+    "id": 696,
+    "lichess_id": "JoVxK",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e5d3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . r . r . k\np b p . . p p p\n. p . . p N . .\n. . . . n . . .\n. . . . . . . R\n. . . B . . . .\nP P P . . . P P\n. . . . R . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e5d3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h4h7",
+    "rating": 825,
+    "png-file-name": "pngs/arabianMate/puzzle_696.png"
+  },
+  {
+    "id": 702,
+    "lichess_id": "K1Rse",
+    "prompt-with-board": "You are a chess expert. Your opponent just played a1g1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. k . r . . r .\n. p . . . p . p\n. P . p p . . .\n. . . . . . . .\n. . . . P p . .\n. . N . . n . .\nR . . P . R . P\nQ . . . . . q K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played a1g1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g8g1",
+    "rating": 905,
+    "png-file-name": "pngs/arabianMate/puzzle_702.png"
+  },
+  {
+    "id": 711,
+    "lichess_id": "KMguR",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . r k\np p p . . p r Q\n. b . . q N . .\n. . . . . . . .\n. . P . P . . .\n. P . . . N . b\nP . . . . P . P\nR . . . . . R K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g1g8",
+    "rating": 972,
+    "png-file-name": "pngs/arabianMate/puzzle_711.png"
+  },
+  {
+    "id": 721,
+    "lichess_id": "Ktngv",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g2h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . r . . k\n. p R . . . p .\np . . . . . . r\n. . . p . p . .\n. P . . . P . .\nP . . B P n . .\n. . . . . P R q\n. . . . . Q . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g2h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h6h2",
+    "rating": 781,
+    "png-file-name": "pngs/arabianMate/puzzle_721.png"
+  },
+  {
+    "id": 728,
+    "lichess_id": "L7eHM",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e4f4. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\nr . b . . k . r\np p p . . . . .\n. . . p . . . .\n. . . Q . p . .\n. . . . R q . .\n. . P p . n . .\nP P . . . . P P\n. . . . . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e4f4. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h8h2",
+    "rating": 1065,
+    "png-file-name": "pngs/arabianMate/puzzle_728.png"
+  },
+  {
+    "id": 738,
+    "lichess_id": "LFMx1",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g2h4. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . .\np . R . . . . .\nk p . . . . . .\n. . . . . . . .\nP P . . . P p r\n. . . . . n . .\n. . . r . . N .\n. . R . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g2h4. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d2h2",
+    "rating": 1232,
+    "png-file-name": "pngs/arabianMate/puzzle_738.png"
+  },
+  {
+    "id": 740,
+    "lichess_id": "LI8xO",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g1h1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\nr . . N k . . r\n. p p . . . . .\np . . p . n . .\n. . b . p . . .\n. . B . P . b .\nP . . P . n P .\n. P P Q . . P P\nR N . . . R K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g1h1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h8h2",
+    "rating": 1217,
+    "png-file-name": "pngs/arabianMate/puzzle_740.png"
+  },
+  {
+    "id": 744,
+    "lichess_id": "LRPoq",
+    "prompt-with-board": "You are a chess expert. Your opponent just played b1c1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . .\n. . . . . p . .\n. . . . p . . .\n. P k p . . . .\n. . . N . P . .\np . n Q P . . .\nP . . . . . . r\nK R . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played b1c1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h2a2",
+    "rating": 602,
+    "png-file-name": "pngs/arabianMate/puzzle_744.png"
+  },
+  {
+    "id": 762,
+    "lichess_id": "Lsg8k",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g5f5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . q . . k\n. p p . b p . p\n. . . p . N . .\np . n P p Q r .\n. . P . P . . .\n. . N . . . . .\nP P . . . P P .\nR . . . K . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g5f5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h1h7",
+    "rating": 1161,
+    "png-file-name": "pngs/arabianMate/puzzle_762.png"
+  },
+  {
+    "id": 768,
+    "lichess_id": "M2fyO",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h7g6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . r . k\n. R . . . . . p\np . . r . N N P\n. . p . . . P .\n. . P b P . K .\n. . . . . . . .\nP . . . . . . q\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h7g6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "b7h7",
+    "rating": 1148,
+    "png-file-name": "pngs/arabianMate/puzzle_768.png"
+  },
+  {
+    "id": 787,
+    "lichess_id": "MXQ5s",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g7h6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . b . k\nR . . . . . p .\n. . . . . N . R\n. . . . p . . P\n. . . p P . . .\n. . . P . . P .\n. r r . . P K .\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g7h6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "a7h7",
+    "rating": 651,
+    "png-file-name": "pngs/arabianMate/puzzle_787.png"
+  },
+  {
+    "id": 794,
+    "lichess_id": "Me1GN",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h7f5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. r . . k . . .\n. . . . . p . Q\np . . p . . . .\n. p . b p q . .\n. . . . . . . .\nN . . . . n . .\nP P P . . . r P\n. . . R . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h7f5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g2h2",
+    "rating": 1099,
+    "png-file-name": "pngs/arabianMate/puzzle_794.png"
+  },
+  {
+    "id": 813,
+    "lichess_id": "N9Izx",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f7h5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . k . . . . .\nR . . . . B . .\n. . p . . p . .\n. . . . p . . .\n. p . . . . . .\n. . . P . n . p\n. . P . . P r P\n. . B . . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f7h5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g2h2",
+    "rating": 1066,
+    "png-file-name": "pngs/arabianMate/puzzle_813.png"
+  },
+  {
+    "id": 815,
+    "lichess_id": "NCZqc",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h7h5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . R . . b k\np . . . . . . p\n. . . . . N p .\n. . . . p . . .\n. . . p . . . .\n. . . . . n . P\n. . . . . . K .\n. . . . r . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h7h5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d8g8",
+    "rating": 664,
+    "png-file-name": "pngs/arabianMate/puzzle_815.png"
+  },
+  {
+    "id": 820,
+    "lichess_id": "NGFvc",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f8h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . r . n . k\np . . . R . . R\nb p . . . N p .\n. . p . . . . .\n. . . . . . . .\n. . . . . . . .\nP . P . . . P P\n. . . . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f8h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "e7h7",
+    "rating": 940,
+    "png-file-name": "pngs/arabianMate/puzzle_820.png"
+  },
+  {
+    "id": 848,
+    "lichess_id": "NvJpt",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g6g2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . r k\n. . R . . . . .\np . . . . N r .\n. . . P p . . .\nP p . n . . . .\n. . . P . . . .\n. P . . . . R .\n. . . . . K . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g6g2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c7h7",
+    "rating": 726,
+    "png-file-name": "pngs/arabianMate/puzzle_848.png"
+  },
+  {
+    "id": 850,
+    "lichess_id": "NwNuw",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . . . . k\n. p . b q p r Q\np . . p . N . .\n. . p P p P . .\n. . P . P . . .\n. . . B . . . R\nP P . b . . P P\nR . . . . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h3h7",
+    "rating": 500,
+    "png-file-name": "pngs/arabianMate/puzzle_850.png"
+  },
+  {
+    "id": 852,
+    "lichess_id": "NyWQz",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e8e6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . r . . k\n. p . . . . . .\np . b . B N R p\n. . P . . p . .\n. . . . . P . .\n. . . . . . . P\n. . r . . . P K\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e8e6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g6g8",
+    "rating": 1206,
+    "png-file-name": "pngs/arabianMate/puzzle_852.png"
+  },
+  {
+    "id": 853,
+    "lichess_id": "O2OZx",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . . . . k\np p p . q p r Q\n. . . p . N . .\nb . . . . n . .\n. . P . N . . R\n. . . . . . . P\nP P . . . . B .\nR . . . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h4h7",
+    "rating": 461,
+    "png-file-name": "pngs/arabianMate/puzzle_853.png"
+  },
+  {
+    "id": 859,
+    "lichess_id": "OCOLD",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e1g1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . r k\n. p p . . q . p\n. . . p . . . .\np . P P P . . .\n. . Q . . . . .\n. P . . . n . P\nP B . . R . . .\n. . . . R . r K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e1g1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g8g1",
+    "rating": 1090,
+    "png-file-name": "pngs/arabianMate/puzzle_859.png"
+  },
+  {
+    "id": 894,
+    "lichess_id": "OuEnA",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d7c5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nk . r . r . . .\np R . n . . . .\nP . N . . . p .\n. . R P . . . .\n. . . . P p . p\n. . . . . P . P\n. . . . . . P .\n. . . . . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d7c5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "b7a7",
+    "rating": 1019,
+    "png-file-name": "pngs/arabianMate/puzzle_894.png"
+  },
+  {
+    "id": 895,
+    "lichess_id": "Ow72y",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . . k\n. . r . . . . Q\np . . p . N . .\n. . . P . . . .\n. p . . p . . .\n. . . . . . . .\nP P q N K . . .\n. . . . . . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h1h7",
+    "rating": 585,
+    "png-file-name": "pngs/arabianMate/puzzle_895.png"
+  },
+  {
+    "id": 896,
+    "lichess_id": "OxHQS",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d3d2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . . . . k\np . . R . . . .\n. p . . . N . .\n. . . . . p . .\n. . . B . . . .\n. . . r . P K .\nb . . N . . P .\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d3d2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d7h7",
+    "rating": 1215,
+    "png-file-name": "pngs/arabianMate/puzzle_896.png"
+  },
+  {
+    "id": 907,
+    "lichess_id": "PA0eA",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr n . q . . . k\np p p . . . r .\n. . . . . N p R\n. . . B P . . .\n. . . P . . b .\n. . . . . . . .\nP P . . . P P .\nR . . . K . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h6h7",
+    "rating": 719,
+    "png-file-name": "pngs/arabianMate/puzzle_907.png"
+  },
+  {
+    "id": 919,
+    "lichess_id": "PMGf8",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g1g7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . k\nR . . . . . p .\n. . P . . . . p\n. . . . . . . .\n. . . . . . . .\n. P . . . n . .\nP r . . . . . .\n. . . . . . R K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g1g7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "b2h2",
+    "rating": 964,
+    "png-file-name": "pngs/arabianMate/puzzle_919.png"
+  },
+  {
+    "id": 925,
+    "lichess_id": "PTibe",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . r . k\np . . . q . . Q\n. . . . b N r .\n. p p p P p . .\n. . . . . P . .\n. . . . P B . .\nP P P . . . . .\n. K . . . . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h1h7",
+    "rating": 1018,
+    "png-file-name": "pngs/arabianMate/puzzle_925.png"
+  },
+  {
+    "id": 935,
+    "lichess_id": "PoMM5",
+    "prompt-with-board": "You are a chess expert. Your opponent just played b2c4. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . . k\nr . . . . p . p\np . . . p N . .\n. p . . . p . .\n. . . . . P . .\n. . . . . . R .\nP n P . . . P P\n. . K . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played b2c4. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g3g8",
+    "rating": 477,
+    "png-file-name": "pngs/arabianMate/puzzle_935.png"
+  },
+  {
+    "id": 977,
+    "lichess_id": "QjzD3",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d1g1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . .\np . . . . . r k\n. p . . . . . p\n. P . . . . . .\nP . . . p N . .\n. . . . P n . Q\n. . . P . . . .\n. . . R . . q K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d1g1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g7g1",
+    "rating": 878,
+    "png-file-name": "pngs/arabianMate/puzzle_977.png"
+  },
+  {
+    "id": 989,
+    "lichess_id": "RCFiD",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h7h8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . r .\np . . q . . . k\n. p p . . N . .\n. . . p . . . .\n. . . P b . . .\n. . . . . . . .\nP P . . . . . .\nK . . B . . R .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h7h8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g1g8",
+    "rating": 1283,
+    "png-file-name": "pngs/arabianMate/puzzle_989.png"
+  },
+  {
+    "id": 991,
+    "lichess_id": "RFRGe",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h5h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . .\np p p . . k . .\n. . . . . . . .\n. . . . . . . R\n. . P b . P . .\n. . N . . n P .\nP P . . r . . r\nR . . . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h5h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "e2h2",
+    "rating": 1000,
+    "png-file-name": "pngs/arabianMate/puzzle_991.png"
+  },
+  {
+    "id": 998,
+    "lichess_id": "ROlmv",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g7g8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nR . . . . . . k\n. . . . . . r .\n. . . . . N . .\n. . . . . b . .\n. . . . . . . .\n. P . p . . . P\nP . . . . P P K\nb . . . r . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g7g8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "a8g8",
+    "rating": 1016,
+    "png-file-name": "pngs/arabianMate/puzzle_998.png"
+  },
+  {
+    "id": 1006,
+    "lichess_id": "RZjiy",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f2g3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . k . . . . r\np p p . . n . .\n. . . . . N . .\n. . . . . . p .\n. . . . . . . .\n. . . . N n p .\nP P P . . P . P\n. . . . . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f2g3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h8h2",
+    "rating": 674,
+    "png-file-name": "pngs/arabianMate/puzzle_1006.png"
+  },
+  {
+    "id": 1028,
+    "lichess_id": "SEOHR",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f8g8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . q Q k\np . p . . p . p\n. . n r . N . .\n. . p . p P . .\n. . . . . . . .\n. . P P . . . P\nP P . . . . . .\n. . . . . . R K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f8g8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g1g8",
+    "rating": 607,
+    "png-file-name": "pngs/arabianMate/puzzle_1028.png"
+  },
+  {
+    "id": 1037,
+    "lichess_id": "SOdsO",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g8h8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr n . q . r k .\np p . . . . b p\n. . . . . N p .\nP . p . . . . .\n. . . . P . . .\n. B . . . . . .\n. P . . . P . .\nR . B b K . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g8h8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h1h7",
+    "rating": 700,
+    "png-file-name": "pngs/arabianMate/puzzle_1037.png"
+  },
+  {
+    "id": 1048,
+    "lichess_id": "Sha0d",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h4h5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. N . . . . . .\n. . . . . p . .\nP . . k p . . .\nr . . . . . . .\n. p . . . . . P\n. . n . . . . .\nP . P . . . . P\nK . . . . B R .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h4h5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "a5a2",
+    "rating": 537,
+    "png-file-name": "pngs/arabianMate/puzzle_1048.png"
+  },
+  {
+    "id": 1055,
+    "lichess_id": "SoxIx",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e8g8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . b . r . R k\np p . q . . . .\n. . . . . N . .\n. . . . P p . p\n. . p . Q . . P\n. . . . . . . .\nP P . . . P . .\n. . K . . . R .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e8g8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g1g8",
+    "rating": 1081,
+    "png-file-name": "pngs/arabianMate/puzzle_1055.png"
+  },
+  {
+    "id": 1092,
+    "lichess_id": "ThPIA",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g8g6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . . . r k\n. . . . . R . .\n. p . . p N . .\np . . . p b . .\nP . . . . . . p\n. . . . B P . .\n. . . . . . P K\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g8g6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f7h7",
+    "rating": 998,
+    "png-file-name": "pngs/arabianMate/puzzle_1092.png"
+  },
+  {
+    "id": 1105,
+    "lichess_id": "U3yEg",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d3f3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . n . k\n. . . . r . . .\np p . . . N . b\n. . p . . . . .\n. . . . P n . .\n. . P r . Q . .\nP . . . . . . .\n. . . . . . R K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d3f3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g1g8",
+    "rating": 950,
+    "png-file-name": "pngs/arabianMate/puzzle_1105.png"
+  },
+  {
+    "id": 1125,
+    "lichess_id": "UWxz8",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f1h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . k . . . . r\np p p . p p b .\n. . . p . n p .\n. . . . . . B .\nP . . . P . . .\n. Q P P . n P .\n. P . . . P . q\nR . . . . N . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f1h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h8h2",
+    "rating": 944,
+    "png-file-name": "pngs/arabianMate/puzzle_1125.png"
+  },
+  {
+    "id": 1128,
+    "lichess_id": "Ugkv3",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g8h8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . k .\nR . . . . . . .\n. . p . . N p .\n. b . p . . . .\n. . . P . p . .\n. P . . . . . .\nP . . . . r . .\n. . . K . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g8h8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "a7h7",
+    "rating": 1157,
+    "png-file-name": "pngs/arabianMate/puzzle_1128.png"
+  },
+  {
+    "id": 1140,
+    "lichess_id": "V4lE5",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c2g6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . k\n. . p . . . . .\n. . . . . . r P\n. p . . . . . .\n. . . P . . P .\np P n . . . . .\nP . B . r . . .\nK . . . . . R .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c2g6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "e2a2",
+    "rating": 1037,
+    "png-file-name": "pngs/arabianMate/puzzle_1140.png"
+  },
+  {
+    "id": 1162,
+    "lichess_id": "VZiMJ",
+    "prompt-with-board": "You are a chess expert. Your opponent just played a5b3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . k . . . . .\np p . . . . p .\nr . . . p . . p\nN . . . . . . P\n. . . . . . . .\n. . n . . . . .\nP P . . . P P .\nK . . . . . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played a5b3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "a6a2",
+    "rating": 658,
+    "png-file-name": "pngs/arabianMate/puzzle_1162.png"
+  },
+  {
+    "id": 1169,
+    "lichess_id": "VlPjs",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e5g4. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . r r . k\np R . . . . . p\n. . . . . N . .\n. . . . n . . .\n. . . . . . N .\n. . . . . . P .\n. P . . . P . .\n. . . . . K . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e5g4. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "b7h7",
+    "rating": 833,
+    "png-file-name": "pngs/arabianMate/puzzle_1169.png"
+  },
+  {
+    "id": 1182,
+    "lichess_id": "WD1vW",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f4e3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . R . . . .\n. p . . . p k .\n. . . . . . . p\n. B . . . . p .\nP . . . . B . .\n. . . . . n . .\n. r . . . . . .\n. . . . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f4e3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "b2h2",
+    "rating": 1096,
+    "png-file-name": "pngs/arabianMate/puzzle_1182.png"
+  },
+  {
+    "id": 1183,
+    "lichess_id": "WI8xX",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f7f8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . Q . k\np . . R . r . p\n. p p . . N p .\nP n p . q p . .\n. . . . . . . .\n. . P P . . . .\n. P . . . . P P\n. . . . . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f7f8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d7h7",
+    "rating": 731,
+    "png-file-name": "pngs/arabianMate/puzzle_1183.png"
+  },
+  {
+    "id": 1190,
+    "lichess_id": "WYwps",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f1f2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . k\nR . . . . . . .\n. . . . B . . .\n. p . . . . . p\n. . . P . . . P\n. . n . . . . .\n. r . . . r . .\nK . . . . R . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f1f2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "b2b1",
+    "rating": 1313,
+    "png-file-name": "pngs/arabianMate/puzzle_1190.png"
+  },
+  {
+    "id": 1198,
+    "lichess_id": "Wfxll",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g7h6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . r . . . k\np . R . . . b .\n. p . B p N p Q\n. q . . P . . .\n. . . n . . . .\n. . . . . . P .\n. . . . . P . .\n. . . . . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g7h6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c7h7",
+    "rating": 929,
+    "png-file-name": "pngs/arabianMate/puzzle_1198.png"
+  },
+  {
+    "id": 1238,
+    "lichess_id": "Y37RE",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h7f7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . . k\n. . p b . . . r\n. p . p . N R .\n. . n P p . . .\np n P . P p . .\n. . N . . P . .\nP P . K B . . .\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h7f7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g6g8",
+    "rating": 1485,
+    "png-file-name": "pngs/arabianMate/puzzle_1238.png"
+  },
+  {
+    "id": 1239,
+    "lichess_id": "Y3Xtr",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f7a2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . . . . k\n. p p . . Q p p\n. . . P . n . .\n. . . . . . B .\n. . . . . . . .\n. . n . . . . .\nq . P . . P P P\nK . . R . . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f7a2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "a8a2",
+    "rating": 1052,
+    "png-file-name": "pngs/arabianMate/puzzle_1239.png"
+  },
+  {
+    "id": 1267,
+    "lichess_id": "Z0545",
+    "prompt-with-board": "You are a chess expert. Your opponent just played a7a8q. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . R . . . .\nP . . . . p k p\n. . . . . . p .\n. . . . . . . .\n. . . . . . P .\n. . . . . n . P\nR . . p r . . .\n. . . . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played a7a8q. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "e2h2",
+    "rating": 1310,
+    "png-file-name": "pngs/arabianMate/puzzle_1267.png"
+  },
+  {
+    "id": 1277,
+    "lichess_id": "ZLumH",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f2g3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . r k .\nQ . . . . . p p\n. . . . . p . .\n. . . N . . . .\n. . . . P . . .\nP . . . . n q b\n. . . . r P . .\nR . . . R . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f2g3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "e2h2",
+    "rating": 1127,
+    "png-file-name": "pngs/arabianMate/puzzle_1277.png"
+  },
+  {
+    "id": 1288,
+    "lichess_id": "ZehTb",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f2h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . r . . . r\np . p k . p p .\n. . n . . . . .\n. Q p B . . . .\n. . . P P . b .\n. . P . . n P .\nP P . . . R . q\nR . . . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f2h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h8h2",
+    "rating": 1153,
+    "png-file-name": "pngs/arabianMate/puzzle_1288.png"
+  },
+  {
+    "id": 1289,
+    "lichess_id": "ZiKx0",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. r . . r . . k\np . . . n p q Q\n. p . . . N p .\n. . p . . . P .\nP . . p b P . .\n. . . P . . . R\n. P P B . . . P\n. . . . . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h3h7",
+    "rating": 616,
+    "png-file-name": "pngs/arabianMate/puzzle_1289.png"
+  },
+  {
+    "id": 1290,
+    "lichess_id": "ZipX3",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g8h8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . . b k .\np . . . R . . .\n. p . . b N p p\n. . . . p . . .\n. . . n . . . .\n. P P B . . . .\n. P . B . . P P\n. . . . . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g8h8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "e7h7",
+    "rating": 697,
+    "png-file-name": "pngs/arabianMate/puzzle_1290.png"
+  },
+  {
+    "id": 1298,
+    "lichess_id": "a9j6l",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h7b1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . . k\n. . . . . . R b\n. . . . . N . P\np . . . . . . .\n. . . . . p . .\n. . K . . . p .\n. . . . . r . .\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h7b1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g7g8",
+    "rating": 937,
+    "png-file-name": "pngs/arabianMate/puzzle_1298.png"
+  },
+  {
+    "id": 1304,
+    "lichess_id": "aJYGI",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g7h6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . b . . . . k\np p . . . p b .\n. . p . p N . Q\n. . . . q . . .\n. . . p . . . .\n. . . P . . R .\nP P P . . . P P\nR . . . . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g7h6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g3g8",
+    "rating": 737,
+    "png-file-name": "pngs/arabianMate/puzzle_1304.png"
+  },
+  {
+    "id": 1305,
+    "lichess_id": "aK30g",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g2h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . k . r\np p . . . . . .\n. b . . p . . .\n. . p n . . . .\n. . P . N . . .\nQ . . . . n . .\nP P . . . P R q\n. . . . . . R K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g2h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h8h2",
+    "rating": 817,
+    "png-file-name": "pngs/arabianMate/puzzle_1305.png"
+  },
+  {
+    "id": 1312,
+    "lichess_id": "aTOIK",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g8b3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nk . . . . r b .\np . R . . . . .\n. . N . . . . .\n. . . . . . p .\n. . . . . . P .\n. R . . . P . .\nP . . . . . . K\n. . . r . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g8b3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c7a7",
+    "rating": 1006,
+    "png-file-name": "pngs/arabianMate/puzzle_1312.png"
+  },
+  {
+    "id": 1330,
+    "lichess_id": "b5ZHN",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g1h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\nk . . . . . . .\nP . . . . . . .\n. . . . . p . .\n. . . R . . p .\n. . . . P . . p\n. . P b . n . P\n. r . . . . . r\n. . . R . . B K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g1h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "b2h2",
+    "rating": 800,
+    "png-file-name": "pngs/arabianMate/puzzle_1330.png"
+  },
+  {
+    "id": 1335,
+    "lichess_id": "bJzIP",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e2d1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . r . . . k\n. . . r . p . p\n. p . p . N . .\np . p B n P . .\nP . . . P . . .\n. . . . . . . R\n. P P . b . P P\n. . . R . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e2d1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h3h7",
+    "rating": 903,
+    "png-file-name": "pngs/arabianMate/puzzle_1335.png"
+  },
+  {
+    "id": 1353,
+    "lichess_id": "bq49H",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . r k\np . p . . p r Q\n. p . . b N . .\n. . . . . . . P\n. . . N . . . .\nq . P . . . R .\n. . . . . P P .\n. . . . R . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g3g8",
+    "rating": 773,
+    "png-file-name": "pngs/arabianMate/puzzle_1353.png"
+  },
+  {
+    "id": 1355,
+    "lichess_id": "buAjJ",
+    "prompt-with-board": "You are a chess expert. Your opponent just played b6d8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . b Q . . . k\np p . . . p . p\n. b p . . N . p\n. . . p P q . .\n. . . . . . R .\n. P . . . N . P\n. P P . . P P .\n. . . . . R K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played b6d8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g4g8",
+    "rating": 460,
+    "png-file-name": "pngs/arabianMate/puzzle_1355.png"
+  },
+  {
+    "id": 1356,
+    "lichess_id": "buqqf",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g8b8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. Q . . . . r k\n. p . . . p . p\n. . p . . N . .\np . . p . . . .\nP . . P r . . .\n. . . . P . . R\n. P . . . q . .\n. . K . . . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g8b8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h3h7",
+    "rating": 1026,
+    "png-file-name": "pngs/arabianMate/puzzle_1356.png"
+  },
+  {
+    "id": 1369,
+    "lichess_id": "c9EB5",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e7g6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . q r . . k\n. p p . n R . .\n. . . p . N . p\np . . . . . . .\n. . P . P . . .\nP . . . . . . P\n. P . . . . P K\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e7g6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f7h7",
+    "rating": 925,
+    "png-file-name": "pngs/arabianMate/puzzle_1369.png"
+  },
+  {
+    "id": 1393,
+    "lichess_id": "clMOM",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d4f6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . k . . .\nr p p . . p . .\np . . p . q . p\n. . . . . . . .\n. . . Q P n . .\n. B P . . n . .\nP P . . . P r .\nR . . . . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d4f6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g2h2",
+    "rating": 959,
+    "png-file-name": "pngs/arabianMate/puzzle_1393.png"
+  },
+  {
+    "id": 1399,
+    "lichess_id": "ctzQ6",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c8d6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . N . . . . .\n. . . . . . p k\n. . . . p . . p\n. p B . . . . .\n. P . . . . . .\n. . . . . n . P\nr . . . . . . .\n. . . R . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c8d6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "a2h2",
+    "rating": 649,
+    "png-file-name": "pngs/arabianMate/puzzle_1399.png"
+  },
+  {
+    "id": 1407,
+    "lichess_id": "d1i8T",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c4e6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . . . . k\np . . . . R . p\n. . . . N N p .\n. . . . . . . .\n. . b . P . . .\n. . . . . P . .\nP . P . . K P P\n. . . r . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c4e6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f7h7",
+    "rating": 819,
+    "png-file-name": "pngs/arabianMate/puzzle_1407.png"
+  },
+  {
+    "id": 1427,
+    "lichess_id": "db31g",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g8h8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . . r k .\np p p . . p p p\n. . . p . N . .\n. . . . p . . .\n. . B . P . R .\n. . . P . N . .\nP P . . . . K R\n. . q . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g8h8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h2h7",
+    "rating": 969,
+    "png-file-name": "pngs/arabianMate/puzzle_1427.png"
+  },
+  {
+    "id": 1440,
+    "lichess_id": "e6cip",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . b . . . . k\np p . . . p r Q\n. . . p . N . .\n. . . . p P P .\n. . P . P . . .\n. . . . q . P .\nP P . . . . K .\nR . . . . . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h1h7",
+    "rating": 656,
+    "png-file-name": "pngs/arabianMate/puzzle_1440.png"
+  },
+  {
+    "id": 1454,
+    "lichess_id": "eNows",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h4f2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . r . . . k\np p . . . p . p\n. . n p b N p .\n. . n N p . . .\n. . P . P . . q\n. . . . P . . R\nP P B . . Q P P\n. . . . . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h4f2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h3h7",
+    "rating": 1124,
+    "png-file-name": "pngs/arabianMate/puzzle_1454.png"
+  },
+  {
+    "id": 1459,
+    "lichess_id": "eY8a4",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f8f7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . r . k\n. . . . . N . .\np . . . . N . .\n. p . . . . R p\n. . p . . . . .\nP . . . n . . .\n. P . . . . P .\n. . . . . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f8f7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g5g8",
+    "rating": 745,
+    "png-file-name": "pngs/arabianMate/puzzle_1459.png"
+  },
+  {
+    "id": 1477,
+    "lichess_id": "ewFsa",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d7d8q. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . .\n. p . P . k . .\np . . . . . . .\nP . p . . . . .\n. . P . . . . .\n. . . . . n . p\n. . . . . r . P\n. . . . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d7d8q. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f2h2",
+    "rating": 1195,
+    "png-file-name": "pngs/arabianMate/puzzle_1477.png"
+  },
+  {
+    "id": 1493,
+    "lichess_id": "fPY7d",
+    "prompt-with-board": "You are a chess expert. Your opponent just played a7a8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . . .\nk . . . . . . .\n. . N . n . . .\n. R . . . p . .\n. . P . p . . .\n. . . . . . . .\n. . . . K P . .\n. . . . . . r q\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played a7a8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "b5b8",
+    "rating": 804,
+    "png-file-name": "pngs/arabianMate/puzzle_1493.png"
+  },
+  {
+    "id": 1515,
+    "lichess_id": "fy17g",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c2c1q. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . . k\n. R . . . . . .\n. . . . . N . .\n. . . . . p . p\n. . . . . . b P\n. . . . . . . .\n. p p . . K . .\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c2c1q. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "b7h7",
+    "rating": 1170,
+    "png-file-name": "pngs/arabianMate/puzzle_1515.png"
+  },
+  {
+    "id": 1534,
+    "lichess_id": "gYO77",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f2h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . k . . .\n. . . b . p b .\np . . . p . p .\n. p . p P . . r\n. . . . . P . .\nP . N B B n . .\n. P . . . R . q\nR . . . . Q . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f2h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h5h2",
+    "rating": 942,
+    "png-file-name": "pngs/arabianMate/puzzle_1534.png"
+  },
+  {
+    "id": 1540,
+    "lichess_id": "gi8Uk",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h3f1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . .\np . . . . p p k\n. p . . p . . p\n. . . . . . . .\n. . . . . P P .\n. . . . . n . Q\nP P r . . . . P\n. . . . . r . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h3f1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c2h2",
+    "rating": 1343,
+    "png-file-name": "pngs/arabianMate/puzzle_1540.png"
+  },
+  {
+    "id": 1567,
+    "lichess_id": "hliN2",
+    "prompt-with-board": "You are a chess expert. Your opponent just played b5b4. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . r . k\n. . . . . p . p\np . . p . N . .\n. p . P p P . .\n. . . . . . . R\n. . . . b P . P\nr . . . . . P .\n. . . . . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played b5b4. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h4h7",
+    "rating": 482,
+    "png-file-name": "pngs/arabianMate/puzzle_1567.png"
+  },
+  {
+    "id": 1589,
+    "lichess_id": "iUd3B",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g8h8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . q . r k .\n. . . b p . b p\np . . p . N p .\n. . . . . . . .\n. p B N . P n .\n. . . . B . . .\nP P P n . . . .\n. . K R . . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g8h8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h1h7",
+    "rating": 939,
+    "png-file-name": "pngs/arabianMate/puzzle_1589.png"
+  },
+  {
+    "id": 1608,
+    "lichess_id": "ivIq6",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f8g8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. r n . . q Q k\n. r . . . . . .\n. p . p . N . b\np P p . p P . .\n. . P . P . . P\n. . . P . . R B\n. . . . . . . K\n. R . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f8g8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g3g8",
+    "rating": 1231,
+    "png-file-name": "pngs/arabianMate/puzzle_1608.png"
+  },
+  {
+    "id": 1611,
+    "lichess_id": "iz8Rn",
+    "prompt-with-board": "You are a chess expert. Your opponent just played a8g8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . . . Q k\n. . . . . p . p\n. . . p . N . b\np p . . q P . .\n. . . . P . . r\n. . P . . . . .\nP P . . . . . .\n. K . R . . R .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played a8g8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g1g8",
+    "rating": 800,
+    "png-file-name": "pngs/arabianMate/puzzle_1611.png"
+  },
+  {
+    "id": 1616,
+    "lichess_id": "j75W4",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c4b3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . b . . b . k\n. . p . . . . r\np . . . p N . P\n. p . p P . . .\n. n q . . P . .\n. Q . . . . . .\n. P . . N . R .\n. K . . . . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c4b3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g2g8",
+    "rating": 953,
+    "png-file-name": "pngs/arabianMate/puzzle_1616.png"
+  },
+  {
+    "id": 1679,
+    "lichess_id": "kl2Br",
+    "prompt-with-board": "You are a chess expert. Your opponent just played b7a6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nk . . r q . . r\n. p R . b . . p\nQ . N . . p p .\n. . . . . . . .\n. . . P p B . .\nP . . . P . . .\n. P . . . P P P\n. . . . . R K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played b7a6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c7a7",
+    "rating": 869,
+    "png-file-name": "pngs/arabianMate/puzzle_1679.png"
+  },
+  {
+    "id": 1685,
+    "lichess_id": "kqd1T",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g7h6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . . k\n. . . . r r p .\np p p . . N . Q\n. . p . q . . .\n. . . . . p . .\n. . . P . P . .\nP P P . . . R P\n. . . . . . R K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g7h6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g2g8",
+    "rating": 639,
+    "png-file-name": "pngs/arabianMate/puzzle_1685.png"
+  },
+  {
+    "id": 1701,
+    "lichess_id": "lP0cn",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f1g1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . r .\np p . . k . . .\n. . p . . p . .\n. . . . . . . Q\nN . . . P . . .\n. . . . . n . .\nP P P . . . . P\n. . . . . R q K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f1g1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g8g1",
+    "rating": 874,
+    "png-file-name": "pngs/arabianMate/puzzle_1701.png"
+  },
+  {
+    "id": 1709,
+    "lichess_id": "lbTJm",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c7c8q. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . R . . . .\n. . P . . . . k\np . . . N . . .\nP . . . . . . p\n. p . . . . . .\n. P . . b n . P\n. . r . . . . .\nR . . . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c7c8q. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c2h2",
+    "rating": 981,
+    "png-file-name": "pngs/arabianMate/puzzle_1709.png"
+  },
+  {
+    "id": 1718,
+    "lichess_id": "lrBPz",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h4h5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . r k\n. . . R . . . .\np . . . . b . p\n. . . . . p . .\n. . N . p . . P\nP . P . P n . R\n. P . . . . . .\n. . . . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h4h5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g8g1",
+    "rating": 638,
+    "png-file-name": "pngs/arabianMate/puzzle_1718.png"
+  },
+  {
+    "id": 1729,
+    "lichess_id": "m3Y4n",
+    "prompt-with-board": "You are a chess expert. Your opponent just played a8g8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . . . Q k\np p p . q r . p\n. . . p . N . .\n. . . . n . . P\n. . . . P . . .\n. . . . . . . .\nP P P . B . . .\n. . K . . R R .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played a8g8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g1g8",
+    "rating": 650,
+    "png-file-name": "pngs/arabianMate/puzzle_1729.png"
+  },
+  {
+    "id": 1735,
+    "lichess_id": "m8y1t",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c4e3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . . . . k\n. . . . . R . .\n. . . . . N p .\n. . . p . . . .\n. . n . p . . .\n. . . . P . . P\n. . . . . . P K\n. . r . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c4e3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f7h7",
+    "rating": 816,
+    "png-file-name": "pngs/arabianMate/puzzle_1735.png"
+  },
+  {
+    "id": 1736,
+    "lichess_id": "mApYE",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c1a2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . k .\n. p . r . . n .\np . . p . . R .\n. . . . p . Q P\n. . . . P . . .\n. . n . . P . b\nq . r . . . . .\nK . N . . . R .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c1a2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c2a2",
+    "rating": 1064,
+    "png-file-name": "pngs/arabianMate/puzzle_1736.png"
+  },
+  {
+    "id": 1749,
+    "lichess_id": "mPO31",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f8f7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . r . k\n. p . . . . . .\n. . r . . N R .\np . . . . K . .\nP . . . . . . .\n. . P . . . . .\n. P . . . . . .\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f8f7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g6g8",
+    "rating": 841,
+    "png-file-name": "pngs/arabianMate/puzzle_1749.png"
+  },
+  {
+    "id": 1756,
+    "lichess_id": "mW2db",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g2h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . k .\n. . . . . p p .\n. . P . . . . .\np . Q P . . r .\nB . . . p . . p\n. . . . . n . P\nP . . . . P R q\n. . . . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g2h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g5g1",
+    "rating": 947,
+    "png-file-name": "pngs/arabianMate/puzzle_1756.png"
+  },
+  {
+    "id": 1759,
+    "lichess_id": "maE33",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f8g8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . r Q k\np p p . . r . .\n. . n . q N . p\n. . . . . . . .\n. . . P . . . .\n. . P . . . . P\nP P . . . . . .\n. . . . . R R K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f8g8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g1g8",
+    "rating": 615,
+    "png-file-name": "pngs/arabianMate/puzzle_1759.png"
+  },
+  {
+    "id": 1767,
+    "lichess_id": "mls3H",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f1g1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . .\n. p . k . . r .\np . . P . p . .\n. . P . p . . .\n. P . . . . . .\n. . . . . n . R\nP . . . . P . P\n. . . . . R r K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f1g1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g7g1",
+    "rating": 988,
+    "png-file-name": "pngs/arabianMate/puzzle_1767.png"
+  },
+  {
+    "id": 1778,
+    "lichess_id": "n68Nr",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . r . . . k\n. p . . . r . R\n. . p . . N . .\np . . P p . P .\n. n P . . p . .\n. . . . . . . .\n. P . . . P P .\n. K . . . . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h1h7",
+    "rating": 532,
+    "png-file-name": "pngs/arabianMate/puzzle_1778.png"
+  },
+  {
+    "id": 1781,
+    "lichess_id": "nCQHM",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . q . . . k\n. b . . . . r R\np . . . r N . .\n. p . P n . . .\n. . . Q . . . .\n. . . . . . . R\nP P P . . . P P\n. . . . . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h3h7",
+    "rating": 943,
+    "png-file-name": "pngs/arabianMate/puzzle_1781.png"
+  },
+  {
+    "id": 1785,
+    "lichess_id": "nEDvx",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h3e6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . r . . . . k\n. . r . . p . p\np . . p . N p .\n. p . . . . . .\n. . . . P . . .\n. P . . b . . b\nP . P . . . . R\n. K . R . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h3e6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h2h7",
+    "rating": 797,
+    "png-file-name": "pngs/arabianMate/puzzle_1785.png"
+  },
+  {
+    "id": 1791,
+    "lichess_id": "nSoWv",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f2h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . k . . r\n. p . . . p . .\np . N . p . . .\n. . P p P . . .\n. P . . . . p .\n. . . Q . n P .\nP . . . . R . q\nR . . . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f2h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h8h2",
+    "rating": 941,
+    "png-file-name": "pngs/arabianMate/puzzle_1791.png"
+  },
+  {
+    "id": 1798,
+    "lichess_id": "nfB76",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g2h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . k . . .\n. . p . . p . .\np . . p . Q . .\n. p . . . . . .\n. . . . P p . .\nP B . P . n . r\n. P P . . P R .\nR . . . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g2h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h3h2",
+    "rating": 538,
+    "png-file-name": "pngs/arabianMate/puzzle_1798.png"
+  },
+  {
+    "id": 1812,
+    "lichess_id": "o2RDY",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g2h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . . . . k\np . p . . p R p\n. . p . . . . r\n. . . . . . . .\n. . . P . . . .\nB . . . P n . .\nP . . . Q P R q\n. . . . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g2h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h6h2",
+    "rating": 836,
+    "png-file-name": "pngs/arabianMate/puzzle_1812.png"
+  },
+  {
+    "id": 1819,
+    "lichess_id": "o683B",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h2h1q. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nk . . . . . . r\np . . . . R . .\n. p N . . . . .\n. . . K . . . .\n. . . . P . . .\n. . . . . . . .\nP . . . . . . p\n. . . . . . q .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h2h1q. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f7a7",
+    "rating": 903,
+    "png-file-name": "pngs/arabianMate/puzzle_1819.png"
+  },
+  {
+    "id": 1822,
+    "lichess_id": "oCtrR",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g8g6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. r . b . . r k\n. . . p . p . p\nb . . . . N . R\n. . . . . . . .\n. P . . P . . .\nP . . . . . . .\n. . B . . . . .\n. K . R . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g8g6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h6h7",
+    "rating": 1147,
+    "png-file-name": "pngs/arabianMate/puzzle_1822.png"
+  },
+  {
+    "id": 1838,
+    "lichess_id": "ocpLp",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e7d8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . Q . . . k\n. . . . b . . p\nr . . . . N . .\n. . . . B p . .\np p n . . . . .\n. P . . . . R .\nP . . . . . P P\n. . . . . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e7d8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g3g8",
+    "rating": 668,
+    "png-file-name": "pngs/arabianMate/puzzle_1838.png"
+  },
+  {
+    "id": 1842,
+    "lichess_id": "ommz0",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d7a7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nk . . . . . . r\nQ . . r R p p .\nB . N . . . . p\n. . . . . . . .\np . . P . q P .\nP b . . . . . P\n. P . . . . . .\n. K . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d7a7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "e7a7",
+    "rating": 1073,
+    "png-file-name": "pngs/arabianMate/puzzle_1842.png"
+  },
+  {
+    "id": 1852,
+    "lichess_id": "pA7ZD",
+    "prompt-with-board": "You are a chess expert. Your opponent just played a4a5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. k . . . . r .\np p p . . . . R\n. . . . . p . .\n. . . p . . . .\nP P . . . . B .\n. . P . . n . P\n. . P . . r . .\nR . . . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played a4a5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f2h2",
+    "rating": 1063,
+    "png-file-name": "pngs/arabianMate/puzzle_1852.png"
+  },
+  {
+    "id": 1856,
+    "lichess_id": "pFurb",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g3h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . k . . . . .\n. . . . . . p p\np P . . . . . .\n. . . . . . . .\nP . . . . . . n\n. . P . . n B .\n. . . r . . . r\nR . . . . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g3h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d2h2",
+    "rating": 828,
+    "png-file-name": "pngs/arabianMate/puzzle_1856.png"
+  },
+  {
+    "id": 1858,
+    "lichess_id": "pGRA2",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. r . . . . . k\n. . . . . p r Q\n. q . . p N . .\np . . p P n P .\nP p . P . P . .\n. P p . B . . .\n. . P . . K . .\n. . . . . . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h1h7",
+    "rating": 913,
+    "png-file-name": "pngs/arabianMate/puzzle_1858.png"
+  },
+  {
+    "id": 1863,
+    "lichess_id": "pR1Rm",
+    "prompt-with-board": "You are a chess expert. Your opponent just played a8g8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . . . R k\n. . . . . . . .\n. . . . . N . p\np . . . . b . .\n. . p . . q . P\n. . . . . . . B\nP P . . . . . .\nK . . . . . R .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played a8g8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g1g8",
+    "rating": 689,
+    "png-file-name": "pngs/arabianMate/puzzle_1863.png"
+  },
+  {
+    "id": 1865,
+    "lichess_id": "pTYSK",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d5d4. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . r . . . k\n. . . . . R . .\n. . . . p N . .\np . p p . . r .\n. . . . P . . .\n. . P . . . . P\nP . . . . . P K\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d5d4. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f7h7",
+    "rating": 869,
+    "png-file-name": "pngs/arabianMate/puzzle_1865.png"
+  },
+  {
+    "id": 1882,
+    "lichess_id": "ptdJd",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f4f2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. q . . . . . k\n. p . R . . . p\n. . p . . N . .\n. . . . . P . .\nP b . . . r . P\n. . . . . . . K\n. . . . . Q . .\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f4f2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d7h7",
+    "rating": 893,
+    "png-file-name": "pngs/arabianMate/puzzle_1882.png"
+  },
+  {
+    "id": 1891,
+    "lichess_id": "q5xBB",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . b . . . . k\np p p . . . r Q\n. . . . q N . .\n. . . . . p p .\n. . n P . . . R\n. . P B . . . .\nP . P . . . P P\n. . R . . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h4h7",
+    "rating": 586,
+    "png-file-name": "pngs/arabianMate/puzzle_1891.png"
+  },
+  {
+    "id": 1903,
+    "lichess_id": "qPe9M",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g8h8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . r . b k .\np p p . . p . .\n. . . . . N . .\n. . . . . . . P\n. . . P B . . n\n. . . . P . . .\nP P . . . . . .\n. K . . . . R .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g8h8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g1g8",
+    "rating": 1173,
+    "png-file-name": "pngs/arabianMate/puzzle_1903.png"
+  },
+  {
+    "id": 1921,
+    "lichess_id": "qvFrG",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g7g8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . R . . k\n. . . . . . r .\nr . . . . N . p\n. p . . P . . .\n. . n P . . . .\n. . . . . . . .\n. . . . . . P P\n. . . . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g7g8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "e8g8",
+    "rating": 649,
+    "png-file-name": "pngs/arabianMate/puzzle_1921.png"
+  },
+  {
+    "id": 1928,
+    "lichess_id": "r2Ndw",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g5g7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . r . k . . r\n. . . p . p p .\nb . . . p . . .\np . . p P . Q .\nP p . . . . P .\n. B . . . n . .\n. . P . . P . P\n. . R . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g5g7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h8h2",
+    "rating": 903,
+    "png-file-name": "pngs/arabianMate/puzzle_1928.png"
+  },
+  {
+    "id": 1929,
+    "lichess_id": "r6BW4",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f8g8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . b . . q Q k\np p . p . p . .\n. . . P p N . b\n. . p . P . . .\n. . P . . . . P\n. . . . . P . .\n. . . . . P . .\n. . . n . K R .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f8g8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g1g8",
+    "rating": 870,
+    "png-file-name": "pngs/arabianMate/puzzle_1929.png"
+  },
+  {
+    "id": 1934,
+    "lichess_id": "rGgsU",
+    "prompt-with-board": "You are a chess expert. Your opponent just played a8g8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . . . Q k\np b . . . p . p\n. p . . . N . q\n. . b . . . . .\n. . P . . . . .\n. . . . . . R .\nP P . . . P P P\n. . . . . R K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played a8g8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g3g8",
+    "rating": 1072,
+    "png-file-name": "pngs/arabianMate/puzzle_1934.png"
+  },
+  {
+    "id": 1937,
+    "lichess_id": "rKfhd",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c2d1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . q . . . k\np . . . . R . .\n. p . p . N . p\n. . p p . . p .\n. . . P . . . .\n. . . . . . . .\nP P b . . P P P\n. . . R . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c2d1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f7h7",
+    "rating": 912,
+    "png-file-name": "pngs/arabianMate/puzzle_1937.png"
+  },
+  {
+    "id": 1944,
+    "lichess_id": "rVrtW",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f2h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . r . k\np p R . . . p p\n. . . . . . . r\n. . . . . . . .\n. . . P Q P . .\n. P . . . n P .\nP . . . N R . q\n. . . . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f2h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h6h2",
+    "rating": 1363,
+    "png-file-name": "pngs/arabianMate/puzzle_1944.png"
+  },
+  {
+    "id": 1946,
+    "lichess_id": "rWihP",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g7h6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . r . k\np . . R . . p .\n. . p . . N . Q\n. p q . . . . .\n. . . . . p . .\n. P . . p . . P\nP . . . . P P .\n. . . . . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g7h6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d7h7",
+    "rating": 663,
+    "png-file-name": "pngs/arabianMate/puzzle_1946.png"
+  },
+  {
+    "id": 1953,
+    "lichess_id": "reszz",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h7f8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . Q . k\n. . . . r . . n\np . n . p N R .\n. p . p . . . .\n. . . P . P . .\nP . . . P . . P\n. P . . . . . K\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h7f8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g6g8",
+    "rating": 1364,
+    "png-file-name": "pngs/arabianMate/puzzle_1953.png"
+  },
+  {
+    "id": 1960,
+    "lichess_id": "ru2v9",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d5f6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . r . . . r\n. Q . . . . . .\n. . . k . p . .\n. . b N . P . .\n. . . p . . p .\n. . . . . n P .\nP . . . . . . P\n. R . . . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d5f6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h8h2",
+    "rating": 1002,
+    "png-file-name": "pngs/arabianMate/puzzle_1960.png"
+  },
+  {
+    "id": 1977,
+    "lichess_id": "sCK0G",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f8h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . b . r n . k\n. . . . p . . Q\np . . p . N p .\nq . . . n . P .\n. p B . P . . .\n. P . . . P . .\nP K P . . . . .\n. . . R . . N R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f8h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h1h7",
+    "rating": 1016,
+    "png-file-name": "pngs/arabianMate/puzzle_1977.png"
+  },
+  {
+    "id": 1981,
+    "lichess_id": "sINnl",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h7h4. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . b . k\n. p . r . . . q\np . . p . N R .\n. P . . p . . .\nP . . . . . . Q\n. . . . P . . .\n. . . n . . P .\n. . . . . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h7h4. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g6g8",
+    "rating": 858,
+    "png-file-name": "pngs/arabianMate/puzzle_1981.png"
+  },
+  {
+    "id": 1982,
+    "lichess_id": "sLpPz",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g2h3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . . . k .\n. p p . . p p .\n. . . . . . r p\np . . . . . . .\nP . . . P Q . .\n. . . . . n . q\n. P . . . . P .\nR . B . R B . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g2h3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g6g1",
+    "rating": 611,
+    "png-file-name": "pngs/arabianMate/puzzle_1982.png"
+  },
+  {
+    "id": 1983,
+    "lichess_id": "sSCZk",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c5d6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nk . r . . . . .\np . . . . R p p\n. . N R . . . .\n. . b . . . . .\n. . . . . . . .\n. . . . . . . .\nP P . . . . K P\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c5d6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f7a7",
+    "rating": 681,
+    "png-file-name": "pngs/arabianMate/puzzle_1983.png"
+  },
+  {
+    "id": 1987,
+    "lichess_id": "seVmm",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e3d5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. k . . . . . r\n. p . r . . p .\n. . . . . p . .\n. . P q p . . .\n. R . . . . . .\n. . . . N n p .\n. . . . . P . P\nQ R . . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e3d5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h8h2",
+    "rating": 1409,
+    "png-file-name": "pngs/arabianMate/puzzle_1987.png"
+  },
+  {
+    "id": 2004,
+    "lichess_id": "tFnED",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e1e3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . .\np . . . . . . p\n. p . . N . p r\n. . P . . k . .\n. . . . . . . .\n. . P . . n . .\nP . . . . P . P\n. . . . R . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e1e3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h6h2",
+    "rating": 550,
+    "png-file-name": "pngs/arabianMate/puzzle_2004.png"
+  },
+  {
+    "id": 2005,
+    "lichess_id": "tG7xz",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g1h1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. k . . . . . .\n. b . . . p . .\np . . . . . . .\n. . . . . N . p\n. . . . p . . P\n. . Q . . n . .\nP P . r . . . .\n. . R . . B K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g1h1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d2h2",
+    "rating": 502,
+    "png-file-name": "pngs/arabianMate/puzzle_2005.png"
+  },
+  {
+    "id": 2006,
+    "lichess_id": "tJQiE",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f4h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . k r . . . r\np p . . . p R .\n. . p . . . . .\n. . b . . . . .\n. . p . . B . .\n. . N . . n . .\nP P P . . P . q\nR . . . . Q . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f4h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h8h2",
+    "rating": 815,
+    "png-file-name": "pngs/arabianMate/puzzle_2006.png"
+  },
+  {
+    "id": 2007,
+    "lichess_id": "tK6hT",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h2h1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . .\np . . . . p p k\n. . p . . . . .\n. . . . . . . .\n. . P . . N P p\n. P . . . n r P\nP . . . . R . K\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h2h1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g3g1",
+    "rating": 757,
+    "png-file-name": "pngs/arabianMate/puzzle_2007.png"
+  },
+  {
+    "id": 2008,
+    "lichess_id": "tKOvm",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g8h8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . r . . . k .\nR . . . . . . p\n. . . . . N . .\n. . . . . . . .\n. . . . . p . .\n. . . . . P . P\np . . . . . P K\nr . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g8h8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "a7h7",
+    "rating": 941,
+    "png-file-name": "pngs/arabianMate/puzzle_2008.png"
+  },
+  {
+    "id": 2019,
+    "lichess_id": "tbFHA",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d3f1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . r . . . . k\n. R . . . . . p\n. . . . . N . .\n. . . . . p r .\n. . P . . . . .\n. . . b . . P .\n. . . . . K . P\n. . . . . R . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d3f1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "b7h7",
+    "rating": 832,
+    "png-file-name": "pngs/arabianMate/puzzle_2019.png"
+  },
+  {
+    "id": 2024,
+    "lichess_id": "tgwdW",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f8h6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . q . k\n. . . . . p . .\np . . . p N . Q\n. . . . P . . .\n. . . P p . . .\n. . . . P . . P\nr . . . b . . .\n. . . . . . R K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f8h6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g1g8",
+    "rating": 399,
+    "png-file-name": "pngs/arabianMate/puzzle_2024.png"
+  },
+  {
+    "id": 2030,
+    "lichess_id": "tvYan",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e2g1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . . r . k\np p p . . p . n\n. . . p . N . .\n. . . . . . . R\n. . P . P p . .\nP . . . . . . .\n. P P . n P . .\n. K . . . . R .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e2g1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h5h7",
+    "rating": 567,
+    "png-file-name": "pngs/arabianMate/puzzle_2030.png"
+  },
+  {
+    "id": 2041,
+    "lichess_id": "u9dDA",
+    "prompt-with-board": "You are a chess expert. Your opponent just played a3d3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . r . . . k\np . . . . R . p\n. p . . . N p .\n. . . . . . . .\n. . . p . . . .\nq . . . . . . .\n. . . . . . P P\n. . . . . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played a3d3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f7h7",
+    "rating": 1178,
+    "png-file-name": "pngs/arabianMate/puzzle_2041.png"
+  },
+  {
+    "id": 2065,
+    "lichess_id": "uoQRu",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g2h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . r\np p . . . . . .\n. . . P k . . .\n. . p . . . . .\n. . . . P . . .\n. N P . . n . .\nP P . . . . R r\n. . . R . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g2h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h8h2",
+    "rating": 691,
+    "png-file-name": "pngs/arabianMate/puzzle_2065.png"
+  },
+  {
+    "id": 2070,
+    "lichess_id": "uv4An",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e4e8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . .\np p . . . r . .\n. . . . . . . p\n. . . . . k . r\n. R P p R B . .\n. . . . . n P .\nP P . . . . . P\n. . . . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e4e8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h5h2",
+    "rating": 816,
+    "png-file-name": "pngs/arabianMate/puzzle_2070.png"
+  },
+  {
+    "id": 2075,
+    "lichess_id": "v6Spn",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e8e6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . r . r . . k\n. . . . . . R p\n. . p . N N . .\np p . . . P . .\n. . n . . B . .\n. . . . . . . P\n. . . . . . P .\n. . . . . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e8e6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g7h7",
+    "rating": 1207,
+    "png-file-name": "pngs/arabianMate/puzzle_2075.png"
+  },
+  {
+    "id": 2082,
+    "lichess_id": "vLCL3",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g3g6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . . k\n. . . R . . . .\n. . p . . N P .\n. . . . . . . .\n. . . . . . . .\n. . . p . . r .\nP P . . . K . .\n. b . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g3g6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d7h7",
+    "rating": 1021,
+    "png-file-name": "pngs/arabianMate/puzzle_2082.png"
+  },
+  {
+    "id": 2084,
+    "lichess_id": "vMB3T",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f4e5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . k r . . . r\n. p p . b p . .\np . . . . . . .\n. P . P q . . .\nQ . P . p B p .\n. . . . . n p .\nP . . . B P . P\nR . . . . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f4e5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h8h2",
+    "rating": 965,
+    "png-file-name": "pngs/arabianMate/puzzle_2084.png"
+  },
+  {
+    "id": 2088,
+    "lichess_id": "vR9UD",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . . . . k\np . p . . p r Q\n. p . p . N . .\nn . . . . . . .\n. . n q P P . .\n. . . . . . . R\n. . P . . . . P\n. . . . . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h3h7",
+    "rating": 645,
+    "png-file-name": "pngs/arabianMate/puzzle_2088.png"
+  },
+  {
+    "id": 2099,
+    "lichess_id": "vn2A0",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h6f8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . . k\nR . . . . . . .\np . r . p N p q\n. p . p . . . .\n. . . P . . P .\n. P . . P . . P\nP . . . . P . K\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h6f8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "a7h7",
+    "rating": 673,
+    "png-file-name": "pngs/arabianMate/puzzle_2099.png"
+  },
+  {
+    "id": 2106,
+    "lichess_id": "vwsEd",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f7g8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. r . . b b Q k\n. . . . . q . p\np . . p . N . .\n. p . . p P . .\n. . . n P . . .\n. . . . . . R .\nP P P . . . P P\nR N . . . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f7g8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g3g8",
+    "rating": 1066,
+    "png-file-name": "pngs/arabianMate/puzzle_2106.png"
+  },
+  {
+    "id": 2123,
+    "lichess_id": "wNEUO",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g6f6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . k . . . .\n. . . . . . . .\n. . . p . p R p\np . . B p . . .\nP . P . P . . .\n. . . . . n . .\n. r . . . . . P\n. . . . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g6f6. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "b2h2",
+    "rating": 1161,
+    "png-file-name": "pngs/arabianMate/puzzle_2123.png"
+  },
+  {
+    "id": 2154,
+    "lichess_id": "xEPno",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g8h8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. r . . . . k .\np p . R . . . .\n. . . . . N . b\n. . . . p . . .\n. . b . . . . P\nP . P . . . n .\n. . . . . . B .\n. . . . . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g8h8. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d7h7",
+    "rating": 999,
+    "png-file-name": "pngs/arabianMate/puzzle_2154.png"
+  },
+  {
+    "id": 2159,
+    "lichess_id": "xQne2",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h3h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . r\n. p p . . k . .\np . . . . p . .\n. . . p . P . .\n. . . . . . p .\n. . N . . n . Q\nP P P . . P P q\n. . . R . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h3h2. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h8h2",
+    "rating": 990,
+    "png-file-name": "pngs/arabianMate/puzzle_2159.png"
+  },
+  {
+    "id": 2160,
+    "lichess_id": "xTOIA",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h2h1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\nk . . . . . . .\np R R . . . . p\nP . . . . . . .\n. . . . . . . .\n. . . N . . . p\n. . . . P n r .\n. . . . . . . K\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h2h1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g3g1",
+    "rating": 801,
+    "png-file-name": "pngs/arabianMate/puzzle_2160.png"
+  },
+  {
+    "id": 2172,
+    "lichess_id": "xi2uS",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g6g5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . r . . . k\np . R . . . . .\n. p . . p N r p\n. . . . P . . .\n. . . . . . . .\nP . . . . . P .\n. P . . . K . P\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g6g5. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c7h7",
+    "rating": 564,
+    "png-file-name": "pngs/arabianMate/puzzle_2172.png"
+  },
+  {
+    "id": 2191,
+    "lichess_id": "yKDse",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e1f1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . k . . r r\np . p . . . . .\n. p . . R . p .\n. . . p . . . .\n. . . . . P . .\n. . . B . n . .\nP P P . . . . P\n. . . . R . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e1f1. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h8h2",
+    "rating": 602,
+    "png-file-name": "pngs/arabianMate/puzzle_2191.png"
+  },
+  {
+    "id": 2195,
+    "lichess_id": "yWJrD",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f2g3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . k . . r\np p p q . p p .\n. . . p . n . .\n. . . . p . . .\n. . P . P . b .\n. . N P B n p .\nP P . . N P B P\nR . . Q . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f2g3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h8h2",
+    "rating": 1029,
+    "png-file-name": "pngs/arabianMate/puzzle_2195.png"
+  },
+  {
+    "id": 2213,
+    "lichess_id": "yxbKp",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d5b3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . k\n. . . . . . p p\n. . . . . . . .\n. . . B P q . .\np Q . . . . P .\n. . . . . n . P\nP P r . . . . .\n. . . . . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d5b3. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c2h2",
+    "rating": 775,
+    "png-file-name": "pngs/arabianMate/puzzle_2213.png"
+  },
+  {
+    "id": 2222,
+    "lichess_id": "zF5om",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d6d4. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . r . . . k\n. . . . . R . .\n. . . q p N . p\n. p . . . . p .\n. . n Q . . . .\n. . . . . . . P\n. . . . . P P .\n. . . . . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d6d4. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f7h7",
+    "rating": 820,
+    "png-file-name": "pngs/arabianMate/puzzle_2222.png"
+  },
+  {
+    "id": 2234,
+    "lichess_id": "zkNTe",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n\n Board:\n. . r . n r . k\n. . . n . . q Q\np . . . . N p .\n. p . . p . P .\n. . . . . . . .\n. B B . . . . R\nP . . . . P . .\n. . . . K . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g7h7. In this puzzle you will use a piece with your knight to deliver checkmate. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h3h7",
+    "rating": 844,
+    "png-file-name": "pngs/arabianMate/puzzle_2234.png"
+  }
+]

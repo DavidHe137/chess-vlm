@@ -1,0 +1,1406 @@
+[
+  {
+    "id": 2,
+    "lichess_id": "06nl4",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h3g4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . k r . . . r\np p q . . p . .\n. . n . p . . .\n. . . . . . p p\n. P P b . P n .\nP . . P . B . P\nR . . . . . P .\n. N B Q . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h3g4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h5g4",
+    "rating": 856,
+    "png-file-name": "pngs/discoveredAttack/puzzle_2.png"
+  },
+  {
+    "id": 6,
+    "lichess_id": "0ARjd",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d5c4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . q . r k .\n. b . n b p B p\n. . p . . n . .\np . . p . . . .\n. p Q P . . . .\n. B . . . P . P\nP P P . N P . .\n. . K R . . R .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d5c4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g7f6",
+    "rating": 1294,
+    "png-file-name": "pngs/discoveredAttack/puzzle_6.png"
+  },
+  {
+    "id": 8,
+    "lichess_id": "0GHQu",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h2g3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . k n . r\np p q b p p . .\n. . p p . . . .\n. . . . . . . .\n. P P b P . . p\n. . N B . P n .\nP . Q N . . P B\nR . . . . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h2g3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h4g3",
+    "rating": 881,
+    "png-file-name": "pngs/discoveredAttack/puzzle_8.png"
+  },
+  {
+    "id": 9,
+    "lichess_id": "0H91w",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f1f4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . . k . r\np b p p . P p .\n. p . . . . . .\n. . b . . P . p\n. . . . P . . q\n. . N B . . . .\nP P P B . . P n\nR . . Q . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f1f4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h2g4",
+    "rating": 1727,
+    "png-file-name": "pngs/discoveredAttack/puzzle_9.png"
+  },
+  {
+    "id": 42,
+    "lichess_id": "1xdOR",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f3g4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\nN . . . . . . r\np p . k . p p p\n. . . p . . . .\n. . b . p . . q\n. . B . P . b .\n. . . P . P . .\nP P P . . . P n\nR . . Q . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f3g4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h2g4",
+    "rating": 1628,
+    "png-file-name": "pngs/discoveredAttack/puzzle_42.png"
+  },
+  {
+    "id": 46,
+    "lichess_id": "2AdFc",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d6c6. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . k . . r\n. . . . . p p p\np . n Q . . . .\n. p . . p . . .\n. . . . P . . q\n. . P . . . . b\nP P B . N b P .\nR N . . . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d6c6. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h3d7",
+    "rating": 1321,
+    "png-file-name": "pngs/discoveredAttack/puzzle_46.png"
+  },
+  {
+    "id": 54,
+    "lichess_id": "2TESV",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g3h2. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . r . . . . r\np p N n . k . .\n. . p P . p . .\n. . . . p . . .\n. . P . P . . b\n. . . . . P K .\nP P B . . . R .\n. . . . . R . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g3h2. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h4f2",
+    "rating": 1381,
+    "png-file-name": "pngs/discoveredAttack/puzzle_54.png"
+  },
+  {
+    "id": 63,
+    "lichess_id": "2lsAs",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h2g3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. r . . k b . r\np . . . . . p .\n. q . . p . . .\n. . . . P . . .\n. . Q . . P . p\n. . . . . . n .\nP P . B . . P P\nR . . . . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h2g3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h4g3",
+    "rating": 958,
+    "png-file-name": "pngs/discoveredAttack/puzzle_63.png"
+  },
+  {
+    "id": 72,
+    "lichess_id": "2zZ6K",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e1e3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . r r .\np . . . k . . .\n. . . . . . . .\n. . N . p n . .\n. P P . . . . p\n. . . P n K . .\nP . . R . . P P\n. . . . R . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e1e3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f5g3",
+    "rating": 2265,
+    "png-file-name": "pngs/discoveredAttack/puzzle_72.png"
+  },
+  {
+    "id": 79,
+    "lichess_id": "3FoHr",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d8d7. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nr . b q . . . k\np p p R n B p .\n. . n . . b . B\n. . . . . . . Q\n. . . . P . . .\n. . N . . . . .\nP P . . . P P P\n. . K . . . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d8d7. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h6f4",
+    "rating": 1725,
+    "png-file-name": "pngs/discoveredAttack/puzzle_79.png"
+  },
+  {
+    "id": 93,
+    "lichess_id": "3iRi0",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c6d4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nr . q . . r . k\nb p p b n . p .\np . n p . . . B\n. . . . . . . Q\n. . . P P . . .\n. B N . . . . P\nP P . . . P P .\nR . . . R . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c6d4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h6f4",
+    "rating": 1687,
+    "png-file-name": "pngs/discoveredAttack/puzzle_93.png"
+  },
+  {
+    "id": 94,
+    "lichess_id": "3iiwZ",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h1g1. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . . . . .\n. b p . . . . .\np . . . k . B .\n. p . . . p . .\n. B . b . P p .\nP . . . p . P p\n. P . . . . . P\n. . R . R . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h1g1. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "e3e2",
+    "rating": 978,
+    "png-file-name": "pngs/discoveredAttack/puzzle_94.png"
+  },
+  {
+    "id": 112,
+    "lichess_id": "4SG74",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e5c4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . .\n. b . . . . . .\n. . p . k . . .\nP . . . N . p .\n. . p p K . P .\n. . . P . . . .\n. P P . . P . .\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e5c4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c6c5",
+    "rating": 669,
+    "png-file-name": "pngs/discoveredAttack/puzzle_112.png"
+  },
+  {
+    "id": 123,
+    "lichess_id": "4izud",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f6g4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\n. . r . . . . k\n. . . . . . R p\np . . p N n . .\n. . . P . . . .\n. . . Q . p . P\n. . . . . . . .\n. . . . . P P K\n. q . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f6g4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g7g4",
+    "rating": 1182,
+    "png-file-name": "pngs/discoveredAttack/puzzle_123.png"
+  },
+  {
+    "id": 124,
+    "lichess_id": "4oTfR",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e3f3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . .\n. b . . . . . .\n. P . . . . k p\n. N . p . p . .\n. . . . . P . .\n. . . . K . P .\n. . . . . . r .\n. R . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e3f3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d5d4",
+    "rating": 934,
+    "png-file-name": "pngs/discoveredAttack/puzzle_124.png"
+  },
+  {
+    "id": 141,
+    "lichess_id": "5NPKW",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e5g4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . . k r .\n. b . . . p p .\np . . P p N . .\n. p B . n . . .\n. . p . . . R .\nP . . . . . . .\n. . B . . P P P\n. . . . . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e5g4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d6d7",
+    "rating": 1454,
+    "png-file-name": "pngs/discoveredAttack/puzzle_141.png"
+  },
+  {
+    "id": 147,
+    "lichess_id": "5c8sv",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f5e4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nr n b q . r . k\np p p . . . p .\n. . . b . . . B\n. . . . p p . Q\n. . B . N . . .\n. . . . . . . .\nP P P . . P P P\nR . . . . R K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f5e4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h6e3",
+    "rating": 1537,
+    "png-file-name": "pngs/discoveredAttack/puzzle_147.png"
+  },
+  {
+    "id": 153,
+    "lichess_id": "5mNPa",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e1f1. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. k . . . . . .\n. p p . . p . .\n. p . . . . . p\n. . . . . . . .\n. P P . . . . B\n. . . . . b P .\nP . . . . . r p\nR . . . R . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e1f1. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g2f2",
+    "rating": 1965,
+    "png-file-name": "pngs/discoveredAttack/puzzle_153.png"
+  },
+  {
+    "id": 162,
+    "lichess_id": "658Hx",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c2c4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . k r . . n Q\np p . . . p . p\n. q . . p . . .\n. b . . P . . .\n. . . p . . . b\n. . . . . N . .\nP P P B K . P P\n. R . N . . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c2c4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d4c3",
+    "rating": 941,
+    "png-file-name": "pngs/discoveredAttack/puzzle_162.png"
+  },
+  {
+    "id": 180,
+    "lichess_id": "6bnE5",
+    "prompt-with-board": "You are a chess expert. Your opponent just played b7e4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . r k r\np b . . b . N .\n. p . . . . Q p\n. . . . P . . .\n. . . q . N . .\nP . . . . . . .\n. P . . . . P P\nR . . . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played b7e4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g7f5",
+    "rating": 1918,
+    "png-file-name": "pngs/discoveredAttack/puzzle_180.png"
+  },
+  {
+    "id": 197,
+    "lichess_id": "77hc2",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f4g3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nr n . . . r k .\np p . . p p . p\n. . . q . . . .\n. . p P b . B .\n. . . . . p Q .\n. . N . . . P .\nP P . . . P . P\nR . . . . R K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f4g3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g5f6",
+    "rating": 1587,
+    "png-file-name": "pngs/discoveredAttack/puzzle_197.png"
+  },
+  {
+    "id": 198,
+    "lichess_id": "7AC08",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f7f6. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . r . . . .\n. . . . b k . .\n. p . . P . . .\n. p . . . P . .\n. P . P . . K p\n. . B . . . . .\n. . . . . . . P\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f7f6. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d4d5",
+    "rating": 1107,
+    "png-file-name": "pngs/discoveredAttack/puzzle_198.png"
+  },
+  {
+    "id": 215,
+    "lichess_id": "7p6pt",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d5f6. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . r . . b . r\np k . b . p . p\n. p . p . p . .\n. . . N p P . .\nP K . P P . P .\n. P . . . . . P\n. . . . . . . .\nR . . . . B . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d5f6. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d6d5",
+    "rating": 1517,
+    "png-file-name": "pngs/discoveredAttack/puzzle_215.png"
+  },
+  {
+    "id": 227,
+    "lichess_id": "86Sel",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h3g4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . k b . r\np p . . . . . .\n. q p . . . p p\n. . . . n b N .\n. . B . . . n .\n. . . . . . . P\nP P P . Q . P .\nR N B . . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h3g4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h6g5",
+    "rating": 1430,
+    "png-file-name": "pngs/discoveredAttack/puzzle_227.png"
+  },
+  {
+    "id": 234,
+    "lichess_id": "8Is1w",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c4e2. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . b . .\n. . . . r k . .\n. . R K p . . p\n. . . . P . . P\n. . B . . P . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c4e2. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "e7b7",
+    "rating": 1602,
+    "png-file-name": "pngs/discoveredAttack/puzzle_234.png"
+  },
+  {
+    "id": 240,
+    "lichess_id": "8hvSu",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e1d2. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . k . . . . r\np p . n . p . .\n. . q . p . . .\nP . . p P p . .\n. P . . . P . b\n. . P . . K . .\n. . . . B . P .\nR . B . Q R . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e1d2. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d5d4",
+    "rating": 1055,
+    "png-file-name": "pngs/discoveredAttack/puzzle_240.png"
+  },
+  {
+    "id": 248,
+    "lichess_id": "91IwM",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h6g5. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nr . b q . r . k\n. p . . b . p .\n. . n . . . . p\np . . . p p N .\nP . Q . . . . P\n. . P . . N B .\n. P . . . P P .\nR . . . K . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h6g5. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h4g5",
+    "rating": 1099,
+    "png-file-name": "pngs/discoveredAttack/puzzle_248.png"
+  },
+  {
+    "id": 252,
+    "lichess_id": "9DFUC",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h7h6. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\n. . R . N . . k\n. . . . . p p p\nn . . . p . . .\n. . . p . . . .\n. . . . . . n .\n. . . . . . P .\n. . . r . P K P\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h7h6. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "e8f6",
+    "rating": 1042,
+    "png-file-name": "pngs/discoveredAttack/puzzle_252.png"
+  },
+  {
+    "id": 289,
+    "lichess_id": "ATpCA",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f7g6. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . . r . .\np . p n . q p .\n. p . . N p Q k\n. . . b P P . P\n. P R P . . . .\n. . . . . . . .\n. P . . . . P .\n. . . . K . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f7g6. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h5g6",
+    "rating": 1280,
+    "png-file-name": "pngs/discoveredAttack/puzzle_289.png"
+  },
+  {
+    "id": 293,
+    "lichess_id": "Acpes",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h2g3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . k . . r\nq . . . . p . .\np . . . p . . .\nQ . . p P . . .\n. . . . . P . p\n. . . . . . n .\nP P . . . . P P\n. . R . . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h2g3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h4g3",
+    "rating": 893,
+    "png-file-name": "pngs/discoveredAttack/puzzle_293.png"
+  },
+  {
+    "id": 310,
+    "lichess_id": "BDpCS",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d6e7. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nr . b q . b . r\n. p p . . B p p\np . n k . N . .\n. . . Q p . B .\n. . . . . . . .\n. . . . . N . .\nP . . . . P P P\n. . . . . K . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d6e7. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f6e4",
+    "rating": 1263,
+    "png-file-name": "pngs/discoveredAttack/puzzle_310.png"
+  },
+  {
+    "id": 336,
+    "lichess_id": "C6zsh",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g4h5. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . . r . k\np p . . p . . N\n. . . p . n p Q\n. . . . n . . .\n. . . . P . b .\n. . P . . . . .\nP . P . . q P .\nR . K . . B . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g4h5. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h7f6",
+    "rating": 1397,
+    "png-file-name": "pngs/discoveredAttack/puzzle_336.png"
+  },
+  {
+    "id": 393,
+    "lichess_id": "ECiU7",
+    "prompt-with-board": "You are a chess expert. Your opponent just played b7a8. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . . r k .\n. B p . . p p .\n. . . . p . . p\n. . . . . . . .\np . . P . . . q\n. . P . P . . .\nP . Q . . P P b\nR . . . . . R K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played b7a8. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h2g3",
+    "rating": 1454,
+    "png-file-name": "pngs/discoveredAttack/puzzle_393.png"
+  },
+  {
+    "id": 400,
+    "lichess_id": "ESNde",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e5e8. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. k . . . . r .\n. . . . . . . .\np p . . . . . p\n. . . . R . . .\nP . p P . . . r\n. . P . . . . b\nB . P . . P . .\n. . . . R . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e5e8. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h3c8",
+    "rating": 1643,
+    "png-file-name": "pngs/discoveredAttack/puzzle_400.png"
+  },
+  {
+    "id": 416,
+    "lichess_id": "F6JAn",
+    "prompt-with-board": "You are a chess expert. Your opponent just played b7e7. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . Q . . . .\np q . . . r k p\n. . . . . p . .\n. . . . p B . .\n. . p n P . K .\n. . . . . . R .\n. . . . . P . .\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played b7e7. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g4h5",
+    "rating": 1381,
+    "png-file-name": "pngs/discoveredAttack/puzzle_416.png"
+  },
+  {
+    "id": 435,
+    "lichess_id": "FXZC0",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e7g5. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\n. . r q . r . k\n. b . . b . p .\np . n p . . P B\n. p . Q . p . .\n. . . . P . . .\n. . N . . . . .\nP P P . B . . .\n. . K R . . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e7g5. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h6g5",
+    "rating": 1068,
+    "png-file-name": "pngs/discoveredAttack/puzzle_435.png"
+  },
+  {
+    "id": 439,
+    "lichess_id": "Fdoto",
+    "prompt-with-board": "You are a chess expert. Your opponent just played a8a7. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nr R . . . . N k\nP . . . . . p .\n. . . . . p . p\n. . n . . . . .\n. . . . . . P .\n. . . . . K . .\n. . . . . . . .\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played a8a7. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g8f6",
+    "rating": 1100,
+    "png-file-name": "pngs/discoveredAttack/puzzle_439.png"
+  },
+  {
+    "id": 452,
+    "lichess_id": "FyjAS",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d3d2. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . . r\np . p . n . b .\n. p p . . . p .\n. . . b . . N .\n. . . . . B . .\n. . . k P P P .\nP . . . . K . P\n. . R . . B . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d3d2. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "e3e4",
+    "rating": 1061,
+    "png-file-name": "pngs/discoveredAttack/puzzle_452.png"
+  },
+  {
+    "id": 457,
+    "lichess_id": "G9E3T",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e7e8q. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . k\np . . . P . . n\n. p p . . . . .\n. . . . . . . Q\n. . B b b . . .\n. . . . . . . .\nP P . . . r . P\n. . . . . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e7e8q. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f2f8",
+    "rating": 1628,
+    "png-file-name": "pngs/discoveredAttack/puzzle_457.png"
+  },
+  {
+    "id": 479,
+    "lichess_id": "H4CY5",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f3e5. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . k . . . . r\np p p . . . p .\n. . . b . p . .\n. . . . . . . p\n. P P P . . . P\nP . . Q . N . q\n. . . . . P . n\n. . R . . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f3e5. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h2f3",
+    "rating": 1556,
+    "png-file-name": "pngs/discoveredAttack/puzzle_479.png"
+  },
+  {
+    "id": 492,
+    "lichess_id": "HTJAN",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d6g3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . . . r k\n. p . . . . p .\np . p q . p . B\n. . . . . . . Q\n. P . . . . . P\n. . P p . . R .\n. P . . . . P .\nR . . . . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d6g3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h6f4",
+    "rating": 1449,
+    "png-file-name": "pngs/discoveredAttack/puzzle_492.png"
+  },
+  {
+    "id": 536,
+    "lichess_id": "Iw6Ri",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d5d6. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\nr . . q . . r .\np p . . b k . p\n. . p . . . . p\n. . . P . . . .\n. . . N . . . .\n. Q P . . . . .\nP . . N . P b P\nR . . . . R K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d5d6. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g2d5",
+    "rating": 1316,
+    "png-file-name": "pngs/discoveredAttack/puzzle_536.png"
+  },
+  {
+    "id": 540,
+    "lichess_id": "J2CD5",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h4f2. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . . .\n. . . . k . . p\n. . . R b . . .\np . B . P . . B\nP . . . . . . b\n. . p . . . . .\n. r . . . . . P\n. . . . . K . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h4f2. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d6d4",
+    "rating": 2231,
+    "png-file-name": "pngs/discoveredAttack/puzzle_540.png"
+  },
+  {
+    "id": 542,
+    "lichess_id": "J8qBD",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c3c4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . .\n. Q . . . . p k\n. . . p . . . .\n. . . . . . . p\np . q . . . . P\n. . R . B . . .\nP P P . . . . .\n. . K . n r . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c3c4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "e1f3",
+    "rating": 1702,
+    "png-file-name": "pngs/discoveredAttack/puzzle_542.png"
+  },
+  {
+    "id": 557,
+    "lichess_id": "JZxyV",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f3d4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . k . . r\np p . . . p p .\n. . . . p . . .\n. . . p P . . .\n. . . q . P p b\n. . . . . N . .\nP P . . Q . P K\nR . B . . R . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f3d4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h4f2",
+    "rating": 1505,
+    "png-file-name": "pngs/discoveredAttack/puzzle_557.png"
+  },
+  {
+    "id": 569,
+    "lichess_id": "K6zaB",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g4d1. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . . k . .\n. p . . R B b p\np . . B . n p .\nq . . . . . . .\n. . . . . . b .\n. . . . . . . .\nP P P . . P P P\nR . . Q . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g4d1. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "e7b7",
+    "rating": 1975,
+    "png-file-name": "pngs/discoveredAttack/puzzle_569.png"
+  },
+  {
+    "id": 573,
+    "lichess_id": "KE7xQ",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g8h7. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . . . k .\np . . . R P . N\n. . . p . . p .\n. . . P . . . .\np . p B . P b .\n. . P n . . . .\nP q . . . . P .\n. . . R . K . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g8h7. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f7f8q",
+    "rating": 1018,
+    "png-file-name": "pngs/discoveredAttack/puzzle_573.png"
+  },
+  {
+    "id": 590,
+    "lichess_id": "KW4SS",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h2h3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . . . k .\np p . . . . p p\n. . . p . . . r\n. . . . p . . b\n. . . . . p . .\n. . . P . P . q\nP P P . Q P . K\nR . B . . . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h2h3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h5f3",
+    "rating": 1081,
+    "png-file-name": "pngs/discoveredAttack/puzzle_590.png"
+  },
+  {
+    "id": 609,
+    "lichess_id": "L6yQL",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h3g4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . k r . . . r\np p . n . . p .\n. . p . . . . .\n. . . . . . . .\n. . B b P . n p\n. . N . . R B P\nP P P . . . P .\n. . . . R . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h3g4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h4g3",
+    "rating": 938,
+    "png-file-name": "pngs/discoveredAttack/puzzle_609.png"
+  },
+  {
+    "id": 621,
+    "lichess_id": "LYcYH",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c4c2. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nr n . . . r . k\np . . . . p R p\n. p . . p B . .\n. . . . . . . .\n. P q . . . . .\n. . . . P P . .\n. P Q . . P . P\nR . . . K . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c4c2. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g7g1",
+    "rating": 1675,
+    "png-file-name": "pngs/discoveredAttack/puzzle_621.png"
+  },
+  {
+    "id": 642,
+    "lichess_id": "MMpre",
+    "prompt-with-board": "You are a chess expert. Your opponent just played b8b7. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\n. r . q . k . r\np Q p . n p R p\n. . B . . . b B\n. . . p . . . .\n. . . P . . . .\n. . . . P . . .\nP P . N . P . P\nR . . . K . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played b8b7. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g7g6",
+    "rating": 1403,
+    "png-file-name": "pngs/discoveredAttack/puzzle_642.png"
+  },
+  {
+    "id": 643,
+    "lichess_id": "MNyBD",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f2f4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . . . . k\np p p . . B p .\n. . . . . . . p\n. . . . N . . .\n. P . . P . . q\n. . P . . . r b\nP . Q . . R . K\nR . B . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f2f4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h3g4",
+    "rating": 1790,
+    "png-file-name": "pngs/discoveredAttack/puzzle_643.png"
+  },
+  {
+    "id": 647,
+    "lichess_id": "MXeQv",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d2c3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . . . . q\n. . p . k p . .\n. p . p . . . .\np P n P p B b .\nP . P . . . P .\n. . . . . . . P\n. . Q K . P . .\n. . R . . . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d2c3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "e5e4",
+    "rating": 1501,
+    "png-file-name": "pngs/discoveredAttack/puzzle_647.png"
+  },
+  {
+    "id": 684,
+    "lichess_id": "NnHFH",
+    "prompt-with-board": "You are a chess expert. Your opponent just played b4b5. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\n. . R N k b . r\n. . . n . p p p\n. . . . p . . .\n. B . p . b . .\n. r . P . B . .\n. . . . P . . .\nP P . . . P P P\n. . . . K . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played b4b5. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d8c6",
+    "rating": 1470,
+    "png-file-name": "pngs/discoveredAttack/puzzle_684.png"
+  },
+  {
+    "id": 700,
+    "lichess_id": "OQwLC",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f5g3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nk . . r . . . r\n. . B . . p p .\nB p . . p . q .\n. N . . . n . .\n. N . . b . . .\n. . . . . . P .\n. . . . . . . P\nR . . . . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f5g3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "a6c8",
+    "rating": 1673,
+    "png-file-name": "pngs/discoveredAttack/puzzle_700.png"
+  },
+  {
+    "id": 710,
+    "lichess_id": "OujKx",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g5g4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\n. . R B k . . .\np . . n . p p .\n. . . . p . . .\nP . . p . . p .\n. . . P . . . .\n. . . . . . . r\nP P K . . . . .\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g5g4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d8h4",
+    "rating": 1354,
+    "png-file-name": "pngs/discoveredAttack/puzzle_710.png"
+  },
+  {
+    "id": 711,
+    "lichess_id": "OwIdQ",
+    "prompt-with-board": "You are a chess expert. Your opponent just played b4b2. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . k .\n. . . . . . p .\n. . . . . . . p\n. . p P p P . P\n. r . . . . . .\n. . . . . K . .\nB P . b . P . .\nR . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played b4b2. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d5d6",
+    "rating": 1114,
+    "png-file-name": "pngs/discoveredAttack/puzzle_711.png"
+  },
+  {
+    "id": 722,
+    "lichess_id": "PWq9N",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h3g3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . .\np p . . . . . k\n. . P b . . . .\n. . . . p p . .\nR . . . . . . P\n. B . . . p . K\nP P P . . P . .\n. . . . . . . r\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h3g3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "e5e4",
+    "rating": 1093,
+    "png-file-name": "pngs/discoveredAttack/puzzle_722.png"
+  },
+  {
+    "id": 725,
+    "lichess_id": "Pf3FZ",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d2d4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . k b . r\np p p . . p p p\n. . . P . . . .\n. . . . p . q .\n. P B . . n . .\n. . . . . Q . .\n. P P P . P b P\nR N B . . R K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d2d4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g2f3",
+    "rating": 1570,
+    "png-file-name": "pngs/discoveredAttack/puzzle_725.png"
+  },
+  {
+    "id": 727,
+    "lichess_id": "PiJVp",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f6e5. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . . . r .\np p . . . p N p\n. . . . b k . .\n. . p p . N P P\n. . . . . . . .\n. . P . . K . .\nP P . . B . . .\n. . . . R . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f6e5. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "e2d3",
+    "rating": 1123,
+    "png-file-name": "pngs/discoveredAttack/puzzle_727.png"
+  },
+  {
+    "id": 739,
+    "lichess_id": "QHvou",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f1e2. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . R . . . . .\n. P . . . . . .\n. . . N . . . .\n. . . . . . . .\n. . . . P k . .\n. . p B b . . .\n. . P . . . p r\n. . . . . K . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f1e2. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g2g1q",
+    "rating": 845,
+    "png-file-name": "pngs/discoveredAttack/puzzle_739.png"
+  },
+  {
+    "id": 744,
+    "lichess_id": "QOrH2",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g6h6. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nr . b k B R . .\np . p p n . . p\n. p . b . . r Q\nn . . . . . . .\n. . . P . . . .\n. . N . . . . .\nP P P . . . . .\nR . . . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g6h6. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "e8h5",
+    "rating": 1445,
+    "png-file-name": "pngs/discoveredAttack/puzzle_744.png"
+  },
+  {
+    "id": 746,
+    "lichess_id": "QY2yB",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d3e4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\nN . . . . r k .\np p . . . p p p\n. . n . . . . .\n. . b . . . . .\n. . B . p . . q\n. . . P . . . b\nP P P . . . P .\nR . B Q . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d3e4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h3g4",
+    "rating": 1560,
+    "png-file-name": "pngs/discoveredAttack/puzzle_746.png"
+  },
+  {
+    "id": 749,
+    "lichess_id": "QhAct",
+    "prompt-with-board": "You are a chess expert. Your opponent just played b8b2. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\n. r . q . r k .\n. . . . b p B p\n. . . . p n . .\n. . . . . . . .\np . . . . . . .\nP . N P . N . .\n. P n . P P . P\n. . . K . . R .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played b8b2. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g7f6",
+    "rating": 1241,
+    "png-file-name": "pngs/discoveredAttack/puzzle_749.png"
+  },
+  {
+    "id": 763,
+    "lichess_id": "RArhq",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f1g1. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . r\np . k . . . . .\n. p p . . . . .\n. . . . . . p .\n. . . . p . . .\n. . . . P . . b\nP P P . . P . .\n. . . R . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f1g1. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h3f1",
+    "rating": 1851,
+    "png-file-name": "pngs/discoveredAttack/puzzle_763.png"
+  },
+  {
+    "id": 775,
+    "lichess_id": "Rexpc",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d7d3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . r k\np p . R . p . p\n. . n . . p . .\n. . P . . . . .\n. P . . . . . .\nN Q P . . . . .\nP . . . . P b P\n. . . . . R K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d7d3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g2f3",
+    "rating": 1830,
+    "png-file-name": "pngs/discoveredAttack/puzzle_775.png"
+  },
+  {
+    "id": 782,
+    "lichess_id": "RpzSA",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h8h7. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . r . r k\np p . . . . . Q\n. . q . . . p B\n. . p . . . . .\n. . . . N . . .\n. P . P . . P .\nP . n . . . K .\n. . . . . . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h8h7. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h6f8",
+    "rating": 1501,
+    "png-file-name": "pngs/discoveredAttack/puzzle_782.png"
+  },
+  {
+    "id": 802,
+    "lichess_id": "SktgN",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d8c7. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . . Q . . . .\np p . . . p k p\n. . . . . p . .\n. . p . . . . .\n. . P . . . . .\n. . . . . . P .\nP . . . . P . P\n. . . . r b K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d8c7. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f1h3",
+    "rating": 1311,
+    "png-file-name": "pngs/discoveredAttack/puzzle_802.png"
+  },
+  {
+    "id": 810,
+    "lichess_id": "T2ASL",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h1a1. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . . . . k\np p p . . B . p\n. . . . . . . .\n. . . . . p . .\n. n . P . . p .\n. . Q . P . . .\nP P . . K P P .\nR . . . . . . q\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h1a1. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d4d5",
+    "rating": 1158,
+    "png-file-name": "pngs/discoveredAttack/puzzle_810.png"
+  },
+  {
+    "id": 813,
+    "lichess_id": "T8HPR",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d4c3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . . r . k\n. q . . . . p .\np b n p . p . B\n. p . B . P . Q\n. P . p P . . .\n. . P . . . . P\n. . . . . . P .\nR . R . . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d4c3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h6e3",
+    "rating": 1449,
+    "png-file-name": "pngs/discoveredAttack/puzzle_813.png"
+  },
+  {
+    "id": 826,
+    "lichess_id": "ThL8U",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d8d3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . r . . . k\n. . . . . . R p\n. . . . . . p .\n. p . . B . P .\n. . . . . P K .\n. r . . . . . P\n. P . . . . . .\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d8d3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g7g6",
+    "rating": 1611,
+    "png-file-name": "pngs/discoveredAttack/puzzle_826.png"
+  },
+  {
+    "id": 827,
+    "lichess_id": "TjteP",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e5d3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . . r k .\np . p . . p B p\n. p . . p . . .\n. . . . n . . .\n. . P . . . . .\n. . . B . P . .\nP b . . . P R P\n. . . . . . R K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e5d3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g7b2",
+    "rating": 1290,
+    "png-file-name": "pngs/discoveredAttack/puzzle_827.png"
+  },
+  {
+    "id": 830,
+    "lichess_id": "TpcS6",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e5f6. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nr n . . . r k .\np p . . . p B p\n. . . . q . . .\n. . . n b R . .\n. . . . . . Q .\n. . P . . . . K\nP . . . . . P P\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e5f6. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g7f6",
+    "rating": 1316,
+    "png-file-name": "pngs/discoveredAttack/puzzle_830.png"
+  },
+  {
+    "id": 843,
+    "lichess_id": "U76F6",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e7e6. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . . .\n. r . n k p p .\n. . R B . . . .\n. . . . p . . p\np . . . P . . P\nP p P . . P . .\n. . . . . . P .\n. . K . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e7e6. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d6f8",
+    "rating": 1531,
+    "png-file-name": "pngs/discoveredAttack/puzzle_843.png"
+  },
+  {
+    "id": 852,
+    "lichess_id": "UZZD6",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d8d5. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . . R . . . Q\np p p . . p p N\n. b . . . . p .\n. P . . . k . .\n. . . . . . q .\nP . . P . . . .\nB . . . . P b P\n. . . . . R K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d8d5. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g2d5",
+    "rating": 1321,
+    "png-file-name": "pngs/discoveredAttack/puzzle_852.png"
+  },
+  {
+    "id": 867,
+    "lichess_id": "VFmb0",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c6d5. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . . r . k\np b q . . . p .\n. b p . . . . .\n. . . B . . p N\n. . . . . p . .\n. . P . . . . Q\nP P . . . P P P\n. . . R R . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c6d5. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h5f6",
+    "rating": 1041,
+    "png-file-name": "pngs/discoveredAttack/puzzle_867.png"
+  },
+  {
+    "id": 887,
+    "lichess_id": "Vy93H",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d2c2. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . . .\n. . p . . p . .\np . . . p P p k\n. . p . . . . .\nP . . . . P . K\n. P . . . . . R\n. . P r . . . P\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d2c2. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h4g4",
+    "rating": 1113,
+    "png-file-name": "pngs/discoveredAttack/puzzle_887.png"
+  },
+  {
+    "id": 895,
+    "lichess_id": "WCo6m",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c1c3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nR . N . . . k .\n. p . . . . p p\n. . . . . . . .\n. P p . . p . .\n. . . . . P . .\n. . P . n . P K\n. . . . . . . P\n. . r . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c1c3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c8d6",
+    "rating": 1585,
+    "png-file-name": "pngs/discoveredAttack/puzzle_895.png"
+  },
+  {
+    "id": 897,
+    "lichess_id": "WDifR",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g4f4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . . .\n. . . . . . . .\n. . . B . . R .\np p . p P p . .\n. . p P b P k .\n. . r . . . . .\n. . . . . K . .\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g4f4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "e5e6",
+    "rating": 963,
+    "png-file-name": "pngs/discoveredAttack/puzzle_897.png"
+  },
+  {
+    "id": 900,
+    "lichess_id": "WGBw6",
+    "prompt-with-board": "You are a chess expert. Your opponent just played a1e1. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . r . .\n. p N . k . p .\np . . . . . . p\n. . P . . . . .\n. . . . . n b .\nN . . . . . . .\nP . . . . . P P\nR . . . . K . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played a1e1. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f4e2",
+    "rating": 1701,
+    "png-file-name": "pngs/discoveredAttack/puzzle_900.png"
+  },
+  {
+    "id": 906,
+    "lichess_id": "WSf5h",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c6d8. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . . b . r\np p . q p Q p k\n. n n p . . . P\n. . . . . . . .\n. . . P . . p .\n. . . . . . . .\nP P . . . P P .\nR N B . K . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c6d8. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h6g7",
+    "rating": 1149,
+    "png-file-name": "pngs/discoveredAttack/puzzle_906.png"
+  },
+  {
+    "id": 908,
+    "lichess_id": "WXv5S",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d4f3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . b n .\nk . . N . p . .\nB . . p . . . p\n. . . . . . . .\n. . . n P . . .\n. . . P . P q .\n. P P . . . . .\nR . . . . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d4f3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "a6c8",
+    "rating": 1502,
+    "png-file-name": "pngs/discoveredAttack/puzzle_908.png"
+  },
+  {
+    "id": 921,
+    "lichess_id": "Wwdwl",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h1h2. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . k .\n. . . . . p . p\nB . . . . . p q\n. . b P p . . n\nP . . . P . . .\n. . . . . P P .\n. . . . . . . r\n. R . . Q R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h1h2. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h5f4",
+    "rating": 1272,
+    "png-file-name": "pngs/discoveredAttack/puzzle_921.png"
+  },
+  {
+    "id": 927,
+    "lichess_id": "XC5vu",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h2h3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . .\n. . . . . p . .\n. . . . . . . .\n. . . . p k . .\n. . . . . . . P\n. . . . . . . r\nR . . . . B p K\n. . . . . b . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h2h3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g2g1q",
+    "rating": 1118,
+    "png-file-name": "pngs/discoveredAttack/puzzle_927.png"
+  },
+  {
+    "id": 930,
+    "lichess_id": "XEnHa",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h7h8. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . . .\n. . . . . . . k\n. . p . . K B .\n. . . p B p . .\n. . . P . . . .\n. . . . . b P .\n. . . . . P q .\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h7h8. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f6f7",
+    "rating": 1480,
+    "png-file-name": "pngs/discoveredAttack/puzzle_930.png"
+  },
+  {
+    "id": 940,
+    "lichess_id": "Y45e0",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c8f5. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\n. . b . R N . k\n. r . . . . . p\np p p . . . p .\n. . . p . . . .\n. P . . . . . .\nP . . . . P . .\n. . . . . . P P\n. . . . . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c8f5. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f8e6",
+    "rating": 1860,
+    "png-file-name": "pngs/discoveredAttack/puzzle_940.png"
+  },
+  {
+    "id": 942,
+    "lichess_id": "Y7Ioe",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d1b1. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\n. . R . . B k .\n. . . . . p . p\n. . . . . . p .\n. p . p . . . .\n. . . . . . . .\nP . . . . . P .\n. P . . . P K P\n. . . q . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d1b1. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f8h6",
+    "rating": 1205,
+    "png-file-name": "pngs/discoveredAttack/puzzle_942.png"
+  },
+  {
+    "id": 948,
+    "lichess_id": "YE7Zo",
+    "prompt-with-board": "You are a chess expert. Your opponent just played a3b4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . . .\np . . . . . . .\n. p . . R B . k\n. P b P . . p .\nP . . . . . P .\nq . . . . . . n\n. . B . . . . .\n. K . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played a3b4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f6b2",
+    "rating": 1427,
+    "png-file-name": "pngs/discoveredAttack/puzzle_948.png"
+  },
+  {
+    "id": 968,
+    "lichess_id": "ZArCs",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h8h7. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . r . r k\n. . . . . p . Q\np . p . b P . .\n. p . . . . . B\n. . P . P . p .\n. P . . . . . .\nP . . . . P K .\n. . . . . . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h8h7. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h5f7",
+    "rating": 1085,
+    "png-file-name": "pngs/discoveredAttack/puzzle_968.png"
+  },
+  {
+    "id": 976,
+    "lichess_id": "ZXH9W",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f1f4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\nr n . . k . n r\np p p . . p . p\n. . . . . . . .\n. . . B . . . .\n. . . b P p . q\n. . . P . . p b\nP P P . . . P .\nR N B Q N R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f1f4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h3g4",
+    "rating": 1910,
+    "png-file-name": "pngs/discoveredAttack/puzzle_976.png"
+  },
+  {
+    "id": 982,
+    "lichess_id": "Zsf9l",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e3e2. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nr . b . Q . . .\np p . . . . r k\n. q n . . . . .\n. . . . . P . .\n. . . . p . . B\n. . . . p . . R\nP P . . . . P P\n. . . . R . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e3e2. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h4f2",
+    "rating": 1473,
+    "png-file-name": "pngs/discoveredAttack/puzzle_982.png"
+  },
+  {
+    "id": 1002,
+    "lichess_id": "aT192",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f8f5. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nr . b q . r . k\np p . . n . p N\n. . n . . . . .\n. . . . . . . Q\n. . B . p . . .\n. . P . . . . .\nP P . . . P P b\nR . . . . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f8f5. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h7g5",
+    "rating": 1627,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1002.png"
+  },
+  {
+    "id": 1005,
+    "lichess_id": "aWagJ",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g3g4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\nr . b q k . . r\np p . . . p p .\n. . . . p . . .\n. N . . . . . .\n. n . P . . n p\n. . . . . B K .\nP P . . N P P .\nR . B Q . R . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g3g4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "e6e5",
+    "rating": 1291,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1005.png"
+  },
+  {
+    "id": 1027,
+    "lichess_id": "bGJOt",
+    "prompt-with-board": "You are a chess expert. Your opponent just played b8a7. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\n. b . . r . k .\n. . . p . . B p\np . q . p . . .\n. p . . . . . .\n. P . . . . R .\nP . . . . . P .\n. . . . . . . P\n. . . . . Q K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played b8a7. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g7d4",
+    "rating": 1166,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1027.png"
+  },
+  {
+    "id": 1033,
+    "lichess_id": "bZMn1",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g8h8. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . q r k .\n. b p p b p . .\np . n . . . Q .\n. p . . p . n .\n. . . . P . . P\n. B N P . . . .\nP P P . . P P .\nR . . . K . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g8h8. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h4g5",
+    "rating": 1382,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1033.png"
+  },
+  {
+    "id": 1048,
+    "lichess_id": "cNYc8",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h1h2. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . . r k .\np . p . . p p p\n. . p . . . . .\n. . . p . . . .\n. . . . . . . q\n. B . P . . n b\nP P P . . . P .\nR N B . Q . R K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h1h2. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h3g4",
+    "rating": 1411,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1048.png"
+  },
+  {
+    "id": 1081,
+    "lichess_id": "dr606",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f4e5. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\nN . . . . . k .\n. . . . R p . p\n. . . . p . p .\n. p . . . . . .\n. . . . . B . .\n. P . . . . . .\nP . . . . P . P\n. . . r . b K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f4e5. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f1h3",
+    "rating": 1103,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1081.png"
+  },
+  {
+    "id": 1094,
+    "lichess_id": "e8aFd",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c7g3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . k b . r\np p q . . p p p\n. . N . p . . .\n. B . p . . B .\n. . . P b . . .\n. . . . . . Q .\nP P P . . P P P\nR . . . K . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c7g3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c6d8",
+    "rating": 1209,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1094.png"
+  },
+  {
+    "id": 1106,
+    "lichess_id": "ebOx2",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f7f8. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . Q B . . .\n. . . . . k p p\n. p . . . . . .\n. P q . . p . .\n. . . . . P . .\n. b . . . . P .\n. . . . . . . P\n. . r R . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f7f8. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "e8g6",
+    "rating": 1497,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1106.png"
+  },
+  {
+    "id": 1110,
+    "lichess_id": "esS4H",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d8e8. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . q . r k .\np p . . . p . p\n. . n p . . . .\n. . . . b p B .\n. . B p . N . .\n. . . P . . Q .\nP P P . . . P P\nR . . . . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d8e8. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g5f6",
+    "rating": 1769,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1110.png"
+  },
+  {
+    "id": 1126,
+    "lichess_id": "fGswg",
+    "prompt-with-board": "You are a chess expert. Your opponent just played b3a4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . . . . .\n. . . . . r k .\nn . . . . . . p\n. . . . . . . .\nn P p . P P . B\n. K . . . . P .\n. . . . . . . P\n. . . R R . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played b3a4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "a6c7",
+    "rating": 2125,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1126.png"
+  },
+  {
+    "id": 1133,
+    "lichess_id": "fQIv2",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g8h8. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . k R\nr . . . . . . .\n. . p . . P K .\n. . . . B . . .\n. p . P . . . .\nb . . . . . . .\n. . . . . . . .\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g8h8. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f6f7",
+    "rating": 675,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1133.png"
+  },
+  {
+    "id": 1138,
+    "lichess_id": "fjCt2",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g4h3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . k . . r\np p . . . . p .\n. . . . . . . .\n. P p . p . . .\nP . P p . . K b\n. . . . . . . .\n. B . . . Q B n\nR . . . . R . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g4h3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h4f2",
+    "rating": 876,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1138.png"
+  },
+  {
+    "id": 1149,
+    "lichess_id": "gH16k",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c7f7. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nr . b . . n . r\n. . q . . Q p k\np . p . p . . .\n. . . p P . p B\n. . . p . . . .\n. . . . . . . R\nP P . N . P . P\nR . . . K . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c7f7. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h5f7",
+    "rating": 794,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1149.png"
+  },
+  {
+    "id": 1153,
+    "lichess_id": "gSE4B",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c5d6. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . r . .\n. . p . . . . k\n. . . p . . . p\n. . P P . . p .\n. . . . q . . .\n. . . . . p . .\n. . . Q . . . B\n. . . . . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c5d6. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f3f2",
+    "rating": 918,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1153.png"
+  },
+  {
+    "id": 1172,
+    "lichess_id": "hb9uH",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c7c6. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . . . . .\np . Q . . . p p\nk . . . . . . N\n. p . . . . . .\n. . B P . n . .\n. . . . . . . P\nP P . . . q b K\n. . R . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c7c6. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g2c6",
+    "rating": 1414,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1172.png"
+  },
+  {
+    "id": 1196,
+    "lichess_id": "i5XGO",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e7g5. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nr . b q . r k .\np p p . b . . p\n. . . p P . . p\n. . . . . p . .\n. . B . . Q . .\n. . . . . . . P\nP P P . . P P .\nR N . . . R K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e7g5. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "e6e7",
+    "rating": 943,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1196.png"
+  },
+  {
+    "id": 1201,
+    "lichess_id": "iZ9SG",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g7h6. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . r . . .\n. b q . b p k .\np . . p n . p Q\n. p . . p . . .\n. . r . P . P B\nP N N . . P . .\n. P P . . . K .\n. . . R . . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g7h6. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h4f6",
+    "rating": 1706,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1201.png"
+  },
+  {
+    "id": 1202,
+    "lichess_id": "icgtJ",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d7d8q. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . k\n. . . P . . . .\n. p . . n . . K\np . . . p . p b\nP . . . P . P .\n. . . . . P . .\n. . . . . . . r\n. R . R . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d7d8q. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h5e8",
+    "rating": 1624,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1202.png"
+  },
+  {
+    "id": 1205,
+    "lichess_id": "infHY",
+    "prompt-with-board": "You are a chess expert. Your opponent just played a1f6. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nr n . R . B k .\np q . . . p p p\n. p . . p . . .\n. B . . . . . .\n. . . . . . . .\n. P . . P P . .\nP . . . Q P . P\nb . . . . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played a1f6. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f8e7",
+    "rating": 1274,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1205.png"
+  },
+  {
+    "id": 1215,
+    "lichess_id": "j3pTd",
+    "prompt-with-board": "You are a chess expert. Your opponent just played b5b4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . k . . r\np p . . . p p p\n. . . . p . . .\n. R . p . b . .\n. b . P . B . .\n. . . . P . . .\n. . . N . P P P\n. . r n K B . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played b5b4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d1c3",
+    "rating": 1447,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1215.png"
+  },
+  {
+    "id": 1231,
+    "lichess_id": "jfLu1",
+    "prompt-with-board": "You are a chess expert. Your opponent just played a6f6. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . .\n. . . . . . . .\nR . . . . p . .\n. . . p k . . N\n. . b . . . P .\n. r n . K B . .\n. . . . . . . .\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played a6f6. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c3e4",
+    "rating": 1661,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1231.png"
+  },
+  {
+    "id": 1234,
+    "lichess_id": "jikYm",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f2f3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . . r k .\n. . . . . p . p\n. p p . . . p .\np . . . P . . .\n. . . b . P . q\nP . . B . . N b\n. P Q . . R P .\nR . B . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f2f3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h3g4",
+    "rating": 1467,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1234.png"
+  },
+  {
+    "id": 1243,
+    "lichess_id": "kGHgQ",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c5c4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . Q . p . . .\n. P . . P . R .\np . p . . . . .\nP . P . k . P .\n. K n . . r . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c5c4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c1d3",
+    "rating": 1062,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1243.png"
+  },
+  {
+    "id": 1245,
+    "lichess_id": "kNyD3",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e2g3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . . . k .\np p p . . . p p\n. . . . p . p .\n. . . n . . q .\n. . . . . r P .\n. . . B . . b .\nP P P K N . . .\nR . B Q . . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e2g3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f4e4",
+    "rating": 2174,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1245.png"
+  },
+  {
+    "id": 1258,
+    "lichess_id": "khFaw",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h3g4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . r\np . . . . . . .\n. p . p . . . .\n. . p P . . . p\n. . P . P k r K\n. . . . . P . P\nP . . R R . . .\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h3g4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h5g4",
+    "rating": 846,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1258.png"
+  },
+  {
+    "id": 1279,
+    "lichess_id": "lTsYk",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h1f1. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . k . . r\np p p . . p p p\n. . . . . . . .\n. . b . P . . .\n. . . . . . . q\n. . . B . . . b\nP P P . . . P K\nR N B Q . . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h1f1. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h3d7",
+    "rating": 1217,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1279.png"
+  },
+  {
+    "id": 1283,
+    "lichess_id": "lUr8g",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e2g4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . k . . r\np p . n . p . .\n. . p . . . . .\n. . P p . p p p\n. . . P . . n .\n. . . . P . q .\nP P . N B . . .\nR . B Q . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e2g4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h5g4",
+    "rating": 1399,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1283.png"
+  },
+  {
+    "id": 1291,
+    "lichess_id": "lgC6V",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d5c6. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . k . n r\np . p . . N p p\n. p . . . . . .\n. . b B p . . .\n. . Q . P . . q\n. . . P . . p b\nP P P . . . P .\nR N B . . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d5c6. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h3d7",
+    "rating": 1429,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1291.png"
+  },
+  {
+    "id": 1303,
+    "lichess_id": "mBIw7",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g6h4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . r k .\np p Q . . . b .\n. . . . . . N p\n. . . . . . . .\n. P P n . . . q\nP . . . . . . .\n. . . . . P P B\n. . R B r b K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g6h4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f1e2",
+    "rating": 1472,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1303.png"
+  },
+  {
+    "id": 1322,
+    "lichess_id": "msb2P",
+    "prompt-with-board": "You are a chess expert. Your opponent just played b2b4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . . . k .\n. p . b . p p p\n. . . p . . . .\np B . N p . . .\nK . r p P . . .\nP . . . . . q .\n. P P . . . . .\nR . B Q R . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played b2b4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "a5b4",
+    "rating": 1335,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1322.png"
+  },
+  {
+    "id": 1341,
+    "lichess_id": "ndwH0",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d8d1. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . r . r . k\np . p . . p R p\n. p . . p Q . B\n. . . . . . . .\n. . . . . . . .\n. . P . . . . .\nP . q . . . . P\n. . . . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d8d1. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g7g1",
+    "rating": 858,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1341.png"
+  },
+  {
+    "id": 1356,
+    "lichess_id": "oGuYA",
+    "prompt-with-board": "You are a chess expert. Your opponent just played b1a2. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . . r . . k .\n. p . . . p p p\n. . . . b . . .\np n . . . . . .\nP . p . P . P .\nb . . . P N . P\n. . P . N P B .\nR K . r . . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played b1a2. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c4c3",
+    "rating": 1479,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1356.png"
+  },
+  {
+    "id": 1374,
+    "lichess_id": "ouDdM",
+    "prompt-with-board": "You are a chess expert. Your opponent just played a8f3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\nB . . . . . . k\np . . . . . . p\n. p . p . . . .\n. . . . p P . .\n. . P p . . . .\n. . . . . n . q\nP P . . Q P . n\nR . . . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played a8f3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h2f3",
+    "rating": 1109,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1374.png"
+  },
+  {
+    "id": 1382,
+    "lichess_id": "p4csg",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h2g3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . r . k . . r\np . . . . p p .\n. q . . p . . .\n. N . p . . . p\nP . . . . . B .\n. P . . . . n .\n. B P . . b P P\nR . . Q . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h2g3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h5g4",
+    "rating": 1099,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1382.png"
+  },
+  {
+    "id": 1389,
+    "lichess_id": "pDaAj",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h6g7. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . r . k . .\np . . . . p . p\n. . . P b N p q\n. p . . . . . .\n. Q p . . . . .\n. . . . . . . .\nP . . . . P P .\n. . . R . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h6g7. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d6d7",
+    "rating": 1110,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1389.png"
+  },
+  {
+    "id": 1396,
+    "lichess_id": "pRxS1",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e8d8. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nr . b . q r . k\np p p p . . p N\n. . . . . . . .\n. . . . . p . .\n. . B n . B . Q\n. . . . . . . .\nP P P . . n . P\n. . K . . . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e8d8. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h7f6",
+    "rating": 1623,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1396.png"
+  },
+  {
+    "id": 1406,
+    "lichess_id": "poKOg",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f8c8. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . . r . k\n. . . . . . R p\n. . . . . . . .\n. . . p B p . .\np . . P . . . .\nP . . K . . P .\nn . P . . P . P\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f8c8. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g7g5",
+    "rating": 1606,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1406.png"
+  },
+  {
+    "id": 1409,
+    "lichess_id": "q06Lp",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g2h3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . k\np p p . . p . p\n. . n . . p . r\nP . . . . . . b\n. P B P . p . .\n. . P Q . N . q\n. . . . . P K .\nR . . . R . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g2h3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h5f3",
+    "rating": 1006,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1409.png"
+  },
+  {
+    "id": 1410,
+    "lichess_id": "q1bDn",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e7g5. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nr n b q . . r k\np p p p b . . N\n. . . . p . . Q\n. . . . . p . P\n. . . . . . . .\n. . P B . . . .\nP P P . . P P .\nR . . . K . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e7g5. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h7g5",
+    "rating": 1463,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1410.png"
+  },
+  {
+    "id": 1411,
+    "lichess_id": "q2Dwt",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h2h4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . . .\n. . . R . . . .\n. . . . . p . B\np . . . p . . .\n. . . . b . . .\n. P . . . k P .\nP . . . . b . P\n. . . . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h2h4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f3g3",
+    "rating": 986,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1411.png"
+  },
+  {
+    "id": 1451,
+    "lichess_id": "rOXt8",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g3g4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . . Q . . . .\np p . . . p . .\n. . . p . . p p\n. . p . b . . k\n. . P . . r . .\n. P . . . q P P\nP . . . . P . K\n. . . R . R . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g3g4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f4g4",
+    "rating": 899,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1451.png"
+  },
+  {
+    "id": 1454,
+    "lichess_id": "rST5P",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g6h5. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . q . r k .\n. p p . . p . p\np . . p . b p .\n. . . . . . B Q\n. . . . P . . P\n. . N . . . . .\nP P P . . P . .\n. . K . . . R R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g6h5. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g5f6",
+    "rating": 893,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1454.png"
+  },
+  {
+    "id": 1455,
+    "lichess_id": "rU4JF",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h3g4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\nr n . . k . . r\np p q . . . p .\n. . p . p p . .\n. . . . . . . p\n. . P P N P n .\n. . . . b . . P\nP P . B B . P .\n. . R Q . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h3g4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h5g4",
+    "rating": 1017,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1455.png"
+  },
+  {
+    "id": 1485,
+    "lichess_id": "sN9cu",
+    "prompt-with-board": "You are a chess expert. Your opponent just played b1g6. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . r k .\np . . . . p . p\n. . . . p . p .\n. p b . P . . .\n. . p . . . . .\n. . . . R . P .\nP Q . . . K P P\nR B . q . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played b1g6. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f7g6",
+    "rating": 1782,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1485.png"
+  },
+  {
+    "id": 1487,
+    "lichess_id": "sU84s",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f1g3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . . r k .\n. . p . . . b .\n. p . p . n . .\n. P . P p . . p\np . P . P p . q\n. . . . . P p b\nP . Q . N . P .\nR . . . B N R K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f1g3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h3c8",
+    "rating": 1679,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1487.png"
+  },
+  {
+    "id": 1516,
+    "lichess_id": "tMTO7",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f4e5. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . k . . r\np p p . . p p p\n. . . p . . . .\n. . b . n . . .\n. . B . . P . q\n. . . . . . . b\nP P Q . R . P .\nR N B . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f4e5. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h3d7",
+    "rating": 1547,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1516.png"
+  },
+  {
+    "id": 1518,
+    "lichess_id": "tP5yh",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h8h7. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\n. . r . . . r k\np p . q b . . .\n. . n . p . . B\n. . . n p . . Q\n. . . . . . . .\n. . . . . . . .\nP P P . . P P P\nR N . . R . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h8h7. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h6f8",
+    "rating": 1496,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1518.png"
+  },
+  {
+    "id": 1525,
+    "lichess_id": "tgKhl",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h7h8q. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\nQ . . . . . . .\n. . p k . . . P\np . . . p . . .\n. p . . P . P .\n. . . P . . . .\n. . . . . . . .\nP P P . . . . .\n. . K b q . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h7h8q. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d1e2",
+    "rating": 1346,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1525.png"
+  },
+  {
+    "id": 1540,
+    "lichess_id": "uEzQH",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h8g8. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . R N . . k\np p . . . . p p\n. n . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . P .\nP r . . . P . P\n. . . . . . K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h8g8. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "e8d6",
+    "rating": 1552,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1540.png"
+  },
+  {
+    "id": 1553,
+    "lichess_id": "uZZYC",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d1d3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . . r . . r k\n. . . . . . . p\nB . p p . . . Q\n. . . . p . . .\nP P . . . . . .\n. . . . . q . .\n. . . . . P n P\n. . . R . R . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d1d3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g2e3",
+    "rating": 1741,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1553.png"
+  },
+  {
+    "id": 1564,
+    "lichess_id": "un2g6",
+    "prompt-with-board": "You are a chess expert. Your opponent just played g8h7. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . k .\np . . . R P . .\n. . . r . . p B\n. . . . . . . .\n. . . . . . . .\n. P . n . . P p\nr . . . . . . P\n. . . . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played g8h7. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f7f8q",
+    "rating": 960,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1564.png"
+  },
+  {
+    "id": 1572,
+    "lichess_id": "uvrAh",
+    "prompt-with-board": "You are a chess expert. Your opponent just played d2g5. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . k . . r\n. p p . . p . .\np . p . . . . p\n. . . . . . q .\n. . . . P . b .\n. . P P . . . .\nP P . Q n . P K\nR N . . . R . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played d2g5. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h6g5",
+    "rating": 1091,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1572.png"
+  },
+  {
+    "id": 1593,
+    "lichess_id": "vXdFi",
+    "prompt-with-board": "You are a chess expert. Your opponent just played c8c6. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nq . r r k . . .\np b . . B . . p\n. p . . Q . p .\n. . p . . . P .\n. . . . P . . .\nP P . P . . . .\n. . . . p . . P\n. . R . . . R K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played c8c6. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "e7d6",
+    "rating": 1657,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1593.png"
+  },
+  {
+    "id": 1594,
+    "lichess_id": "vaQ57",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f1g2. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . . . .\np . . . . . . p\n. . . . . . p .\n. . . . . . . .\n. . . . . . K .\nP . . . B . P .\n. . . R . P . q\n. . R . . k . r\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f1g2. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f2f3",
+    "rating": 1146,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1594.png"
+  },
+  {
+    "id": 1596,
+    "lichess_id": "vhOUD",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f8f4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . . . r . .\n. . . . . . . .\n. . . p . . . p\np . p . . . p .\nk . . p P . . .\nP . . P . P . P\nK . P . . . . .\n. . . B . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f8f4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "c2c4",
+    "rating": 1604,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1596.png"
+  },
+  {
+    "id": 1606,
+    "lichess_id": "w5aLO",
+    "prompt-with-board": "You are a chess expert. Your opponent just played b2b1q. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\n. . . r . . . .\n. . . . . . . p\np . . . p . p .\n. . . . . . . .\nP . . . P . k P\n. . . . K R . .\nb p . . B . P .\n. . . . N . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played b2b1q. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "f3h3",
+    "rating": 1968,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1606.png"
+  },
+  {
+    "id": 1610,
+    "lichess_id": "wBQ2l",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f3d4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\n. . R . B k . .\n. . . . . . . .\nr . . . . . . p\n. . . . b N . P\np . . . . p . .\n. . . . . n . .\n. . . . . . . .\n. . . . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f3d4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "e8g6",
+    "rating": 2008,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1610.png"
+  },
+  {
+    "id": 1624,
+    "lichess_id": "wQP6t",
+    "prompt-with-board": "You are a chess expert. Your opponent just played f6e4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nQ B k r . b . r\n. p . . p p p p\n. . p . . n . .\n. . . . N . . .\n. . p . . . b .\n. . . . . . . .\nP P . . q P P P\nR . . . . . K R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played f6e4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "b8d6",
+    "rating": 1447,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1624.png"
+  },
+  {
+    "id": 1641,
+    "lichess_id": "x21PK",
+    "prompt-with-board": "You are a chess expert. Your opponent just played a6b5. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. k . . . . r .\n. . . . . . . .\nQ . . . . . . .\n. p . . p . . .\n. . . . . . . .\nP . . . . . . P\n. . . . B q b K\n. . . . R . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played a6b5. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "g2b7",
+    "rating": 1334,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1641.png"
+  },
+  {
+    "id": 1685,
+    "lichess_id": "yLdqr",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e8e7. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nr . b . q r . k\np p p . . . p .\n. . n p . . . B\n. . b B p . . .\n. . . . p . . Q\n. . . P . . . P\nP P P . . P P N\nR . . . . R K .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e8e7. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h6g5",
+    "rating": 1482,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1685.png"
+  },
+  {
+    "id": 1692,
+    "lichess_id": "ycCAp",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h3g4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\nr . . . k . . r\np p . . b . p .\n. . q . p p . .\n. . . . P . . p\n. P P p . P n .\n. . . P . . P P\nN . n B Q . . K\n. R . . . . R .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h3g4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h5g4",
+    "rating": 951,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1692.png"
+  },
+  {
+    "id": 1707,
+    "lichess_id": "zO1hl",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h5g4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\n. . k r . b . r\np R . . . p p .\nB . . . p . . .\n. . q p P . . p\n. . . n . P Q .\n. . . . p . K .\nP . P . . . P P\n. R . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h5g4. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "b7f7",
+    "rating": 1976,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1707.png"
+  },
+  {
+    "id": 1708,
+    "lichess_id": "zOn0t",
+    "prompt-with-board": "You are a chess expert. Your opponent just played e2f3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . . r . . . .\n. b . . . . k .\np . . . p . N .\n. p . p P p . Q\n. . . . . P . .\nb . P P . . P .\n. q . . K . P .\n. . R . . . . R\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played e2f3. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d5d4",
+    "rating": 1043,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1708.png"
+  },
+  {
+    "id": 1710,
+    "lichess_id": "zTdX0",
+    "prompt-with-board": "You are a chess expert. Your opponent just played h8g8. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n\n Board:\nr . . . . . . k\n. . . . . . . p\n. . . . . Q p .\n. . . P p . . .\n. . B . P . K .\n. . . . . . P .\n. . . . . . . q\n. . . . . . . .\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played h8g8. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: Black\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "d5d6",
+    "rating": 1061,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1710.png"
+  },
+  {
+    "id": 1711,
+    "lichess_id": "zTpng",
+    "prompt-with-board": "You are a chess expert. Your opponent just played a1f1. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n\n Board:\n. . . . . . n r\np p p . k . . .\n. . . p p . . .\n. . b . . . . p\n. . . . P . N .\n. . P P . R p .\nP P . . . . P .\nR . . . . . . K\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "prompt-with-out-board": "You are a chess expert. Your opponent just played a1f1. In this puzzle there is the possibility to deliver a discovered attack. Find the best move.\n\nSide to move: White\n Give your answer in UCI format (e.g., e2e4, g1f3, e7e8q for promotion).\n\nBest move:",
+    "solution": "h5g4",
+    "rating": 849,
+    "png-file-name": "pngs/discoveredAttack/puzzle_1711.png"
+  }
+]

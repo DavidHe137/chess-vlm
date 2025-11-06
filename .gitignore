@@ -12,3 +12,4 @@ pngs/
 .env
 
 logs/
+qwen2-7b-instruct-trl-sft-ChartQA/

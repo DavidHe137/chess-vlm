@@ -1,6 +1,8 @@
+import os
+import json
 import click
 from huggingface_hub import notebook_login
-from datasets import load_dataset
+from datasets import load_dataset, Dataset
 from transformers import BitsAndBytesConfig
 import torch
 from transformers import Qwen2VLForConditionalGeneration, Qwen2VLProcessor
@@ -15,46 +17,6 @@ import pdb
 SYSTEM_MESSAGE = """
 You are a helpful assistant that can answer questions about the image.
 """
-def format_data(sample):
-    return {
-    "images": [sample["image"]],
-    "messages": [
-
-        {
-            "role": "system",
-            "content": [
-                {
-                    "type": "text",
-                    "text": SYSTEM_MESSAGE
-                }
-            ],
-        },
-        {
-            "role": "user",
-            "content": [
-                {
-                    "type": "image",
-                    "image": sample["image"],
-                },
-                {
-                    "type": "text",
-                    "text": sample['query'],
-                }
-            ],
-        },
-        {
-            "role": "assistant",
-            "content": [
-                {
-                    "type": "text",
-                    "text": sample["label"][0]
-                }
-            ],
-        },
-    ]
-    }
-
-
 def generate_text_from_sample(model, processor, sample, max_new_tokens=1024, device="cuda"):
     # Prepare the text input by applying the chat template
     text_input = processor.apply_chat_template(
@@ -90,24 +52,77 @@ def generate_text_from_sample(model, processor, sample, max_new_tokens=1024, dev
 
     return output_text[0]  # Return the first decoded output text
 
+def load_json(file_name):
+    with open(file_name, "r") as f:
+        return json.load(f)
+
+def get_formatted_dataset(folder_name):
+    def format_lichess_puzzles(sample):
+        return {
+            "messages": [
+                {
+                    "role": "system",
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": SYSTEM_MESSAGE
+                        }
+                    ],
+                },
+                {
+                    "role": "user",
+                    "content": [
+                        {
+                            "type": "image",
+                            "image": sample["png-file-name"],
+                        },
+                        {
+                            "type": "text",
+                            "text": sample['prompt-with-board'],
+                        }
+                    ],
+                },
+                {
+                    "role": "assistant",
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": sample['solution'],
+                        }
+                    ],
+                }
+            ]
+        }
+    
+    # Get random .9 of the dataset
+    # Get random elements from a dictionary
+    train_dataset = load_json(os.path.join(folder_name, "train.json"))
+    eval_dataset = load_json(os.path.join(folder_name, "eval.json"))
+    test_dataset = load_json(os.path.join(folder_name, "test.json"))
+
+    train_dataset = [format_lichess_puzzles(sample) for sample in train_dataset]
+    eval_dataset = [format_lichess_puzzles(sample) for sample in eval_dataset]
+    test_dataset = [format_lichess_puzzles(sample) for sample in test_dataset]
+    
+    # Convert lists to HuggingFace Dataset objects
+    train_dataset = Dataset.from_list(train_dataset)
+    eval_dataset = Dataset.from_list(eval_dataset)
+    test_dataset = Dataset.from_list(test_dataset)
+    
+    return train_dataset, eval_dataset, test_dataset
+
 
 @click.command()
-@click.option("--dataset_id", default="HuggingFaceM4/ChartQA", type=str, required=True)
+@click.option("--dataset_json", default="data/themed_prompts/bodenMate/", type=str, required=True)
 @click.option("--model_id", default="Qwen/Qwen2-VL-7B-Instruct", type=str, required=True)
 @click.option("--output_dir", default="qwen2-7b-instruct-trl-sft-ChartQA", type=str, required=True)
-def sft(dataset_id, model_id, output_dir):
+def sft(dataset_json, model_id, output_dir):
     """
     Train a Qwen2 VL model on a dataset.
     """
 
     # Load dataset
-    click.echo("loading dataset")
-    train_dataset, eval_dataset, test_dataset = load_dataset(dataset_id, split=['train[:10%]', 'val[:10%]', 'test[:10%]'])
-
-    train_dataset = [format_data(sample) for sample in train_dataset]
-    eval_dataset = [format_data(sample) for sample in eval_dataset]
-    st_dataset = [format_data(sample) for sample in test_dataset]
-
+    train_dset, eval_dset, test_dset = get_formatted_dataset(dataset_json)
 
     # Load model and tokenizer
     click.echo("loading model")
@@ -179,8 +194,8 @@ def sft(dataset_id, model_id, output_dir):
     trainer = SFTTrainer(
         model=model,
         args=training_args,
-        train_dataset=train_dataset,
-        eval_dataset=eval_dataset,
+        train_dataset=train_dset,
+        eval_dataset=eval_dset,
         peft_config=peft_config,
         processing_class=processor,
     )

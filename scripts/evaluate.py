@@ -22,6 +22,7 @@ supported_models = {
     ],
     "vllm": [
         "Qwen/Qwen2.5-VL-3B-Instruct",
+        "Qwen/Qwen2-VL-7B-Instruct",
         "Qwen/Qwen3-VL-30B-A3B-Instruct",
         "Qwen/Qwen3-VL-30B-A3B-Thinking"
     ]
