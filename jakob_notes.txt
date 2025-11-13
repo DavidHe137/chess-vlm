@@ -1,16 +1,16 @@
 salloc -N1 -t4:00:00 --cpus-per-task 6 --ntasks-per-node=1 --gres=gpu:H200:1 --mem=128000
 
-uv run vllm serve Qwen/Qwen3-VL-8B-Instruct --port=8003 --generation-config vllm
+uv run vllm serve Qwen/Qwen2.5-VL-7B-Instruct --port=8003 --generation-config vllm
 --repetition-penalty=1.0
 --presence-penalty=2.0
 --top-k=40
 --top-p=1.0
 --temperature=1.0
 --max-model-len=32k
-curl http://atl1-1-03-017-23-0:8003/v1/chat/completions \
+curl http://atl1-1-03-012-18-0:8003/v1/chat/completions \
     -H "Content-Type: application/json" \
     -d '{
-        "model": "Qwen/Qwen3-VL-8B-Instruct",
+        "model": "Qwen/Qwen2.5-VL-7B-Instruct",
         "messages": [
             {"role": "system", "content": "You are a helpful assistant."},
             {"role": "user", "content": "Who won the world series in 2020?"}
