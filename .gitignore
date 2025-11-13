@@ -12,3 +12,4 @@ pngs/
 .env
 
 logs/
+outputs/
