@@ -13,3 +13,5 @@ pngs/
 
 logs/
 qwen2-7b-instruct-trl-sft-ChartQA/
+data/Lichess/*
+Lichess/*
