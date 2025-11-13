@@ -99,7 +99,6 @@ def main():
 @click.option('--directory', type=str, default="Lichess/one-move-chess-puzzles")
 def create_dataset(make_first_move, seed, directory):
     dataset = load_dataset("Lichess/chess-puzzles", split="train")
-    dataset = dataset.select(range(3000))
     dataset = dataset.filter(lambda puzzle : 'oneMove' in puzzle['Themes'])
 
     dataset = dataset.shuffle(seed=seed)
