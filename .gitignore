@@ -13,3 +13,6 @@ pngs/
 
 logs/
 qwen2-7b-instruct-trl-sft-ChartQA/
+verl/
+outputs/
+test_adapter_save

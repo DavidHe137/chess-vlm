@@ -45,3 +45,21 @@ python examples/data_preprocess/geo3k.py --local_save_dir=data
 # we might have to do stuff differently for qwen3_vl-8b ?
 # pip install vllm=0.11.0 
 
+
+
+
+# sft
+uv run python qwen-test.py  --output_dir somthing_more_sensible/
+
+get the model eval'd using david's exact match script. This will use VLLM for inference, so just make sure that a model who is peft can be loaded
+peft_to_full_model.py --source --dest
+
+
+
+300 tflops 0.5 mfu -> 150 tflops
+7 b param model 4 times -> 28 bflops/ token
+256 tokens / example how many examples for 3 hours of training.
+3 * 3600 = 10800 seconds
+calculate num examples in 3 hours
+226,004 examples
+

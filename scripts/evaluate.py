@@ -21,6 +21,7 @@ supported_models = {
         "meta-llama/llama-4-maverick:free",
     ],
     "vllm": [
+        # "output_temp",
         "Qwen/Qwen2.5-VL-3B-Instruct",
         "Qwen/Qwen2-VL-7B-Instruct",
         "Qwen/Qwen3-VL-30B-A3B-Instruct",
@@ -147,9 +148,9 @@ async def async_main(board_format, model_name, client_type, hostname, batch_size
     # Setup logging
     logger, log_path = setup_evaluation_logging(model_name, prompt_config, board_format)
     
-    if model_name not in supported_models[client_type]:
-        logger.error(f"Model {model_name} not supported for client type {client_type}")
-        raise click.ClickException(f"Model {model_name} not supported for client type {client_type}")
+    # if model_name not in supported_models[client_type]:
+    #     logger.error(f"Model {model_name} not supported for client type {client_type}")
+    #     raise click.ClickException(f"Model {model_name} not supported for client type {client_type}")
     
     client = setup_client(client_type, hostname)
     
