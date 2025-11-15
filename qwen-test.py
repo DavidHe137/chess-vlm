@@ -2,16 +2,16 @@ import os
 import json
 import click
 from huggingface_hub import notebook_login
-from datasets import load_dataset, Dataset
+from datasets import load_dataset, Dataset, load_from_disk
 from transformers import BitsAndBytesConfig
 import torch
 from transformers import Qwen2VLForConditionalGeneration, Qwen2VLProcessor
 from qwen_vl_utils import process_vision_info
 from peft import LoraConfig, get_peft_model
 from trl import SFTConfig
-import trackio
 from trl import SFTTrainer
 import pdb
+import wandb
 
 
 SYSTEM_MESSAGE = """
@@ -52,77 +52,65 @@ def generate_text_from_sample(model, processor, sample, max_new_tokens=1024, dev
 
     return output_text[0]  # Return the first decoded output text
 
-def load_json(file_name):
-    with open(file_name, "r") as f:
-        return json.load(f)
-
-def get_formatted_dataset(folder_name):
-    def format_lichess_puzzles(sample):
-        return {
-            "messages": [
-                {
-                    "role": "system",
-                    "content": [
-                        {
-                            "type": "text",
-                            "text": SYSTEM_MESSAGE
-                        }
-                    ],
-                },
-                {
-                    "role": "user",
-                    "content": [
-                        {
-                            "type": "image",
-                            "image": sample["png-file-name"],
-                        },
-                        {
-                            "type": "text",
-                            "text": sample['prompt-with-board'],
-                        }
-                    ],
-                },
-                {
-                    "role": "assistant",
-                    "content": [
-                        {
-                            "type": "text",
-                            "text": sample['solution'],
-                        }
-                    ],
-                }
-            ]
-        }
+def format_lichess_puzzles(sample):
+    return {
+        "messages": [
+            {
+                "role": "system",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": SYSTEM_MESSAGE
+                    }
+                ],
+            },
+            {
+                "role": "user",
+                "content": [
+                    {
+                        "type": "image",
+                        "image": sample["png_file_name"],
+                    },
+                    {
+                        "type": "text",
+                        "text": f"FEN: {sample['FEN']} with valid moves: {sample['All_Valid_Moves']}",
+                    }
+                ],
+            },
+            {
+                "role": "assistant",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": f'<move>{sample['Moves']}</move>',
+                    }
+                ],
+            }
+        ]
+    }
     
-    # Get random .9 of the dataset
-    # Get random elements from a dictionary
-    train_dataset = load_json(os.path.join(folder_name, "train.json"))
-    eval_dataset = load_json(os.path.join(folder_name, "eval.json"))
-    test_dataset = load_json(os.path.join(folder_name, "test.json"))
-
-    train_dataset = [format_lichess_puzzles(sample) for sample in train_dataset]
-    eval_dataset = [format_lichess_puzzles(sample) for sample in eval_dataset]
-    test_dataset = [format_lichess_puzzles(sample) for sample in test_dataset]
-    
-    # Convert lists to HuggingFace Dataset objects
-    train_dataset = Dataset.from_list(train_dataset)
-    eval_dataset = Dataset.from_list(eval_dataset)
-    test_dataset = Dataset.from_list(test_dataset)
-    
-    return train_dataset, eval_dataset, test_dataset
-
-
 @click.command()
-@click.option("--dataset_json", default="data/themed_prompts/bodenMate/", type=str, required=True)
+@click.option("--dataset_name", default="Lichess/one-move-chess-puzzles", type=str, required=True)
+@click.option("--board_format", default="png", type=click.Choice(["png", "ascii", "fen"]), required=True)
+@click.option("--use_png", default=False, type=bool, required=True)
+@click.option("--prompt_config", default="basic", type=str, required=True)
 @click.option("--model_id", default="Qwen/Qwen2-VL-7B-Instruct", type=str, required=True)
 @click.option("--output_dir", default="qwen2-7b-instruct-trl-sft-ChartQA", type=str, required=True)
-def sft(dataset_json, model_id, output_dir):
+@click.option("--num_train_epochs", default=3, type=int, help="Number of training epochs")
+def sft(dataset_name, board_format, use_png, prompt_config, model_id, output_dir, num_train_epochs):
     """
     Train a Qwen2 VL model on a dataset.
     """
 
     # Load dataset
-    train_dset, eval_dset, test_dset = get_formatted_dataset(dataset_json)
+
+    dataset = load_from_disk(dataset_name)
+    train_dset = dataset["train"]
+    eval_dset = dataset["eval"]
+    # train_dset.set_transform(format_lichess_puzzles)
+    # eval_dset.set_transform(format_lichess_puzzles)
+    train_dset = train_dset.map(format_lichess_puzzles)
+    eval_dset = eval_dset.map(format_lichess_puzzles)
 
     # Load model and tokenizer
     click.echo("loading model")
@@ -139,6 +127,8 @@ def sft(dataset_json, model_id, output_dir):
         quantization_config=bnb_config
     )
     processor = Qwen2VLProcessor.from_pretrained(model_id)
+    # Add eos_token attribute to processor for SFTTrainer compatibility
+    processor.eos_token = processor.tokenizer.eos_token
 
     # BitsAndBytesConfig int-4 config
     # Configure LoRA
@@ -160,7 +150,7 @@ def sft(dataset_json, model_id, output_dir):
     # Configure training arguments
     training_args = SFTConfig(
         output_dir="qwen2-7b-instruct-trl-sft-ChartQA",  # Directory to save the model
-        num_train_epochs=3,  # Number of training epochs
+        num_train_epochs=num_train_epochs,  # Number of training epochs
         per_device_train_batch_size=4,  # Batch size for training
         per_device_eval_batch_size=4,  # Batch size for evaluation
         gradient_accumulation_steps=8,  # Steps to accumulate gradients
@@ -181,22 +171,20 @@ def sft(dataset_json, model_id, output_dir):
         warmup_ratio=0.03,  # Ratio of total steps for warmup
         # Hub and reporting
         push_to_hub=True,  # Whether to push model to Hugging Face Hub
-        report_to="trackio",  # Reporting tool for tracking metrics
+        report_to="wandb",  # Reporting tool for tracking metrics
     )
 
-    trackio.init(
+    wandb.init(
         project="qwen2-7b-instruct-trl-sft-ChartQA",
         name="qwen2-7b-instruct-trl-sft-ChartQA",
         config=training_args,
-        space_id=training_args.output_dir + "-trackio"
     )
 
     trainer = SFTTrainer(
-        model=model,
+        model=peft_model,
         args=training_args,
         train_dataset=train_dset,
         eval_dataset=eval_dset,
-        peft_config=peft_config,
         processing_class=processor,
     )
 
