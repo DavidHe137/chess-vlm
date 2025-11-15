@@ -26,20 +26,6 @@ def push_moves_to_board(example, board=None):
     example["Moves"] = " ".join(example["Moves"].split()[1:])
     return example, board
 
-def uci_to_san_from_fen(example, board=None):
-    """Convert UCI moves to SAN notation from a given FEN position"""
-    if board is None:
-        board = chess.Board(example["FEN"])
-    san_moves = []
-    
-    for uci in example["Moves"].split():
-        move = chess.Move.from_uci(uci)
-        san_moves.append(board.san(move))
-        board.push(move)
-    
-    example["Moves"] = " ".join(san_moves)
-    return example
-
 def get_unicode_board(example, board=None):
     """Get Unicode board from FEN"""
     if board is None:
@@ -88,7 +74,6 @@ def transform_example(example, make_first_move, directory):
     if make_first_move:
         example, board = push_moves_to_board(example, board)
     example = get_png_file_name(example, directory=directory, board=board)
-    example = uci_to_san_from_fen(example, board)
     example = get_unicode_board(example, board)
     example = get_ascii_board(example, board)
     example = get_board_state(example, board)
@@ -122,10 +107,10 @@ def create_dataset(make_first_move, seed, directory, num_proc):
         num_proc=num_proc,
         desc="Transforming puzzles"
     )
+    dataset = dataset.filter(lambda x: len(x['Moves'].split()) == 1, num_proc=num_proc, desc="Filtering one-move puzzles")
     for elem in dataset:
-        assert len(elem['Moves'].split()) == 1, f"Puzzle {elem['PuzzleId']} has {len(elem['Moves'].split())} moves"
+        assert len(elem['Moves'].split()) == 1, f"Puzzle {elem['PuzzleId']} has {len(elem['Moves'].split())} moves {elem['Moves']}"
 
-    # Pretty print json
     print(json.dumps(dataset[0], indent=4) + "\n")
     n = len(dataset)
 
