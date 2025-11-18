@@ -94,7 +94,7 @@ class PromptFormatter:
         return config
     
     def format_messages(self, puzzle: Puzzle, board_formats: List[str], 
-                       config_name: str = "basic") -> List[dict]:
+                       config_name: str = "basic", image_path: str = None) -> List[dict]:
         """Format messages using YAML configuration."""
         config = self.load_config(config_name)
         moves_played = puzzle.get_moves_played()
@@ -111,32 +111,57 @@ class PromptFormatter:
         side_to_move = puzzle.get_side_to_move()
         question = config.question_template.format(side_to_move=side_to_move)
         
-        messages = [{"role": "system", "content": config.system_prompt}]
+        messages = [{"role": "system", "content": [{
+            "type": "text",
+            "text": config.system_prompt
+        }]}]
         
         # Add in-context examples from config
         for example in config.in_context_examples:
-            messages.append({"role": "user", "content": example["user"]})
-            messages.append({"role": "assistant", "content": example["assistant"]})
+            messages.append({"role": "user", "content": [{
+                "type": "text",
+                "text": example["user"]
+            }]})
+            messages.append({"role": "assistant", "content": [{
+                "type": "text",
+                "text": example["assistant"]
+            }]})
         
         # Add instruction message
-        messages.append({"role": "user", "content": instruction})
+        messages.append({"role": "user", "content": [{
+            "type": "text",
+            "text": instruction
+        }]})
         
         # Add each board format as separate message
         for fmt in board_formats:
             if fmt == BoardFormat.PNG:
-                png_image = puzzle.get_board_png()
-                img_base64 = encode_image(png_image)
-                
+                if image_path is not None:
+                    img_base64 = encode_image(image_path)
+                else: 
+                    png_image = puzzle.get_board_png()
+                    img_base64 = encode_image(png_image)
                 messages.append({
                     "role": "user", 
-                    "content": [{"type": "image_url", "image_url": {"url": f"data:image/png;base64,{img_base64}"}}]
+                    "content": [{
+                        "type": "image_url", 
+                        "image_url": {"url": f"data:image/png;base64,{img_base64}"}
+                        # "image_url": {"url": f"{image_path}"}
+                    }]
                 })
             else:
                 board_repr = puzzle.get_board(fmt)
-                messages.append({"role": "user", "content": f"{fmt.value.upper()}:\n{board_repr}"})
+                messages.append({"role": "user", 
+                "content": [{
+                    "type": "text",
+                    "text": f"{fmt.value.upper()}:\n{board_repr}"
+                }]})
         
         # Add final question
-        messages.append({"role": "user", "content": question})
+        messages.append({"role": "user", "content": [{
+            "type": "text",
+            "text": question
+        }]})
         
         messages = coalesce_messages(messages)
         return messages
