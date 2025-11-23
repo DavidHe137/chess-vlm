@@ -54,7 +54,7 @@ def generate_text_from_sample(model, processor, sample, max_new_tokens=1024, dev
 
     return output_text[0]  # Return the first decoded output text
 
-def create_format_function(board_formats, prompt_config, prompt_formatter):
+def create_format_function(board_formats, prompt_config, prompt_formatter, include_valid_moves):
     """
     Create a format function that uses PromptFormatter to format messages.
     This is a closure that captures the board_formats and prompt_config.
