@@ -139,7 +139,7 @@ def create_format_function(board_formats, prompt_config, prompt_formatter, inclu
 @click.option("--model_id", default="Qwen/Qwen2-VL-7B-Instruct", type=str, required=True)
 @click.option("--include_valid_moves", is_flag=True, default=False)
 @click.option("--output_dir", default="qwen2-7b-instruct-trl-sft-ChartQA", type=str, required=True)
-@click.option("--num_train_epochs", default=3, type=int, help="Number of training epochs")
+@click.option("--num_train_epochs", default=1, type=int, help="Number of training epochs")
 @click.option("--regenerate_messages", default=False, type=bool, help="Force regeneration of messages even if they exist in dataset")
 @click.option("--logging_steps", default=1, type=int, help="Steps interval for logging")
 @click.option("--eval_steps", default=100, type=int, help="Steps interval for evaluation")
@@ -175,7 +175,7 @@ def sft(dataset_name, board_formats, prompt_config, model_id, include_valid_move
 
     # Load dataset
     dataset = load_from_disk(dataset_name)
-    train_dset = dataset["train"].select(range(50000))
+    train_dset = dataset["train"].select(range(30000))
     eval_dset = dataset["eval"].select(range(1000))
 
     train_dset = train_dset.map(format_func, num_proc=os.cpu_count())
@@ -263,7 +263,7 @@ def sft(dataset_name, board_formats, prompt_config, model_id, include_valid_move
 
     wandb.init(
         project="chess-vlm",
-        name="chess-vlm-sft",
+        name="chess-vlm-sft-{board_formats}-{prompt_config}-{include_valid_moves}",
         config=training_args,
     )
 
