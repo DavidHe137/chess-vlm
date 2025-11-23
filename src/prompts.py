@@ -94,7 +94,7 @@ class PromptFormatter:
         return config
     
     def format_messages(self, puzzle: Puzzle, board_formats: List[str], 
-                       config_name: str = "basic", image_path: str = None) -> List[dict]:
+                       config_name: str = "basic", image_path: str = None, encode_images: bool = True) -> List[dict]:
         """Format messages using YAML configuration."""
         config = self.load_config(config_name)
         moves_played = puzzle.get_moves_played()
@@ -105,7 +105,7 @@ class PromptFormatter:
         # Format instruction using template
         instruction = config.instruction_template.format(
             last_move=moves_played[-1],
-            themes=', '.join(puzzle.themes)
+            themes=', '.join(puzzle.themes) if isinstance(puzzle.themes, list) else f"{puzzle.themes}"
         )
         
         side_to_move = puzzle.get_side_to_move()
@@ -137,15 +137,20 @@ class PromptFormatter:
         for fmt in board_formats:
             if fmt == BoardFormat.PNG:
                 if image_path is not None:
-                    img_base64 = encode_image(image_path)
+                    if encode_images:
+                        img_base64 = encode_image(image_path)
+                    else:
+                        img_base64 = image_path
                 else: 
                     png_image = puzzle.get_board_png()
                     img_base64 = encode_image(png_image)
+                
+                content_type = "image_url" if encode_images else "image"
                 messages.append({
                     "role": "user", 
                     "content": [{
-                        "type": "image_url", 
-                        "image_url": {"url": f"data:image/png;base64,{img_base64}"}
+                        "type": content_type, 
+                        "image_url": {"url": f"data:image/png;base64,{img_base64}" if encode_images else image_path}
                         # "image_url": {"url": f"{image_path}"}
                     }]
                 })

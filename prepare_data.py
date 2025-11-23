@@ -9,7 +9,6 @@ import chess.svg
 from datasets import load_dataset, Dataset, DatasetDict, load_from_disk
 from tqdm import tqdm
 import cairosvg
-from pprint import pprint
 import requests
 import json
 import matplotlib.pyplot as plt
@@ -94,12 +93,6 @@ def format_lichess_puzzles(example, prompt_formatter: PromptFormatter):
     example["GameUrl"] = None
     example["Puzzle_Moves_SAN"] = None
     example["GameId"] = None
-    puzzle = Puzzle.from_dataset_row(example)
-    messages = prompt_formatter.format_messages(puzzle, ["png"], 
-        config_name="basic", 
-        image_path=example["png_file_name"] if "png_file_name" in example else None)
-    messages.append({"role": "assistant", "content": [{"type": "text", "text": f"<move>{example['Moves']}</move>"}]})
-    example["messages"] = messages
     return example
 
 @click.group()
