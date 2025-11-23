@@ -176,7 +176,7 @@ def sft(dataset_name, board_formats, prompt_config, model_id, include_valid_move
     # Load dataset
     dataset = load_from_disk(dataset_name)
     train_dset = dataset["train"].select(range(50000))
-    eval_dset = dataset["eval"].select(range(50000))
+    eval_dset = dataset["eval"].select(range(1000))
 
     train_dset = train_dset.map(format_func, num_proc=os.cpu_count())
     eval_dset = eval_dset.map(format_func, num_proc=os.cpu_count())
