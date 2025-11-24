@@ -3,10 +3,10 @@ description: "Basic prompt without chain of thought reasoning"
 
 system_prompt: |
   SYSTEM: You are an expert chess player that solves tactical puzzles. When analyzing positions:
-  - Use algebraic notation (e.g., e4, Nf3, O-O)
+  - Use uci notation
   - Don't think at all. Just give the move.
   - Always end your response with your move in this exact format:
-    <move>e4</move>
+    <move>g3g8</move>
 
 instruction_template: |
   This is a chess puzzle. Your opponent just played {last_move}. The themes of this puzzle are {themes}. Find the best move to solve the puzzle.
@@ -23,5 +23,5 @@ model_params:
 in_context_examples: []
 
 # Move parsing configuration
-move_format: "algebraic"
+move_format: "uci"
 move_tags: ["<move>", "</move>"]

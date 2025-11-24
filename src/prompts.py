@@ -5,6 +5,8 @@ import base64
 import re
 import yaml
 import os
+from PIL import Image
+
 
 def encode_image(image_path_or_buffer):
     if isinstance(image_path_or_buffer, str):
@@ -94,7 +96,7 @@ class PromptFormatter:
         return config
     
     def format_messages(self, puzzle: Puzzle, board_formats: List[str], 
-                       config_name: str = "basic", image_path: str = None, encode_images: bool = True) -> List[dict]:
+                       config_name: str = "basic", image_path: str = None, encode_images: bool = True, for_qwen=False) -> List[dict]:
         """Format messages using YAML configuration."""
         config = self.load_config(config_name)
         moves_played = puzzle.get_moves_played()
@@ -140,20 +142,30 @@ class PromptFormatter:
                     if encode_images:
                         img_base64 = encode_image(image_path)
                     else:
-                        img_base64 = image_path
+                        img_base64 = Image.open(image_path)
                 else: 
                     png_image = puzzle.get_board_png()
                     img_base64 = encode_image(png_image)
                 
                 content_type = "image_url" if encode_images else "image"
-                messages.append({
-                    "role": "user", 
-                    "content": [{
-                        "type": content_type, 
-                        "image_url": {"url": f"data:image/png;base64,{img_base64}" if encode_images else image_path}
-                        # "image_url": {"url": f"{image_path}"}
-                    }]
-                })
+                if for_qwen:
+                    messages.append({
+                        "role": "user", 
+                        "content": [{
+                            "type": content_type, 
+                            "image": image_path
+                            # "image_url": {"url": f"{image_path}"}
+                        }]
+                    })
+                else:
+                    messages.append({
+                        "role": "user", 
+                        "content": [{
+                            "type": content_type, 
+                            "image_url": {"url": f"data:image/png;base64,{img_base64}" if encode_images else image_path}
+                            # "image_url": {"url": f"{image_path}"}
+                        }]
+                    })
             else:
                 board_repr = puzzle.get_board(fmt)
                 messages.append({"role": "user", 

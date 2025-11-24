@@ -49,7 +49,7 @@ python examples/data_preprocess/geo3k.py --local_save_dir=data
 
 
 # sft
-uv run python qwen-test.py  --output_dir somthing_more_sensible/
+uv run python qwen-test.py --output_dir somthing_more_sensible/
 
 get the model eval'd using david's exact match script. This will use VLLM for inference, so just make sure that a model who is peft can be loaded
 peft_to_full_model.py --source --dest
@@ -63,3 +63,30 @@ peft_to_full_model.py --source --dest
 calculate num examples in 3 hours
 226,004 examples
 
+
+# kevin scripts:
+uv run python prepare_data.py create-dataset
+CUDA_VISIBLE_DEVICES=0 uv run qwen-test.py --board_formats png,fen --output_dir experiments/png-fen-test
+CUDA_VISIBLE_DEVICES=1 uv run qwen-test.py --board_formats png,fen --output_dir experiments/png-fen
+CUDA_VISIBLE_DEVICES=2 uv run qwen-test.py --board_formats ascii --output_dir experiments/ascii-test
+CUDA_VISIBLE_DEVICES=3 uv run qwen-test.py --board_formats fen --output_dir experiments/fen-test
+CUDA_VISIBLE_DEVICES=4 uv run qwen-test.py --board_formats png --output_dir experiments/png-test
+CUDA_VISIBLE_DEVICES=5 uv run qwen-test.py --board_formats png,ascii --output_dir experiments/png-ascii-test
+
+
+# evaluating the saved models.
+CUDA_VISIBLE_DEVICES=0 uv run peft_to_full_model.py serve --source /nethome/jbjorner3/dev/chess-vlm/experiments/png-fen-test2/checkpoint-200
+CUDA_VISIBLE_DEVICES=0 uv run peft_to_full_model.py serve --source /nethome/jbjorner3/dev/chess-vlm/experiments/png-fen-test2/checkpoint-400
+CUDA_VISIBLE_DEVICES=0 uv run peft_to_full_model.py serve --source /nethome/jbjorner3/dev/chess-vlm/experiments/png-fen-test2/checkpoint-600
+
+CUDA_VISIBLE_DEVICES=1 uv run peft_to_full_model.py serve --source /nethome/jbjorner3/dev/chess-vlm/experiments/ascii-test/checkpoint-200
+CUDA_VISIBLE_DEVICES=1 uv run peft_to_full_model.py serve --source /nethome/jbjorner3/dev/chess-vlm/experiments/ascii-test/checkpoint-400
+CUDA_VISIBLE_DEVICES=1 uv run peft_to_full_model.py serve --source /nethome/jbjorner3/dev/chess-vlm/experiments/ascii-test/checkpoint-600
+
+CUDA_VISIBLE_DEVICES=2 uv run peft_to_full_model.py serve --source /nethome/jbjorner3/dev/chess-vlm/experiments/fen-test/checkpoint-200
+CUDA_VISIBLE_DEVICES=2 uv run peft_to_full_model.py serve --source /nethome/jbjorner3/dev/chess-vlm/experiments/fen-test/checkpoint-400
+CUDA_VISIBLE_DEVICES=2 uv run peft_to_full_model.py serve --source /nethome/jbjorner3/dev/chess-vlm/experiments/fen-test/checkpoint-600
+uv run python peft_to_full_model.py peft-to-full-model --source /nethome/jbjorner3/dev/chess-vlm/experiments/fen/checkpoint-938 --model_id Qwen/Qwen2-VL-7B-Instruct
+uv run python -m vllm.entrypoints.openai.api_server --model /nethome/jbjorner3/dev/chess-vlm/experiments/fen/checkpoint-938_full --host localhost --port 8000
+uv run scripts/evaluate.py --client_type vllm --model_name /nethome/jbjorner3/dev/chess-vlm/experiments/fen/checkpoint-938_full --hostname localhost --prompt_config basic --board_format fen # --board_format png --board_format fen
+rm -rf /nethome/jbjorner3/dev/chess-vlm/experiments/fen/checkpoint-938_full
