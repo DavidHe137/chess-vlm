@@ -220,9 +220,9 @@ def sft(dataset_name, board_formats, prompt_config, model_id, include_valid_move
     # BitsAndBytesConfig int-4 config
     # Configure LoRA
     peft_config = LoraConfig(
-        lora_alpha=16,
+        lora_alpha=64,
         lora_dropout=0.05,
-        r=8,
+        r=32,
         bias="none",
         target_modules=["q_proj", "v_proj"],
         task_type="CAUSAL_LM",
@@ -263,7 +263,7 @@ def sft(dataset_name, board_formats, prompt_config, model_id, include_valid_move
 
     wandb.init(
         project="chess-vlm",
-        name="chess-vlm-sft-{board_formats}-{prompt_config}-{include_valid_moves}",
+        name=f"chess-vlm-sft-{board_formats}",
         config=training_args,
     )
 
