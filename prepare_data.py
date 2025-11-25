@@ -58,25 +58,56 @@ def get_all_valid_moves(example, board=None):
     example["All_Valid_Moves"] = [move.uci() for move in board.legal_moves]
     return example
 
-def get_png_file_name(example, directory="Lichess/one-move-chess-puzzles/pngs", board=None):
+def get_png_file_name(example, directory="Lichess/one-move-chess-puzzles/pngs", board=None, board_theme=None):
     """Generate PNG from board and save it with puzzle ID as filename"""
     if board is None:
         board = chess.Board(example["FEN"])
-    svg = chess.svg.board(board)
+    if board_theme is None:
+        board_theme = "lichess"
+    # Default colors (Lichess-style)
+    colors = {
+        "lichess": {
+            "square light": "#f0d9b5",
+            "square dark": "#b58863",
+            "margin": "#404040",
+            "coord": "#404040",
+        },
+        "green-pink": {
+            "square light": "#f0d9b5",
+            "square dark": "#b58863",
+            "square light lastmove": "#cdd26a",
+            "margin": "#404040",
+            "coord": "#404040",
+        },
+        "blue-orange": {
+            "square light": "#f0d9b5",
+            "square dark": "#b58863",
+            "square light lastmove": "#cdd26a",
+            "margin": "#404040",
+            "coord": "#404040",
+        },
+    }
+    
+    svg = chess.svg.board(
+        board,
+        size=size,
+        colors=colors[board_theme],
+        coordinates=True,
+    )
     # Ensure directory exists before writing
     os.makedirs(directory, exist_ok=True)
     puzzle_id = example["PuzzleId"]
     png_filename = os.path.join(directory, f"{puzzle_id}.png")
-    # cairosvg.svg2png(bytestring=svg.encode('utf-8'), write_to=png_filename)
+    cairosvg.svg2png(bytestring=svg.encode('utf-8'), write_to=png_filename)
     example["png_file_name"] = png_filename
     return example
 
-def transform_example(example, make_first_move, directory, prompt_formatter: PromptFormatter):
+def transform_example(example, make_first_move, directory, prompt_formatter: PromptFormatter, board_theme=None):
     """Transform example"""
     board = chess.Board(example["FEN"])
     if make_first_move:
         example, board = push_moves_to_board(example, board)
-    example = get_png_file_name(example, directory=directory, board=board)
+    example = get_png_file_name(example, directory=directory, board=board, board_theme=board_theme)
     example = get_unicode_board(example, board)
     example = get_ascii_board(example, board)
     example = get_board_state(example, board)
@@ -104,7 +135,8 @@ def main():
 @click.option('--seed', type=int, default=42)
 @click.option('--directory', type=str, default="Lichess/one-move-chess-puzzles")
 @click.option('--num_proc', type=int, default=None, help="Number of processes for parallel processing. Defaults to number of CPU cores.")
-def create_dataset(make_first_move, seed, directory, num_proc):
+@click.option('--board_theme', type=click.Choice(["lichess", "green-pink", "blue-orange"]), default="lichess")
+def create_dataset(make_first_move, seed, directory, num_proc, board_theme):
     if num_proc is None:
         num_proc = os.cpu_count() or 1
     prompt_formatter = PromptFormatter()
@@ -121,7 +153,8 @@ def create_dataset(make_first_move, seed, directory, num_proc):
         fn_kwargs={
             "make_first_move": make_first_move, 
             "directory": os.path.join(directory, "pngs"),
-            "prompt_formatter": prompt_formatter
+            "prompt_formatter": prompt_formatter,
+            "board_theme": board_theme,
         }, 
         num_proc=num_proc,
         desc="Transforming puzzles"
