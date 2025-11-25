@@ -15,7 +15,7 @@ import wandb
 from src.prompts import PromptFormatter
 from src.puzzle import Puzzle, BoardFormat
 from PIL import Image
- 
+from peft import PeftModel
 SYSTEM_MESSAGE = """
 You are a helpful assistant that can answer questions about the image.
 """
@@ -54,7 +54,7 @@ def generate_text_from_sample(model, processor, sample, max_new_tokens=1024, dev
 
     return output_text[0]  # Return the first decoded output text
 
-def create_format_function(board_formats, prompt_config, prompt_formatter, include_valid_moves, include_ascii_board):
+def create_format_function(board_formats, prompt_config, prompt_formatter, include_valid_moves, include_ascii_board, is_eval=False):
     """
     Create a format function that uses PromptFormatter to format messages.
     This is a closure that captures the board_formats and prompt_config.
@@ -119,15 +119,16 @@ def create_format_function(board_formats, prompt_config, prompt_formatter, inclu
                 board_statement = f"The current board position is: {sample['ASCII_Board']} . "
             else:
                 board_statement = ""
-            new_messages.append({
-                "role": "assistant",
-                "content": [{
-                    "type": "text",
-                    "text": f"{board_statement}The next best move is: <move>{move_text}</move>"
-                }]
-            })
+            if not is_eval:
+                new_messages.append({
+                    "role": "assistant",
+                    "content": [{
+                        "type": "text",
+                        "text": f"{board_statement}The next best move is: <move>{move_text}</move>"
+                    }]
+                })
 
-            return {"messages": new_messages, "images": [Image.open(image_path)]}
+            return {"messages": new_messages, "images": [Image.open(image_path)], 'correct_move': move_text}
         except Exception as e:
             # Log error and re-raise with more context
             import traceback
