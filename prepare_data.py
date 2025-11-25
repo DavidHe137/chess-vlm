@@ -63,34 +63,22 @@ def get_png_file_name(example, directory="Lichess/one-move-chess-puzzles/pngs", 
     if board is None:
         board = chess.Board(example["FEN"])
     if board_theme is None:
-        board_theme = "lichess"
+        board_theme = "default"
     # Default colors (Lichess-style)
     colors = {
-        "lichess": {
-            "square light": "#f0d9b5",
-            "square dark": "#b58863",
-            "margin": "#404040",
-            "coord": "#404040",
-        },
+        "default": {},
         "green-pink": {
-            "square light": "#f0d9b5",
-            "square dark": "#b58863",
-            "square light lastmove": "#cdd26a",
-            "margin": "#404040",
-            "coord": "#404040",
+            "square light": "#27F56C",
+            "square dark": "#F527E4",
         },
-        "blue-orange": {
-            "square light": "#f0d9b5",
-            "square dark": "#b58863",
-            "square light lastmove": "#cdd26a",
-            "margin": "#404040",
-            "coord": "#404040",
+        "all-pink": {
+            "square light": "#F527E4",
+            "square dark": "#F527E4",
         },
     }
     
     svg = chess.svg.board(
         board,
-        size=size,
         colors=colors[board_theme],
         coordinates=True,
     )
@@ -135,12 +123,12 @@ def main():
 @click.option('--seed', type=int, default=42)
 @click.option('--directory', type=str, default="Lichess/one-move-chess-puzzles")
 @click.option('--num_proc', type=int, default=None, help="Number of processes for parallel processing. Defaults to number of CPU cores.")
-@click.option('--board_theme', type=click.Choice(["lichess", "green-pink", "blue-orange"]), default="lichess")
+@click.option('--board_theme', type=click.Choice(["lichess", "green-pink", "all-pink"]), default="lichess")
 def create_dataset(make_first_move, seed, directory, num_proc, board_theme):
     if num_proc is None:
         num_proc = os.cpu_count() or 1
     prompt_formatter = PromptFormatter()
-    dataset = load_dataset("Lichess/chess-puzzles", split="train")
+    dataset = load_dataset("Lichess/chess-puzzles", split="train").select(range(3000))
     dataset = dataset.filter(
         lambda puzzle : 'oneMove' in puzzle['Themes'], 
         num_proc=num_proc,
