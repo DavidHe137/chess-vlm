@@ -54,7 +54,7 @@ def generate_text_from_sample(model, processor, sample, max_new_tokens=1024, dev
 
     return output_text[0]  # Return the first decoded output text
 
-def create_format_function(board_formats, prompt_config, prompt_formatter, include_valid_moves):
+def create_format_function(board_formats, prompt_config, prompt_formatter, include_valid_moves, include_ascii_board):
     """
     Create a format function that uses PromptFormatter to format messages.
     This is a closure that captures the board_formats and prompt_config.
@@ -115,11 +115,15 @@ def create_format_function(board_formats, prompt_config, prompt_formatter, inclu
             # Add assistant response with the move
             moves = sample.get("Moves", "")
             move_text = moves.split()[0] if moves else ""
+            if include_ascii_board:
+                board_statement = f"The current board position is: {sample['ASCII_Board']} . "
+            else:
+                board_statement = ""
             new_messages.append({
                 "role": "assistant",
                 "content": [{
                     "type": "text",
-                    "text": f"<move>{move_text}</move>"
+                    "text": f"{board_statement}The next best move is: <move>{move_text}</move>"
                 }]
             })
 
@@ -162,13 +166,14 @@ def remove_null_url(d):
 @click.option("--prompt_config", default="basic", type=click.Choice(["basic", "cot", "detailed_cot", "few_shot"]), required=True)
 @click.option("--model_id", default="Qwen/Qwen2-VL-7B-Instruct", type=str, required=True)
 @click.option("--include_valid_moves", is_flag=True, default=False)
+@click.option("--include_ascii_board", is_flag=True, default=False)
 @click.option("--output_dir", default="qwen2-7b-instruct-trl-sft-ChartQA", type=str, required=True)
 @click.option("--num_train_epochs", default=1, type=int, help="Number of training epochs")
 @click.option("--regenerate_messages", default=False, type=bool, help="Force regeneration of messages even if they exist in dataset")
 @click.option("--logging_steps", default=1, type=int, help="Steps interval for logging")
 @click.option("--eval_steps", default=100, type=int, help="Steps interval for evaluation")
 @click.option("--save_steps", default=100, type=int, help="Steps interval for saving")
-def sft(dataset_name, board_formats, prompt_config, model_id, include_valid_moves, output_dir, num_train_epochs, regenerate_messages, logging_steps, eval_steps, save_steps):
+def sft(dataset_name, board_formats, prompt_config, model_id, include_valid_moves, include_ascii_board, output_dir, num_train_epochs, regenerate_messages, logging_steps, eval_steps, save_steps):
     """
     Train a Qwen2 VL model on a dataset.
     """
@@ -194,7 +199,8 @@ def sft(dataset_name, board_formats, prompt_config, model_id, include_valid_move
         board_formats=board_format_list,
         prompt_config=prompt_config,
         prompt_formatter=prompt_formatter,
-        include_valid_moves=include_valid_moves
+        include_valid_moves=include_valid_moves,
+        include_ascii_board=include_ascii_board
     )
 
     # Load dataset
